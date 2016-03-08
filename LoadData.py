@@ -20,11 +20,13 @@ def main():
     conn = psycopg2.connect("dbname=postgres host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
+    cur.execute('DROP TABLE IF EXISTS dayv2pub, hhv2pub, perv2pub, vehv2pub, eia_mkwh_2015, eia_co2_electricity_2015, eia_co2_transportation_2015;')
+
     createTables(cur)
 
-    files = ['DAYV2PUB.CSV', 'EIA_CO2_Transportation_2015.csv', 'HHV2PUB.CSV', 'VEHV2PUB.CSV', 'EIA_CO2_Electricity_2015.csv', 'EIA_MkWh_2015.csv', 'PERV2PUB.CSV']
-    #for i, myfile in enumerate(files):
-        #loadTables('/subset/%s' %(myfile, cur)
+    files = ['DAYV2PUB.CSV', 'HHV2PUB.CSV', 'VEHV2PUB.CSV', 'PERV2PUB.CSV', 'EIA_CO2_Transportation_2015.csv', 'EIA_CO2_Electricity_2015.csv', 'EIA_MkWh_2015.csv']
+    for i, myfile in enumerate(files):
+        loadTables(myfile, cur)
 
     conn.commit()
     cur.close()
@@ -67,7 +69,7 @@ def loadTables(filename, cur):
     chunksize = 1000
     fid = 1
     filesmade = []
-    with open(filename) as infile:
+    with open('subset/%s' %(filename)) as infile:
         f = open('%s%d' %(filename, fid), 'w')
         print f
         for i, line in enumerate(infile):
