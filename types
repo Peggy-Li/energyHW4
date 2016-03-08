@@ -1,0 +1,4122 @@
+`ame Label Type Length Question Code / Range Frequency Weighted
+CDIVMSAR Grouping of HH by combination of Census
+Division, MSA status, and presence of a
+subway system (if area > 1 million)
+C 2 DV_1* -9 = Not ascertained 2 23,274
+11 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or more with heavy rail
+618 2,959,202
+12 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or without heavy rail.
+351 986,625
+13 = New England (ME, NH, VT, CT, MA, RI) MSA of less than 1
+million.
+696 634,203
+14 = New England (ME, NH, VT, CT, MA, RI) Not in a MSA. 1,499 913,339
+21 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or more
+with heavy rail.
+7,088 9,304,695
+22 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or without
+heavy rail.
+1,615 1,850,926
+23 = Mid-Atlantic (NY, NJ, PA) MSA of less than 1 million. 5,737 2,643,020
+24 = Mid-Atlantic (NY, NJ, PA) Not in a MSA. 3,087 1,374,631
+31 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or more with heavy rail
+1,038 4,563,342
+32 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or without heavy rail
+2,128 5,560,439
+33 = East North Central (IL, IN, MI, OH, WI) MSA of less than 1
+million.
+2,147 4,171,733
+34 = East North Central (IL, IN, MI, OH, WI) Not in a MSA. 2,028 3,520,610
+42 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA or
+CMSA of 1 million or without heavy rail
+454 2,794,453
+43 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA of
+less than 1 million.
+5,146 2,032,570
+44 = West North Central (IA, KS, MO, MN, ND, NE, SD) Not in a
+MSA.
+2,487 3,217,458
+51 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or more with heavy rail
+6,606 6,754,006
+52 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or without heavy rail
+15,630 5,323,193
+53 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA of
+less than 1 million.
+19,603 5,796,588
+54 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) Not in a
+MSA.
+14,200 4,331,328
+62 = East South Central (AL, KY, MS, TN) MSA or CMSA of 1
+million or without heavy rail.
+978 1,494,304
+63 = East South Central (AL, KY, MS, TN) MSA of less than 1
+million.
+1,301 2,760,801
+64 = East South Central (AL, KY, MS, TN) Not in a MSA. 1,226 2,777,429
+72 = West South Central (AR, LA, OK, TX) MSA or CMSA of 1
+million or without heavy rail.
+13,549 6,288,630
+73 = West South Central (AR, LA, OK, TX) MSA of less than 1
+million.
+5,333 3,778,267
+74 = West South Central (AR, LA, OK, TX) Not in a MSA. 4,183 2,501,981
+82 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA or CMSA
+of 1 million or without heavy rail
+5,182 3,877,490
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-1
+Name Label Type Length Question Code / Range Frequency Weighted
+83 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA of less
+than 1 million.
+2,973 2,085,934
+84 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) Not in a MSA. 851 1,906,967
+91 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+more with heavy rail.
+10,601 8,196,660
+92 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+without heavy rail.
+7,645 4,386,113
+93 = Pacific (AK, CA, HI, OR, WA) MSA of less than 1 million. 2,948 2,722,140
+94 = Pacific (AK, CA, HI, OR, WA) Not in a MSA. 1,217 1,568,977
+CENSUS_D Census division classification for home
+address
+C 2 DV_2* 01 = New England 3,164 5,493,370
+02 = Middle Atlantic 17,528 15,196,048
+03 = East North Central 7,341 17,816,124
+04 = West North Central 8,087 8,044,481
+05 = South Atlantic 56,039 22,205,115
+06 = East South Central 3,505 7,032,535
+07 = West South Central 23,066 12,569,376
+08 = Mountain 9,006 7,870,391
+09 = Pacific 22,411 16,873,890
+CENSUS_R Census region classification for home address C 2 DV_3* 01 = Northeast 20,692 20,689,418
+02 = Midwest 15,428 25,860,605
+03 = South 82,610 41,807,026
+04 = West 31,417 24,744,281
+CNTTDHH Category of number of household trips C 2 DV* 0-81 150,147 113,101,330
+DRVRCNT Number of drivers in HH N 8 DV_10* 0 5,170 5,634,147
+1 42,773 38,224,173
+2 84,429 54,194,073
+3 13,868 11,379,470
+4 3,357 3,175,251
+5 473 396,263
+6 56 64,279
+7 16 30,703
+8 3 2,228
+9 2 742
+FLAG100 Did HH have 100% of members complete
+interview?
+C 2 DV* 01 = Yes 130,509 96,549,730
+02 = No 19,638 16,551,600
+HBHTNRNT Percent renter-occupied - Block group C 2 Claritas 0 = 0-4% 10,654 7,924,700
+5 = 5-14% 41,161 26,129,431
+-9 = N/A 2 23,274
+20 = 15-24% 37,428 22,897,626
+30 = 25-34% 20,755 15,607,140
+40 = 35-44% 14,003 11,209,815
+50 = 45-54% 9,509 9,249,969
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-2
+Name Label Type Length Question Code / Range Frequency Weighted
+60 = 55-64% 6,414 6,719,468
+70 = 65-74% 4,381 5,052,689
+80 = 75-84% 2,885 3,795,155
+90 = 85-94% 1,899 2,653,365
+95 = 95-100% 1,056 1,838,698
+HBHUR Urban / Rural indicator - Block group C 2 Claritas -9 = N/A 2 23,274
+C = Second City 27,082 20,632,917
+S = Suburban 34,991 27,430,457
+TC = Town and Country 71,126 45,041,531
+U = Urban 16,937 19,964,251
+X = Unassigned 9 8,899
+HBPPOPDN Population per sq mile - Block group C 5 Claritas -9 = N/A 2 23,274
+50 = 0-99 19,991 13,011,338
+300 = 100-499 26,236 15,267,810
+750 = 500-999 14,041 8,905,799
+1500 = 1,000-1,999 20,558 14,036,469
+3000 = 2,000-3,999 28,856 21,433,082
+7000 = 4,000-9,999 31,201 26,508,974
+17000 = 10,000-24,999 6,962 8,810,703
+30000 = 25,000-999,999 2,300 5,103,879
+HBRESDN Housing units per sq mile - Block group C 5 Claritas -9 = N/A 2 23,274
+50 = 0-99 33,533 20,660,597
+300 = 100-499 31,423 19,608,042
+750 = 500-999 22,145 15,566,327
+1500 = 1,000-1,999 30,480 22,731,383
+3000 = 2,000-3,999 22,771 20,033,444
+7000 = 4,000-9,999 7,301 9,156,164
+17000 = 10,000-24,999 1,589 3,440,435
+30000 = 25,000-999,999 903 1,881,665
+HHC_MSA CMSA FIPS code for HH address C 4 DV_13* -1 = Appropriate skip 30,778 22,112,719
+-9 = Not ascertained 2 23,274
+0520 = Atlanta, GA 1,013 1,835,913
+0640 = Austin--San Marcos, TX 1,543 607,634
+1122 = Boston--Worcester--Lawrence, MA--NH--ME--CT 479 2,268,630
+1280 = Buffalo--Niagara Falls, NY 665 471,544
+1520 = Charlotte--Gastonia--Rock Hill, NC--SC 615 718,414
+1602 = Chicago--Gary--Kenosha, IL--IN--WI 849 3,422,902
+1642 = Cincinnati--Hamilton, OH--KY--IN 151 860,321
+1692 = Cleveland--Akron, OH 189 1,140,440
+1840 = Columbus, OH 94 664,873
+1922 = Dallas--Fort Worth, TX 5,977 2,300,752
+2082 = Denver--Boulder--Greeley, CO 160 1,121,556
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-3
+Name Label Type Length Question Code / Range Frequency Weighted
+2162 = Detroit--Ann Arbor--Flint, MI 301 2,013,430
+3000 = Grand Rapids--Muskegon--Holland, MI 69 469,402
+3120 = Greensboro--Winston-Salem--High Point, NC 5,824 642,760
+3280 = Hartford, CT 105 491,345
+3362 = Houston--Galveston--Brazoria, TX 3,993 1,686,175
+3480 = Indianapolis, IN 871 695,961
+3600 = Jacksonville, FL 1,140 494,180
+3760 = Kansas City, MO--KS 134 698,407
+4120 = Las Vegas, NV--AZ 161 763,742
+4472 = Los Angeles--Riverside--Orange County, CA 6,615 5,419,449
+4520 = Louisville, KY--IN 170 374,907
+4920 = Memphis, TN--AR--MS 322 445,218
+4992 = Miami--Fort Lauderdale, FL 2,950 1,580,002
+5082 = Milwaukee--Racine, WI 445 654,197
+5120 = Minneapolis--St. Paul, MN--WI 233 1,271,162
+5360 = Nashville, TN 582 559,790
+5560 = New Orleans, LA 74 412,847
+5602 = New York--Northern New Jersey--Long Island,NY--NJ--CT--
+PA
+6,898 7,913,476
+5720 = Norfolk--Virginia Beach--Newport News, VA--NC 3,188 619,768
+5880 = Oklahoma City, OK 80 464,080
+5960 = Orlando, FL 1,157 749,780
+6162 = Philadelphia--Wilmington--Atlantic City,PA--NJ--DE--MD 468 2,303,759
+6200 = Phoenix--Mesa, AZ 4,707 1,461,700
+6280 = Pittsburgh, PA 164 961,242
+6442 = Portland--Salem, OR--WA 177 1,027,384
+6480 = Providence--Fall River--Warwick, RI--MA 246 495,281
+6640 = Raleigh--Durham--Chapel Hill, NC 516 581,380
+6840 = Rochester, NY 786 418,140
+6922 = Sacramento--Yolo, CA 1,231 803,133
+7040 = St. Louis, MO--IL 190 1,146,133
+7160 = Salt Lake City--Ogden, UT 154 530,492
+7240 = San Antonio, TX 1,880 812,538
+7320 = San Diego, CA 6,002 1,037,955
+7362 = San Francisco--Oakland--San Jose, CA 3,986 2,777,211
+7602 = Seattle--Tacoma--Bremerton, WA 235 1,517,641
+8280 = Tampa--St. Petersburg--Clearwater, FL 2,160 1,098,918
+8872 = Washington--Baltimore, DC--MD--VA--WV 2,504 3,116,123
+8960 = West Palm Beach--Boca Raton, FL 1,030 417,993
+XXXX = Suppressed, in an MSA of less than 1 million 45,884 26,625,257
+HHFAMINC Derived total HH income C 2 DV_16* -7 = Refused 8,719 5,471,660
+-8 = Don't know 3,455 2,376,466
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-4
+Name Label Type Length Question Code / Range Frequency Weighted
+-9 = Not ascertained 35 22,321
+01 = < $5,000 2,657 2,974,335
+02 = $5,000 - $9,999 5,294 5,710,544
+03 = $10,000 - $14,999 7,351 6,959,723
+04 = $15,000 - $19,999 8,048 7,068,391
+05 = $20,000 - $24,999 6,680 5,621,171
+06 = $25,000 - $29,999 9,554 7,421,820
+07 = $30,000 - $34,999 5,542 4,473,208
+08 = $35,000 - $39,999 9,079 6,808,183
+09 = $40,000 - $44,999 4,511 3,745,950
+10 = $45,000 - $49,999 8,717 6,292,726
+11 = $50,000 - $54,999 3,941 3,068,161
+12 = $55,000 - $59,999 7,796 5,346,736
+13 = $60,000 - $64,999 3,026 2,343,901
+14 = $65,000 - $69,999 6,592 4,427,809
+15 = $70,000 - $74,999 3,035 2,014,700
+16 = $75,000 - $79,999 6,328 4,669,839
+17 = $80,000 - $99,999 12,429 8,631,132
+18 = > = $100,000 27,358 17,652,553
+HHRELATD At least some HHMs are related C 2 C4 -1 = Appropriate skip 150,066 113,009,722
+-9 = Not ascertained 5 4,218
+01 = Yes 76 87,391
+HHRESP Person ID number of household respondent C 2 Table 1* 01 149,775 112,822,150
+02 320 236,041
+03 31 27,317
+04 13 5,949
+05 5 1,782
+06 1 1,743
+08 1 6,181
+10 1 167
+HHSIZE Count of HH members N 8 DV_18* 1 35,651 31,740,852
+2 68,282 37,727,994
+3 20,198 18,103,989
+4 16,542 15,583,915
+5 6,334 6,298,984
+6 2,097 2,290,206
+7 659 873,925
+8 228 278,747
+9 90 132,776
+10 34 37,773
+11 19 26,475
+12 5 1,485
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-5
+Name Label Type Length Question Code / Range Frequency Weighted
+13 7 3,943
+14 1 265
+HHSTATE State HH location C 2 DV_19* AK = Alaska 253 237,667
+AL = Alabama 425 1,817,665
+AR = Arkansas 258 1,114,043
+AZ = Arizona 7,157 2,273,842
+CA = California 21,225 12,176,760
+CO = Colorado 306 1,897,629
+CT = Connecticut 275 1,330,779
+DC = District of Columbia 264 250,157
+DE = Delaware 245 328,921
+FL = Florida 15,884 7,057,285
+GA = Georgia 7,502 3,470,225
+HI = Hawaii 254 437,171
+IA = Iowa 3,752 1,215,351
+ID = Idaho 259 565,805
+IL = Illinois 809 4,766,227
+IN = Indiana 3,458 2,480,570
+KS = Kansas 263 1,110,710
+KY = Kentucky 271 1,686,124
+LA = Louisiana 292 1,625,174
+MA = Massachusetts 412 2,463,783
+MD = Maryland 355 2,092,538
+ME = Maine 277 540,898
+MI = Michigan 643 3,810,808
+MN = Minnesota 340 2,089,258
+MO = Missouri 389 2,330,291
+MS = Mississippi 257 1,094,063
+MT = Montana 256 375,621
+NC = North Carolina 11,096 3,595,175
+ND = North Dakota 256 274,801
+NE = Nebraska 1,289 704,143
+NH = New Hampshire 254 508,818
+NJ = New Jersey 559 3,154,028
+NM = New Mexico 251 741,667
+NV = Nevada 256 953,134
+NY = New York 16,165 7,137,482
+OH = Ohio 724 4,508,888
+OK = Oklahoma 261 1,407,910
+OR = Oregon 264 1,474,365
+PA = Pennsylvania 804 4,904,538
+RI = Rhode Island 256 399,106
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-6
+Name Label Type Length Question Code / Range Frequency Weighted
+SC = South Carolina 5,209 1,700,419
+SD = South Dakota 1,798 319,926
+TN = Tennessee 2,552 2,434,683
+TX = Texas 22,255 8,422,249
+UT = Utah 261 854,088
+VA = Virginia 15,231 2,961,083
+VT = Vermont 1,690 249,986
+WA = Washington 415 2,547,927
+WI = Wisconsin 1,707 2,249,630
+WV = West Virginia 253 749,313
+WY = Wyoming 260 208,606
+HHSTFIPS State FIPS for HH address C 2 DV_20* 01 = Alabama 425 1,817,665
+02 = Alaska 253 237,667
+04 = Arizona 7,157 2,273,842
+05 = Arkansas 258 1,114,043
+06 = California 21,225 12,176,760
+08 = Colorado 306 1,897,629
+09 = Connecticut 275 1,330,779
+10 = Delaware 245 328,921
+11 = District of Columbia 264 250,157
+12 = Florida 15,884 7,057,285
+13 = Georgia 7,502 3,470,225
+15 = Hawaii 254 437,171
+16 = Idaho 259 565,805
+17 = Illinois 809 4,766,227
+18 = Indiana 3,458 2,480,570
+19 = Iowa 3,752 1,215,351
+20 = Kansas 263 1,110,710
+21 = Kentucky 271 1,686,124
+22 = Louisiana 292 1,625,174
+23 = Maine 277 540,898
+24 = Maryland 355 2,092,538
+25 = Massachusetts 412 2,463,783
+26 = Michigan 643 3,810,808
+27 = Minnesota 340 2,089,258
+28 = Mississippi 257 1,094,063
+29 = Missouri 389 2,330,291
+30 = Montana 256 375,621
+31 = Nebraska 1,289 704,143
+32 = Nevada 256 953,134
+33 = New Hampshire 254 508,818
+34 = New Jersey 559 3,154,028
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-7
+Name Label Type Length Question Code / Range Frequency Weighted
+35 = New Mexico 251 741,667
+36 = New York 16,165 7,137,482
+37 = North Carolina 11,096 3,595,175
+38 = North Dakota 256 274,801
+39 = Ohio 724 4,508,888
+40 = Oklahoma 261 1,407,910
+41 = Oregon 264 1,474,365
+42 = Pennsylvania 804 4,904,538
+44 = Rhode Island 256 399,106
+45 = South Carolina 5,209 1,700,419
+46 = South Dakota 1,798 319,926
+47 = Tennessee 2,552 2,434,683
+48 = Texas 22,255 8,422,249
+49 = Utah 261 854,088
+50 = Vermont 1,690 249,986
+51 = Virginia 15,231 2,961,083
+53 = Washington 415 2,547,927
+54 = West Virginia 253 749,313
+55 = Wisconsin 1,707 2,249,630
+56 = Wyoming 260 208,606
+HHVEHCNT Count of HH vehicles N 8 DV_21* 0 7,205 9,827,977
+1 40,527 36,508,561
+2 61,711 41,077,106
+3 26,647 16,274,799
+4 9,258 5,992,904
+5 3,080 2,194,377
+6 1,037 736,912
+7 377 244,357
+8 156 131,756
+9 72 43,440
+10 38 28,705
+11 17 10,524
+12 10 26,885
+13 2 1,018
+14 6 1,050
+15 2 766
+23 1 16
+27 1 177
+HH_CBSA CBSA FIPS code for HH address C 5 DV_64* -9 = Not ascertained 2 23,274
+12060 = Atlanta-Sandy Springs-Marietta, GA 1,242 1,890,056
+12420 = Austin-Round Rock, TX 1,543 607,634
+12580 = Baltimore-Towson, MD 167 1,015,758
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-8
+Name Label Type Length Question Code / Range Frequency Weighted
+13820 = Birmingham-Hoover, AL 69 432,568
+14460 = Boston-Cambridge-Quincy, MA-NH 336 1,706,147
+15380 = Buffalo-Niagara Falls, NY 665 471,544
+16740 = Charlotte-Gastonia-Concord, NC-SC 565 661,539
+16980 = Chicago-Naperville-Joliet, IL-IN-WI 870 3,419,638
+17140 = Cincinnati-Middletown, OH-KY-IN 172 877,313
+17460 = Cleveland-Elyria-Mentor, OH 133 837,150
+18140 = Columbus, OH 98 678,757
+19100 = Dallas-Fort Worth-Arlington, TX 5,875 2,275,469
+19740 = Denver-Aurora-Broomfield, CO 131 968,658
+19820 = Detroit-Warren-Livonia, MI 246 1,654,042
+25540 = Hartford-West Hartford-East Hartford, CT 94 463,159
+26420 = Houston-Sugar Land-Baytown, TX 4,043 1,696,333
+26900 = Indianapolis-Carmel, IN 815 666,493
+27260 = Jacksonville, FL 1,184 501,531
+28140 = Kansas City, MO-KS 138 727,082
+29820 = Las Vegas-Paradise, NV 140 684,916
+31100 = Los Angeles-Long Beach-Santa Ana, CA 4,663 4,049,255
+31140 = Louisville-Jefferson County, KY-IN 193 442,967
+32820 = Memphis, TN-MS-AR 329 474,768
+33100 = Miami-Fort Lauderdale-Pompano Beach, FL 3,980 1,997,995
+33340 = Milwaukee-Waukesha-West Allis, WI 402 598,790
+33460 = Minneapolis-St. Paul-Bloomington, MN-WI 233 1,271,162
+34980 = Nashville-Davidson--Murfreesboro--Franklin, TN 617 590,047
+35380 = New Orleans-Metairie-Kenner, LA 72 382,793
+35620 = New York-Northern New Jersey-Long Island, NY-NJ-PA 5,191 6,862,122
+36420 = Oklahoma City, OK 77 465,139
+36740 = Orlando-Kissimmee, FL 1,157 749,780
+37980 = Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 425 2,068,904
+38060 = Phoenix-Mesa-Scottsdale, AZ 4,707 1,461,700
+38300 = Pittsburgh, PA 171 987,089
+38900 = Portland-Vancouver-Beaverton, OR-WA 153 840,250
+39300 = Providence-New Bedford-Fall River, RI-MA 284 603,229
+39580 = Raleigh-Cary, NC 357 401,138
+40060 = Richmond, VA 2,440 464,291
+40140 = Riverside-San Bernardino-Ontario, CA 1,566 1,156,819
+40380 = Rochester, NY 730 398,148
+40900 = Sacramento--Arden-Arcade--Roseville, CA 1,231 803,133
+41180 = St. Louis, MO-IL 195 1,168,181
+41620 = Salt Lake City, UT 111 364,667
+41700 = San Antonio, TX 2,054 857,228
+41740 = San Diego-Carlsbad-San Marcos, CA 6,002 1,037,955
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-9
+Name Label Type Length Question Code / Range Frequency Weighted
+41860 = San Francisco-Oakland-Fremont, CA 2,293 1,656,729
+41940 = San Jose-Sunnyvale-Santa Clara, CA 865 636,973
+42660 = Seattle-Tacoma-Bellevue, WA 192 1,336,054
+45300 = Tampa-St. Petersburg-Clearwater, FL 2,160 1,098,918
+47260 = Virginia Beach-Norfolk-Newport News, VA-NC 3,193 620,427
+47900 = Washington-Arlington-Alexandria, DC-VA-MD-WV 2,207 1,997,745
+XXXXX 83,369 52,997,873
+HH_HISP Hispanic status of HH respondent C 2 C6 -1 = Appropriate Skip 2 237
+-7 = Refused 374 257,355
+-8 = Don't Know 235 192,821
+-9 = Not Ascertained 14 10,556
+01 = Yes 10,246 12,789,059
+02 = No 139,276 99,851,301
+HH_RACE Race of HH respondent C 2 C7 -1 = Appropriate skip 2 237
+-7 = Refused 880 636,796
+-8 = Don't know 315 353,432
+-9 = Not ascertained 35 20,796
+01 = White 128,807 86,740,797
+02 = African American, Black 9,376 13,069,737
+03 = Asian Only 2,838 2,815,059
+04 = American Indian, Alaskan Native 1,100 1,091,518
+05 = Native Hawaiian, other Pacific 388 472,510
+06 = Multiracial 906 817,463
+07 = Hispanic/Mexican 3,892 5,152,263
+97 = Other specify 1,608 1,930,722
+HOMEOWN Housing unit owned or rented C 2 C2 01 = Own 130,874 75,375,205
+02 = Rent 19,273 37,726,125
+HOMETYPE Type of housing unit C 2 C1 -7 = Refused 197 119,177
+-8 = Don't know 99 76,579
+-9 = Not ascertained 1 356
+01 = Detached single house 117,353 74,280,526
+02 = Duplex 7,765 8,208,970
+03 = Rowhouse or townhouse 16,510 25,205,689
+04 = Apartment, condominium 8,056 4,957,343
+05 = Mobile home or trailer 40 12,966
+06 = Dorm room, fraternity or sorority house 11 60,342
+97 = Other 115 179,383
+HOUSEID HH eight-digit ID number C 8 Table 1* 20000017-69999811 150,147 113,101,330
+HTEEMPDN Workers per square mile living in Tract C 4 Claritas -9 = N/A 4 29,191
+25 = 0-49 34,297 21,398,805
+75 = 50-99 11,097 6,407,548
+150 = 100-249 18,439 11,474,133
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-10
+Name Label Type Length Question Code / Range Frequency Weighted
+350 = 250-499 19,111 13,319,379
+750 = 500-999 22,869 17,397,941
+1500 = 1,000-1,999 21,324 18,229,429
+3000 = 2,000-3,999 13,628 13,348,089
+5000 = 4,000-999,999 9,378 11,496,815
+HTHTNRNT Percent renter-occupied - Tract level C 2 Claritas 0 = 0-4% 4,470 3,487,983
+5 = 5-14% 31,763 20,585,797
+-9 = N/A 2 23,274
+20 = 15-24% 43,319 27,812,119
+30 = 25-34% 27,476 20,154,980
+40 = 35-44% 17,429 13,747,877
+50 = 45-54% 10,837 9,945,753
+60 = 55-64% 6,930 6,622,095
+70 = 65-74% 3,954 5,195,082
+80 = 75-84% 2,263 2,844,632
+90 = 85-94% 1,196 1,751,001
+95 = 95-100% 508 930,736
+HTPPOPDN Population per sq mile - Tract level C 5 Claritas -9 = N/A 2 23,274
+50 = 0-99 23,248 15,418,890
+300 = 100-499 28,031 16,417,325
+750 = 500-999 14,649 10,099,700
+1500 = 1,000-1,999 20,456 14,001,543
+3000 = 2,000-3,999 28,428 21,574,588
+7000 = 4,000-9,999 27,961 24,028,240
+17000 = 10,000-24,999 5,476 7,243,736
+30000 = 25,000-999,999 1,896 4,294,034
+HTRESDN Housing units per sq mile - Tract level C 5 Claritas -9 = N/A 2 23,274
+50 = 0-99 38,580 23,879,032
+300 = 100-499 31,839 21,188,259
+750 = 500-999 22,783 16,029,969
+1500 = 1,000-1,999 29,419 22,071,587
+3000 = 2,000-3,999 19,861 18,235,159
+7000 = 4,000-9,999 5,600 7,273,761
+17000 = 10,000-24,999 1,283 2,738,685
+30000 = 25,000-999,999 780 1,661,603
+LIF_CYC Life Cycle classification for the HH C 2 DV_24* 01 = one adult, no children 15,138 19,501,836
+02 = 2+ adults, no children 31,475 23,578,493
+03 = one adult, youngest child 0-5 610 1,258,975
+04 = 2+ adults, youngest child 0-5 12,937 13,279,790
+05 = one adult, youngest child 6-15 2,037 2,436,983
+06 = 2+ adults, youngest child 6-15 16,826 14,832,622
+07 = one adult, youngest child 16-21 1,139 1,037,275
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-11
+Name Label Type Length Question Code / Range Frequency Weighted
+08 = 2+ adults, youngest child 16-21 6,626 5,764,705
+09 = one adult, retired, no children 20,513 12,239,016
+10 = 2+ adults, retired, no children 42,846 19,171,634
+MSACAT MSA category for the HH home address C 2 DV_28* -9 = Not ascertained 2 23,274
+01 = MSA of 1 million or more, with rail 25,951 31,777,906
+02 = MSA of 1 million or more, and not in 1 47,532 32,562,174
+03 = MSA less than 1 million 45,884 26,625,257
+04 = Not in MSA (CMSA) 30,778 22,112,719
+MSASIZE MSA population size for the HH home address C 2 DV_29* -9 = Not ascertained 2 23,274
+01 = In an MSA of Less than 250,000 17,018 7,927,615
+02 = In an MSA of 250,000 - 499,999 12,800 9,748,676
+03 = In an MSA of 500,000 - 999,999 16,066 8,948,966
+04 = In an MSA or CMSA of 1,000,000 - 2,999,999 32,508 24,722,917
+05 = In an MSA or CMSA of 3 million or more 40,975 39,617,163
+06 = Not in MSA or CMSA 30,778 22,112,719
+NUMADLT Count of adult HHMs at least 18 years old N 8 DV_31* 1 38,426 35,010,916
+2 94,354 61,690,175
+3 13,310 12,089,376
+4 3,414 3,654,776
+5 524 527,556
+6 92 93,024
+7 22 34,052
+8 3 540
+9 1 477
+10 1 439
+RAIL MSA heavy rail status for HH C 2 DV_38* 01 = MSA has rail 25,951 31,777,906
+02 = MSA does not have rail, or hh not in an MSA 124,196 81,323,424
+RESP_CNT Count of responding persons per HH N 8 DV_39* 1 48,752 41,554,765
+2 66,772 40,211,117
+3 18,555 15,841,798
+4 11,293 10,518,214
+5 3,452 3,527,283
+6 949 1,025,987
+7 252 236,995
+8 76 123,217
+9 30 52,516
+10 8 3,259
+11 5 3,553
+12 2 586
+13 1 2,039
+SCRESP Person ID number of screener respondent C 2 C8 -1 = Appropriate skip 114,767 81,648,265
+01 35,380 31,453,065
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-12
+Name Label Type Length Question Code / Range Frequency Weighted
+TDAYDATE Date of Travel Day (YYYYMM) C 8 DV* 200803 225 215,033
+200804 5,259 4,737,128
+200805 9,643 9,425,401
+200806 10,066 9,425,477
+200807 12,387 9,424,815
+200808 13,841 9,494,374
+200809 13,406 9,355,141
+200810 13,559 9,425,214
+200811 14,800 9,425,266
+200812 14,079 9,424,913
+200901 13,377 9,393,753
+200902 10,503 9,456,638
+200903 11,618 9,425,165
+200904 7,384 4,473,014
+TRAVDAY Travel day - day of week C 2 DV* 01 = Sunday 21,807 16,156,809
+02 = Monday 21,521 16,157,629
+03 = Tuesday 21,525 16,157,551
+04 = Wednesday 21,341 16,157,085
+05 = Thursday 21,445 16,157,449
+06 = Friday 21,335 16,157,325
+07 = Saturday 21,173 16,157,483
+URBAN Home address in urbanized area C 2 DV_47* -9 = Not ascertained 2 23,274
+01 = In an urban area 91,918 75,383,529
+02 = In an Urban cluster 14,582 11,992,871
+03 = In an area surrounded by urban areas 62 100,645
+04 = Not in urban area 43,583 25,601,011
+URBANSIZE Size of urban area in which home address is
+located
+C 2 DV_48* -9 = Not ascertained 2 23,274
+01 = 50,000 - 199,999 21,107 11,591,257
+02 = 200,000 - 499,999 14,144 9,876,479
+03 = 500,000 - 999,999 12,220 9,461,053
+04 = 1 million or more without subway or rail 27,509 21,139,513
+05 = 1 million or more with subway or rail 16,938 23,315,227
+06 = Not in an urbanized area 58,227 37,694,527
+URBRUR Household in urban/rural area C 2 DV_49* -9 = Not ascertained 2 23,274
+01 = Urban 106,562 87,477,045
+02 = Rural 43,583 25,601,011
+VARSTRAT Linearization Variance Stratum for Std Err
+Calculation
+N 8 DV* 1-100 150,147 113,101,330
+WRKCOUNT Number of workers in HH N 8 DV_57* 0 57,832 30,154,870
+1 52,122 49,148,267
+2 34,605 28,384,670
+3 4,712 4,557,877
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-13
+Name Label Type Length Question Code / Range Frequency Weighted
+4 788 781,809
+5 79 68,952
+6 9 4,884
+WTHHFIN Final HH weight N 8 Table 4* 1.17-53067 150,147 113,101,330
+2009 NHTS Household File - Public Use Codebook, Version 2.1
+B-14
+Name Label Type Length Question Code / Range Frequency Weighted
+BORNINUS Respondent was born in U.S. C 2 M8 -1 = Appropriate skip 38,183 44,757,967
+-7 = Refused 137 126,980
+-8 = Don't know 40 59,470
+-9 = Not ascertained 27 30,621
+01 = Yes 244,524 204,383,267
+02 = No 25,990 33,695,567
+CARRODE Number of people in vehicle last week N 8 E18 -9 = Not ascertained 333 354,199
+-8 = Don't know 68 87,933
+-7 = Refused 2 659
+-5 = Did not work last week 271 286,974
+-1 = Appropriate skip 199,204 165,849,069
+1 92,199 94,957,969
+2 11,702 14,795,463
+3 3,331 4,200,359
+4 1,149 1,706,116
+5 358 508,504
+6 115 162,644
+7 40 35,627
+8 42 27,853
+9 14 12,801
+10 22 10,990
+11 16 9,062
+12 10 5,342
+13 7 5,349
+14 12 4,087
+15 4 31,956
+20 2 917
+CDIVMSAR Grouping of HH by combination of Census
+Division, MSA status, and presence of a
+subway system (if area > 1 million)
+C 2 DV_1* -9 = Not ascertained 2 23,099
+11 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or more with heavy rail
+1,277 7,325,327
+12 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or without heavy rail.
+735 2,515,059
+13 = New England (ME, NH, VT, CT, MA, RI) MSA of less than 1
+million.
+1,435 1,534,072
+14 = New England (ME, NH, VT, CT, MA, RI) Not in a MSA. 3,005 2,093,554
+21 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or more
+with heavy rail.
+15,004 24,179,547
+22 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or without
+heavy rail.
+3,336 4,265,374
+23 = Mid-Atlantic (NY, NJ, PA) MSA of less than 1 million. 11,626 6,329,854
+24 = Mid-Atlantic (NY, NJ, PA) Not in a MSA. 6,313 3,320,415
+31 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or more with heavy rail
+2,215 11,608,427
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-15
+Name Label Type Length Question Code / Range Frequency Weighted
+32 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or without heavy rail
+4,524 13,765,825
+33 = East North Central (IL, IN, MI, OH, WI) MSA of less than 1
+million.
+4,561 9,747,539
+34 = East North Central (IL, IN, MI, OH, WI) Not in a MSA. 4,186 8,204,852
+42 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA or
+CMSA of 1 million or without heavy rail
+980 6,569,721
+43 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA of
+less than 1 million.
+10,916 4,722,750
+44 = West North Central (IA, KS, MO, MN, ND, NE, SD) Not in a
+MSA.
+5,102 7,478,997
+51 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or more with heavy rail
+13,877 17,361,418
+52 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or without heavy rail
+31,269 12,740,059
+53 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA of
+less than 1 million.
+39,216 13,711,262
+54 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) Not in a
+MSA.
+28,133 10,653,517
+62 = East South Central (AL, KY, MS, TN) MSA or CMSA of 1
+million or without heavy rail.
+1,993 3,520,962
+63 = East South Central (AL, KY, MS, TN) MSA of less than 1
+million.
+2,593 6,467,433
+64 = East South Central (AL, KY, MS, TN) Not in a MSA. 2,392 6,863,675
+72 = West South Central (AR, LA, OK, TX) MSA or CMSA of 1
+million or without heavy rail.
+28,818 16,609,992
+73 = West South Central (AR, LA, OK, TX) MSA of less than 1
+million.
+11,033 9,651,009
+74 = West South Central (AR, LA, OK, TX) Not in a MSA. 8,227 6,167,451
+82 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA or CMSA
+of 1 million or without heavy rail
+10,943 10,027,667
+83 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA of less
+than 1 million.
+5,899 5,308,754
+84 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) Not in a MSA. 1,778 4,736,368
+91 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+more with heavy rail.
+22,606 23,109,209
+92 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+without heavy rail.
+16,122 11,031,718
+93 = Pacific (AK, CA, HI, OR, WA) MSA of less than 1 million. 6,302 7,550,615
+94 = Pacific (AK, CA, HI, OR, WA) Not in a MSA. 2,483 3,858,348
+CENSUS_D Census division classification for home
+address
+C 2 DV_2* 01 = New England 6,452 13,468,012
+02 = Middle Atlantic 36,280 38,117,859
+03 = East North Central 15,486 43,326,644
+04 = West North Central 16,998 18,771,469
+05 = South Atlantic 112,495 54,466,256
+06 = East South Central 6,978 16,852,071
+07 = West South Central 48,079 32,428,881
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-16
+Name Label Type Length Question Code / Range Frequency Weighted
+08 = Mountain 18,620 20,072,790
+09 = Pacific 47,513 45,549,890
+CENSUS_R Census region classification for home address C 2 DV_3* 01 = Northeast 42,732 51,585,871
+02 = Midwest 32,484 62,098,113
+03 = South 167,552 103,747,208
+04 = West 66,133 65,622,680
+CNTTDTR Count of travel day trips for this respondent N 8 DV_4* 0-27 308,901 283,053,872
+CONDNIGH Medical condition results in limiting driving to
+daytime
+C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 140 83,792
+-8 = Don't know 1,493 1,333,565
+-9 = Not ascertained 4 1,190
+01 = Yes 14,644 10,009,240
+02 = No 17,142 12,857,073
+CONDPUB Medical condition results in using bus/subway
+less frequently
+C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 253 145,713
+-8 = Don't know 2,498 1,473,820
+-9 = Not ascertained 4 1,190
+01 = Yes 4,755 5,203,009
+02 = No 25,913 17,461,129
+CONDRIDE Medical condition results in asking others for
+rides
+C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 14 7,841
+-8 = Don't know 74 111,331
+-9 = Not ascertained 4 1,190
+01 = Yes 18,329 14,375,033
+02 = No 15,002 9,789,466
+CONDRIVE Medical condition results in giving up driving C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 48 39,056
+-8 = Don't know 525 631,337
+-9 = Not ascertained 9 3,736
+01 = Yes 10,393 8,090,452
+02 = No 22,448 15,520,280
+CONDSPEC Medical condition results in using special
+transit services
+C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 22 15,017
+-8 = Don't know 223 187,802
+-9 = Not ascertained 4 1,190
+01 = Yes 2,946 3,292,102
+02 = No 30,228 20,788,751
+CONDTAX Medical condition results in using a reduced
+fare taxi
+C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 26 15,279
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-17
+Name Label Type Length Question Code / Range Frequency Weighted
+-8 = Don't know 232 210,934
+-9 = Not ascertained 4 1,190
+01 = Yes 1,425 1,550,986
+02 = No 31,736 22,506,472
+CONDTRAV Medical condition results in reduced day-today
+travel C 2 M6 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 18 10,380
+-8 = Don't know 100 83,918
+-9 = Not ascertained 3 1,179
+01 = Yes 27,751 19,837,222
+02 = No 5,551 4,352,162
+DELIVER Number of these internet purchases delivered
+to home
+N 4 Mb -9 = Not ascertained 4 1,165
+-8 = Don't know 62 70,145
+-7 = Refused 3 1,706
+-1 = Appropriate skip 208,634 193,321,744
+0-200 100,198 89,659,112
+DIARY Indicates if travel diary was completed C 2 DV_5* -1 = Appropriate skip 1,251 1,700,440
+-7 = Refused 22 10,966
+-8 = Don't know 251 293,276
+01 = Yes 223,726 199,019,266
+02 = No 83,651 82,029,924
+DISTTOSC Distance home to school C 2 F3 -1 = Appropriate skip 286,447 256,750,081
+-7 = Refused 13 15,367
+-8 = Don't know 120 221,975
+-9 = Not ascertained 1 340
+01 = Less than 1/4 mile 1,612 2,510,486
+02 = Between a 1/4 to 1/2 mile 1,507 2,013,237
+03 = 1/2 mile to 1 mile 2,378 3,025,895
+04 = 1 mile to 2 miles 4,154 4,987,413
+05 = More than 2 miles 12,669 13,529,077
+DISTTOWK One-way distance to workplace (miles) N 8 E14 -9 = Not ascertained 3 3,752
+-8 = Don't know 2,289 4,177,926
+-7 = Refused 91 119,899
+-1 = Appropriate skip 187,829 148,405,192
+0-990 118,689 130,347,102
+DRIVER Driver status of S C 2 DV_8* -1 = Appropriate skip 34,307 40,256,811
+-9 = Not ascertained 122 180,073
+01 = Yes, a driver 249,882 212,308,999
+02 = No, not a driver 24,590 30,307,989
+DRVRCNT Number of drivers in HH N 8 DV_10* 0 6,233 7,775,345
+1 54,807 54,484,485
+2 186,502 150,104,474
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-18
+Name Label Type Length Question Code / Range Frequency Weighted
+3 44,964 48,223,864
+4 13,516 18,492,151
+5 2,410 3,029,657
+6 325 626,045
+7 99 288,149
+8 26 18,340
+9 19 11,363
+DTACDT Respondent's view on Safety concerns C 2 L2a -1 = Appropriate skip 268,461 248,209,397
+-7 = Refused 7 1,616
+-8 = Don't know 140 93,042
+-9 = Not ascertained 1 2,748
+01 = A little issue 6,660 5,219,998
+02 = A moderate issue 17,434 14,294,230
+03 = A big issue 16,198 15,232,841
+DTCONJ Respondent's view on Highway congestion C 2 L2a -1 = Appropriate skip 271,919 255,630,178
+-7 = Refused 10 1,919
+-8 = Don't know 71 29,063
+01 = A little issue 3,884 2,989,671
+02 = A moderate issue 15,815 11,725,987
+03 = A big issue 17,202 12,677,053
+DTCOST Respondent's view on Price of travel (fees,
+tolls and gas)
+C 2 L2a -1 = Appropriate skip 232,461 215,007,266
+-7 = Refused 15 15,914
+-8 = Don't know 141 95,457
+-9 = Not ascertained 1 2,418
+01 = A little issue 5,629 4,518,477
+02 = A moderate issue 26,218 22,617,813
+03 = A big issue 44,436 40,796,527
+DTRAGE Respondent's view on Aggressive/distracted
+drivers
+C 2 L2a -1 = Appropriate skip 269,300 251,220,386
+-7 = Refused 5 3,280
+-8 = Don't know 59 24,777
+-9 = Not ascertained 3 4,980
+01 = A little issue 3,922 3,099,001
+02 = A moderate issue 16,642 13,252,078
+03 = A big issue 18,970 15,449,369
+DTRAN Respondent's view on Access or availability of
+public transit
+C 2 L2a -1 = Appropriate skip 294,847 268,847,146
+-7 = Refused 12 5,738
+-8 = Don't know 83 96,334
+-9 = Not ascertained 3 849
+01 = A little issue 2,048 2,052,464
+02 = A moderate issue 4,618 4,464,968
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-19
+Name Label Type Length Question Code / Range Frequency Weighted
+03 = A big issue 7,290 7,586,374
+DTWALK Respondent's view on Lack of walkways or
+sidewalks
+C 2 L2a -1 = Appropriate skip 302,009 276,681,288
+-7 = Refused 5 1,260
+-8 = Don't know 30 12,875
+-9 = Not ascertained 2 1,216
+01 = A little issue 1,033 852,082
+02 = A moderate issue 2,677 2,652,916
+03 = A big issue 3,145 2,852,236
+EDUC Highest grade completed C 2 M7 -1 = Appropriate skip 45,329 52,935,775
+-7 = Refused 488 364,772
+-8 = Don't know 1,770 2,097,831
+-9 = Not ascertained 299 525,913
+01 = Less then high school graduate 20,309 22,961,103
+02 = High school graduate, include GED 72,198 65,494,834
+03 = Some college or Associate's degree (Vocational) 73,687 65,231,553
+04 = Bachelor's degree (BA, AB, BS) 54,761 43,550,676
+05 = Graduate or Professional Degree
+(MA,MS,MBA,MD,PHD,EdD,JD)
+40,060 29,891,415
+EVERDROV Has been a driver in the past C 2 C8 -1 = Appropriate skip 288,376 256,380,044
+-7 = Refused 2 1,903
+-8 = Don't know 34 58,614
+-9 = Not ascertained 198 389,731
+01 = Yes 11,426 10,258,829
+02 = No 8,865 15,964,751
+FLAG100 Did HH have 100% of members complete
+interview?
+C 2 DV* 01 = Yes 278,075 247,482,057
+02 = No 30,826 35,571,815
+FLEXTIME Respondent can set or change start time of
+work day
+C 2 Ec -1 = Appropriate skip 187,829 148,405,192
+-7 = Refused 56 45,035
+-8 = Don't know 275 332,882
+-9 = Not ascertained 2 1,545
+01 = Yes 52,317 52,620,463
+02 = No 68,422 81,648,756
+FMSCSIZE Number of people on from school trip N 8 F8 -9 = Not ascertained 13 34,403
+-8 = Don't know 55 86,643
+-7 = Refused 4 1,281
+-1 = Appropriate skip 306,412 279,035,156
+0 445 592,280
+1 745 1,163,478
+2 560 923,911
+3 323 567,189
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-20
+Name Label Type Length Question Code / Range Frequency Weighted
+4 149 307,177
+5 89 151,050
+6 35 65,298
+7 17 20,346
+8 13 30,800
+9 3 2,685
+10 22 60,322
+11 1 885
+12 3 2,338
+15 12 8,630
+FRSTHM Did Person Start Travel Day at Home? C 2 G8 -1 = Appropriate skip 1 1,812
+-7 = Refused 49 26,000
+-8 = Don't know 52 68,977
+01 = Yes 289,902 263,600,572
+02 = No 18,897 19,356,511
+FXDWKPL No fixed workplace C 2 DV* -1 = Appropriate skip 306,024 279,528,559
+01 = No fixed workplace 2,877 3,525,313
+GCDWORK Great circle distance (miles) between home
+and work
+N 8 DV_12* -9 = Not ascertained 2,377 3,503,354
+-1 = Appropriate skip 173,108 135,628,239
+0-3899 133,416 143,922,279
+GRADE Grade allowed to walk/bike to/from school
+without adult
+C 2 F10 -1 = Appropriate skip 299,116 270,279,158
+-7 = Refused 162 183,967
+-8 = Don't know 771 1,067,529
+-9 = Not ascertained 6 3,249
+00 = Kindergarten 439 585,268
+01 119 110,944
+02 162 248,241
+03 432 557,037
+04 681 832,616
+05 967 1,301,773
+06 1,228 1,618,779
+07 905 1,305,145
+08 624 830,650
+09 946 1,277,302
+10 452 568,286
+11 159 199,429
+12 304 435,974
+99 = Never 1,428 1,648,525
+GT1JBLWK Have more than one job C 2 E6 -1 = Appropriate skip 169,833 131,680,775
+-7 = Refused 18 37,348
+-8 = Don't know 46 72,834
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-21
+Name Label Type Length Question Code / Range Frequency Weighted
+-9 = Not ascertained 5 6,374
+01 = Yes 14,811 16,287,728
+02 = No 124,188 134,968,813
+HBHTNRNT Percent renter-occupied - Block group C 2 Claritas 0 = 0-4% 24,275 22,689,635
+5 = 5-14% 89,104 70,993,489
+-9 = N/A 2 23,099
+20 = 15-24% 77,472 58,090,552
+30 = 25-34% 41,571 37,940,324
+40 = 35-44% 27,572 26,306,873
+50 = 45-54% 18,523 22,209,751
+60 = 55-64% 12,061 15,414,290
+70 = 65-74% 8,044 11,312,187
+80 = 75-84% 5,128 8,238,527
+90 = 85-94% 3,225 5,484,894
+95 = 95-100% 1,924 4,350,249
+HBHUR Urban / Rural indicator - Block group C 2 Claritas -9 = N/A 2 23,099
+C = Second City 53,787 49,443,777
+S = Suburban 73,614 69,912,750
+TC = Town and Country 148,248 114,096,657
+U = Urban 33,237 49,563,487
+X = Unassigned 13 14,102
+HBPPOPDN Population per sq mile - Block group C 5 Claritas -9 = N/A 2 23,099
+50 = 0-99 41,416 33,012,621
+300 = 100-499 55,255 39,565,490
+750 = 500-999 29,437 22,704,242
+1500 = 1,000-1,999 42,622 34,704,533
+3000 = 2,000-3,999 58,788 52,554,735
+7000 = 4,000-9,999 63,178 65,937,153
+17000 = 10,000-24,999 13,933 21,775,050
+30000 = 25,000-999,999 4,270 12,776,949
+HBRESDN Housing units per sq mile - Block group C 5 Claritas -9 = N/A 2 23,099
+50 = 0-99 70,605 53,647,367
+300 = 100-499 66,251 50,619,121
+750 = 500-999 46,483 39,236,443
+1500 = 1,000-1,999 62,242 56,570,777
+3000 = 2,000-3,999 45,429 49,421,706
+7000 = 4,000-9,999 13,530 21,002,508
+17000 = 10,000-24,999 2,841 8,409,283
+30000 = 25,000-999,999 1,518 4,123,568
+HHC_MSA CMSA FIPS code for HH address C 4 DV_13* -1 = Appropriate skip 61,619 53,377,178
+-9 = Not ascertained 2 23,099
+0520 = Atlanta, GA 2,159 4,806,318
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-22
+Name Label Type Length Question Code / Range Frequency Weighted
+0640 = Austin--San Marcos, TX 3,255 1,571,160
+1122 = Boston--Worcester--Lawrence, MA--NH--ME--CT 992 5,606,917
+1280 = Buffalo--Niagara Falls, NY 1,342 1,064,402
+1520 = Charlotte--Gastonia--Rock Hill, NC--SC 1,274 1,710,634
+1602 = Chicago--Gary--Kenosha, IL--IN--WI 1,791 8,885,365
+1642 = Cincinnati--Hamilton, OH--KY--IN 309 1,974,706
+1692 = Cleveland--Akron, OH 424 2,723,062
+1840 = Columbus, OH 199 1,728,250
+1922 = Dallas--Fort Worth, TX 12,691 6,066,958
+2082 = Denver--Boulder--Greeley, CO 325 2,562,737
+2162 = Detroit--Ann Arbor--Flint, MI 672 5,175,899
+3000 = Grand Rapids--Muskegon--Holland, MI 160 1,197,418
+3120 = Greensboro--Winston-Salem--High Point, NC 11,614 1,543,204
+3280 = Hartford, CT 219 1,276,230
+3362 = Houston--Galveston--Brazoria, TX 8,543 4,525,253
+3480 = Indianapolis, IN 1,799 1,649,705
+3600 = Jacksonville, FL 2,279 1,196,013
+3760 = Kansas City, MO--KS 305 1,759,583
+4120 = Las Vegas, NV--AZ 348 1,974,029
+4472 = Los Angeles--Riverside--Orange County, CA 14,435 16,136,228
+4520 = Louisville, KY--IN 339 804,856
+4920 = Memphis, TN--AR--MS 650 1,041,556
+4992 = Miami--Fort Lauderdale, FL 5,874 4,214,123
+5082 = Milwaukee--Racine, WI 978 1,567,736
+5120 = Minneapolis--St. Paul, MN--WI 493 3,013,445
+5360 = Nashville, TN 1,194 1,396,576
+5560 = New Orleans, LA 149 1,109,146
+5602 = New York--Northern New Jersey--Long Island,NY--NJ--CT--
+PA
+14,607 20,715,225
+5720 = Norfolk--Virginia Beach--Newport News, VA--NC 6,690 1,533,272
+5880 = Oklahoma City, OK 163 1,167,200
+5960 = Orlando, FL 2,385 1,912,337
+6162 = Philadelphia--Wilmington--Atlantic City,PA--NJ--DE--MD 964 5,702,687
+6200 = Phoenix--Mesa, AZ 9,869 3,925,722
+6280 = Pittsburgh, PA 333 2,164,784
+6442 = Portland--Salem, OR--WA 393 2,540,293
+6480 = Providence--Fall River--Warwick, RI--MA 516 1,238,829
+6640 = Raleigh--Durham--Chapel Hill, NC 1,080 1,413,532
+6840 = Rochester, NY 1,661 1,036,187
+6922 = Sacramento--Yolo, CA 2,573 2,049,585
+7040 = St. Louis, MO--IL 404 2,559,707
+7160 = Salt Lake City--Ogden, UT 401 1,565,179
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-23
+Name Label Type Length Question Code / Range Frequency Weighted
+7240 = San Antonio, TX 4,012 2,157,348
+7320 = San Diego, CA 12,625 2,774,615
+7362 = San Francisco--Oakland--San Jose, CA 8,171 6,972,981
+7602 = Seattle--Tacoma--Bremerton, WA 531 3,667,226
+8280 = Tampa--St. Petersburg--Clearwater, FL 4,088 2,568,112
+8872 = Washington--Baltimore, DC--MD--VA--WV 5,562 7,821,023
+8960 = West Palm Beach--Boca Raton, FL 1,859 862,955
+XXXX = Suppressed, in an MSA of less than 1 million 93,581 65,023,289
+HHFAMINC Derived total HH income C 2 DV_16* -7 = Refused 15,075 10,375,093
+-8 = Don't know 5,419 4,274,457
+-9 = Not ascertained 64 71,543
+01 = < $5,000 4,346 6,439,250
+02 = $5,000 - $9,999 7,997 11,109,469
+03 = $10,000 - $14,999 11,444 13,613,214
+04 = $15,000 - $19,999 13,539 15,099,916
+05 = $20,000 - $24,999 11,827 12,077,428
+06 = $25,000 - $29,999 17,464 16,378,168
+07 = $30,000 - $34,999 10,571 10,277,067
+08 = $35,000 - $39,999 17,804 16,531,010
+09 = $40,000 - $44,999 9,035 8,501,189
+10 = $45,000 - $49,999 17,746 15,526,983
+11 = $50,000 - $54,999 8,338 7,710,576
+12 = $55,000 - $59,999 16,854 14,374,802
+13 = $60,000 - $64,999 6,743 6,793,357
+14 = $65,000 - $69,999 14,820 12,783,600
+15 = $70,000 - $74,999 6,966 5,845,169
+16 = $75,000 - $79,999 14,714 13,572,257
+17 = $80,000 - $99,999 30,175 26,025,062
+18 = > = $100,000 67,960 55,674,261
+HHRESP Person ID number of household respondent C 2 Table 1* 01 308,022 282,097,918
+02 724 780,935
+03 87 88,684
+04 46 22,514
+05 9 3,158
+06 1 2,408
+08 9 57,521
+10 3 735
+HHSIZE Count of HH members N 8 DV_18* 1 35,651 29,963,422
+2 126,575 72,051,342
+3 52,615 58,767,120
+4 53,895 66,682,986
+5 24,748 32,536,646
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-24
+Name Label Type Length Question Code / Range Frequency Weighted
+6 9,612 14,065,816
+7 3,427 5,216,039
+8 1,306 2,206,773
+9 574 904,137
+10 249 397,409
+11 134 198,720
+12 44 20,899
+13 61 38,755
+14 10 3,807
+HHSTATE State HH location C 2 DV_19* AK = Alaska 563 638,738
+AL = Alabama 829 4,359,236
+AR = Arkansas 531 2,668,210
+AZ = Arizona 14,667 5,984,270
+CA = California 44,957 34,052,007
+CO = Colorado 620 4,578,854
+CT = Connecticut 565 3,298,074
+DC = District of Columbia 460 559,336
+DE = Delaware 507 810,786
+FL = Florida 30,952 17,187,824
+GA = Georgia 15,247 8,944,336
+HI = Hawaii 530 1,209,195
+IA = Iowa 7,777 2,801,234
+ID = Idaho 573 1,401,832
+IL = Illinois 1,707 12,007,017
+IN = Indiana 7,224 5,933,703
+KS = Kansas 549 2,589,129
+KY = Kentucky 540 3,991,453
+LA = Louisiana 600 4,096,460
+MA = Massachusetts 859 6,115,461
+MD = Maryland 763 5,257,891
+ME = Maine 550 1,236,568
+MI = Michigan 1,386 9,377,871
+MN = Minnesota 723 4,866,095
+MO = Missouri 825 5,518,060
+MS = Mississippi 478 2,702,827
+MT = Montana 528 906,211
+NC = North Carolina 22,075 8,569,591
+ND = North Dakota 540 599,982
+NE = Nebraska 2,781 1,651,340
+NH = New Hampshire 517 1,242,477
+NJ = New Jersey 1,190 8,124,896
+NM = New Mexico 482 1,837,099
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-25
+Name Label Type Length Question Code / Range Frequency Weighted
+NV = Nevada 537 2,402,427
+NY = New York 33,435 18,281,802
+OH = Ohio 1,523 10,742,363
+OK = Oklahoma 525 3,364,544
+OR = Oregon 572 3,545,185
+PA = Pennsylvania 1,655 11,711,161
+RI = Rhode Island 527 986,797
+SC = South Carolina 10,391 4,177,991
+SD = South Dakota 3,803 745,628
+TN = Tennessee 5,131 5,798,554
+TX = Texas 46,423 22,299,667
+UT = Utah 689 2,467,859
+VA = Virginia 31,592 7,246,417
+VT = Vermont 3,434 588,635
+WA = Washington 891 6,104,766
+WI = Wisconsin 3,646 5,265,690
+WV = West Virginia 508 1,712,083
+WY = Wyoming 524 494,238
+HHSTFIPS State FIPS for HH address C 2 DV_20* 01 = Alabama 829 4,359,236
+02 = Alaska 563 638,738
+04 = Arizona 14,667 5,984,270
+05 = Arkansas 531 2,668,210
+06 = California 44,957 34,052,007
+08 = Colorado 620 4,578,854
+09 = Connecticut 565 3,298,074
+10 = Delaware 507 810,786
+11 = District of Columbia 460 559,336
+12 = Florida 30,952 17,187,824
+13 = Georgia 15,247 8,944,336
+15 = Hawaii 530 1,209,195
+16 = Idaho 573 1,401,832
+17 = Illinois 1,707 12,007,017
+18 = Indiana 7,224 5,933,703
+19 = Iowa 7,777 2,801,234
+20 = Kansas 549 2,589,129
+21 = Kentucky 540 3,991,453
+22 = Louisiana 600 4,096,460
+23 = Maine 550 1,236,568
+24 = Maryland 763 5,257,891
+25 = Massachusetts 859 6,115,461
+26 = Michigan 1,386 9,377,871
+27 = Minnesota 723 4,866,095
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-26
+Name Label Type Length Question Code / Range Frequency Weighted
+28 = Mississippi 478 2,702,827
+29 = Missouri 825 5,518,060
+30 = Montana 528 906,211
+31 = Nebraska 2,781 1,651,340
+32 = Nevada 537 2,402,427
+33 = New Hampshire 517 1,242,477
+34 = New Jersey 1,190 8,124,896
+35 = New Mexico 482 1,837,099
+36 = New York 33,435 18,281,802
+37 = North Carolina 22,075 8,569,591
+38 = North Dakota 540 599,982
+39 = Ohio 1,523 10,742,363
+40 = Oklahoma 525 3,364,544
+41 = Oregon 572 3,545,185
+42 = Pennsylvania 1,655 11,711,161
+44 = Rhode Island 527 986,797
+45 = South Carolina 10,391 4,177,991
+46 = South Dakota 3,803 745,628
+47 = Tennessee 5,131 5,798,554
+48 = Texas 46,423 22,299,667
+49 = Utah 689 2,467,859
+50 = Vermont 3,434 588,635
+51 = Virginia 31,592 7,246,417
+53 = Washington 891 6,104,766
+54 = West Virginia 508 1,712,083
+55 = Wisconsin 3,646 5,265,690
+56 = Wyoming 524 494,238
+HHVEHCNT Count of HH vehicles N 8 DV_21* 0 9,752 17,121,521
+1 58,695 61,972,841
+2 134,139 113,219,266
+3 66,816 53,796,326
+4 25,606 22,873,951
+5 8,867 9,036,679
+6 3,048 2,971,199
+7 1,104 1,129,296
+8 448 528,589
+9 207 187,191
+10 117 121,875
+11 47 33,131
+12 29 53,662
+13 4 4,353
+14 14 2,256
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-27
+Name Label Type Length Question Code / Range Frequency Weighted
+15 4 1,446
+23 3 83
+27 1 206
+HH_CBSA CBSA FIPS code for HH address C 5 DV_64* -9 = Not ascertained 2 23,099
+12060 = Atlanta-Sandy Springs-Marietta, GA 2,658 4,956,428
+12420 = Austin-Round Rock, TX 3,255 1,571,160
+12580 = Baltimore-Towson, MD 361 2,525,453
+13820 = Birmingham-Hoover, AL 131 1,042,943
+14460 = Boston-Cambridge-Quincy, MA-NH 687 4,252,112
+15380 = Buffalo-Niagara Falls, NY 1,342 1,064,402
+16740 = Charlotte-Gastonia-Concord, NC-SC 1,177 1,577,173
+16980 = Chicago-Naperville-Joliet, IL-IN-WI 1,830 8,878,897
+17140 = Cincinnati-Middletown, OH-KY-IN 361 2,023,748
+17460 = Cleveland-Elyria-Mentor, OH 299 1,961,442
+18140 = Columbus, OH 206 1,752,004
+19100 = Dallas-Fort Worth-Arlington, TX 12,517 6,009,237
+19740 = Denver-Aurora-Broomfield, CO 270 2,312,460
+19820 = Detroit-Warren-Livonia, MI 545 4,149,167
+25540 = Hartford-West Hartford-East Hartford, CT 185 1,124,259
+26420 = Houston-Sugar Land-Baytown, TX 8,658 4,556,810
+26900 = Indianapolis-Carmel, IN 1,692 1,600,820
+27260 = Jacksonville, FL 2,376 1,220,993
+28140 = Kansas City, MO-KS 316 1,891,231
+29820 = Las Vegas-Paradise, NV 298 1,717,540
+31100 = Los Angeles-Long Beach-Santa Ana, CA 9,989 11,791,343
+31140 = Louisville-Jefferson County, KY-IN 382 1,020,280
+32820 = Memphis, TN-MS-AR 666 1,151,136
+33100 = Miami-Fort Lauderdale-Pompano Beach, FL 7,733 5,077,077
+33340 = Milwaukee-Waukesha-West Allis, WI 879 1,429,468
+33460 = Minneapolis-St. Paul-Bloomington, MN-WI 493 3,013,445
+34980 = Nashville-Davidson--Murfreesboro--Franklin, TN 1,251 1,439,042
+35380 = New Orleans-Metairie-Kenner, LA 146 1,059,098
+35620 = New York-Northern New Jersey-Long Island, NY-NJ-PA 10,907 18,021,712
+36420 = Oklahoma City, OK 152 1,109,825
+36740 = Orlando-Kissimmee, FL 2,385 1,912,337
+37980 = Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 872 5,113,228
+38060 = Phoenix-Mesa-Scottsdale, AZ 9,869 3,925,722
+38300 = Pittsburgh, PA 348 2,228,150
+38900 = Portland-Vancouver-Beaverton, OR-WA 337 2,031,183
+39300 = Providence-New Bedford-Fall River, RI-MA 594 1,500,634
+39580 = Raleigh-Cary, NC 770 1,002,600
+40060 = Richmond, VA 5,106 1,152,553
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-28
+Name Label Type Length Question Code / Range Frequency Weighted
+40140 = Riverside-San Bernardino-Ontario, CA 3,555 3,735,529
+40380 = Rochester, NY 1,526 976,013
+40900 = Sacramento--Arden-Arcade--Roseville, CA 2,573 2,049,585
+41180 = St. Louis, MO-IL 413 2,594,841
+41620 = Salt Lake City, UT 261 1,013,663
+41700 = San Antonio, TX 4,383 2,264,736
+41740 = San Diego-Carlsbad-San Marcos, CA 12,625 2,774,615
+41860 = San Francisco-Oakland-Fremont, CA 4,632 4,155,741
+41940 = San Jose-Sunnyvale-Santa Clara, CA 1,872 1,641,362
+42660 = Seattle-Tacoma-Bellevue, WA 440 3,144,110
+45300 = Tampa-St. Petersburg-Clearwater, FL 4,088 2,568,112
+47260 = Virginia Beach-Norfolk-Newport News, VA-NC 6,697 1,534,427
+47900 = Washington-Arlington-Alexandria, DC-VA-MD-WV 4,912 5,012,191
+XXXXX 168,879 129,398,735
+HH_HISP Hispanic status of HH respondent C 2 C6 -1 = Appropriate Skip 5 686
+-7 = Refused 706 514,806
+-8 = Don't Know 410 384,485
+-9 = Not Ascertained 28 35,739
+01 = Yes 24,398 42,164,750
+02 = No 283,354 239,953,405
+HH_RACE Race of HH respondent C 2 C7 -1 = Appropriate skip 5 686
+-7 = Refused 1,723 1,422,307
+-8 = Don't know 721 935,051
+-9 = Not ascertained 77 66,586
+01 = White 263,466 207,004,687
+02 = African American, Black 17,500 35,165,802
+03 = Asian Only 7,009 8,450,135
+04 = American Indian, Alaskan Native 2,338 3,105,684
+05 = Native Hawaiian, other Pacific 916 1,511,517
+06 = Multiracial 1,997 2,360,484
+07 = Hispanic/Mexican 9,645 17,709,416
+97 = Other specify 3,504 5,321,517
+HOMEOWN Housing unit owned or rented C 2 C2 01 = Own 274,277 200,587,309
+02 = Rent 34,624 82,466,563
+HOMETYPE Type of housing unit C 2 C1 -7 = Refused 318 212,883
+-8 = Don't know 167 150,581
+-9 = Not ascertained 5 2,130
+01 = Detached single house 252,278 202,326,187
+02 = Duplex 15,121 20,483,489
+03 = Rowhouse or townhouse 25,511 47,460,958
+04 = Apartment, condominium 15,244 11,980,618
+05 = Mobile home or trailer 65 19,583
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-29
+Name Label Type Length Question Code / Range Frequency Weighted
+06 = Dorm room, fraternity or sorority house 14 73,247
+97 = Other 178 344,196
+HOUSEID HH eight-digit ID number C 8 Table 1* 20000017-69999811 308,901 283,053,872
+HTEEMPDN Workers per square mile living in Tract C 4 Claritas -9 = N/A 5 34,939
+25 = 0-49 71,767 55,372,013
+75 = 50-99 23,575 16,363,885
+150 = 100-249 39,031 29,804,436
+350 = 250-499 40,491 34,930,610
+750 = 500-999 47,367 44,650,692
+1500 = 1,000-1,999 42,696 44,254,099
+3000 = 2,000-3,999 26,747 32,371,653
+5000 = 4,000-999,999 17,222 25,271,545
+HTHTNRNT Percent renter-occupied - Tract level C 2 Claritas 0 = 0-4% 10,251 10,135,366
+5 = 5-14% 69,767 56,285,245
+-9 = N/A 2 23,099
+20 = 15-24% 90,582 70,930,020
+30 = 25-34% 55,416 49,199,829
+40 = 35-44% 34,608 33,002,987
+50 = 45-54% 20,747 23,207,821
+60 = 55-64% 13,185 15,911,280
+70 = 65-74% 7,246 11,813,851
+80 = 75-84% 4,057 6,452,314
+90 = 85-94% 2,036 3,719,526
+95 = 95-100% 1,004 2,372,534
+HTPPOPDN Population per sq mile - Tract level C 5 Claritas -9 = N/A 2 23,099
+50 = 0-99 47,858 38,907,687
+300 = 100-499 59,106 41,668,149
+750 = 500-999 30,609 25,998,920
+1500 = 1,000-1,999 42,446 34,489,464
+3000 = 2,000-3,999 57,708 53,344,047
+7000 = 4,000-9,999 56,740 59,488,181
+17000 = 10,000-24,999 10,905 18,136,681
+30000 = 25,000-999,999 3,527 10,997,642
+HTRESDN Housing units per sq mile - Tract level C 5 Claritas -9 = N/A 2 23,099
+50 = 0-99 80,687 61,349,611
+300 = 100-499 67,159 54,241,727
+750 = 500-999 47,577 40,209,516
+1500 = 1,000-1,999 59,848 55,237,342
+3000 = 2,000-3,999 39,597 44,425,727
+7000 = 4,000-9,999 10,412 17,155,802
+17000 = 10,000-24,999 2,288 6,701,175
+30000 = 25,000-999,999 1,331 3,709,873
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-30
+Name Label Type Length Question Code / Range Frequency Weighted
+ISSUE Most important transportation issue C 2 L2a -1 = Appropriate skip 88,274 95,797,974
+-7 = Refused 674 466,152
+-8 = Don't know 5,499 4,028,205
+-9 = Not ascertained 45 33,970
+01 = Highway congestion 36,982 27,423,694
+02 = Access to / availability of public transit 14,054 14,206,726
+03 = Lack of walkways or sidewalks 6,892 6,372,584
+04 = Price of travel 76,440 68,046,606
+05 = Aggressive / distracted drivers 39,601 31,833,486
+06 = Safety concerns 40,440 34,844,475
+LIF_CYC Life Cycle classification for the HH C 2 DV_24* 01 = one adult, no children 15,138 19,129,823
+02 = 2+ adults, no children 61,114 52,987,069
+03 = one adult, youngest child 0-5 1,276 3,592,429
+04 = 2+ adults, youngest child 0-5 36,713 51,427,270
+05 = one adult, youngest child 6-15 5,062 8,149,320
+06 = 2+ adults, youngest child 6-15 61,019 68,935,066
+07 = one adult, youngest child 16-21 2,134 2,983,786
+08 = 2+ adults, youngest child 16-21 20,422 25,420,544
+09 = one adult, retired, no children 20,513 10,833,599
+10 = 2+ adults, retired, no children 85,510 39,594,966
+LSTTRDAY Approximate number of days since last trip N 8 DV_25* -1 = Appropriate skip 266,498 249,040,738
+0-18250 42,403 34,013,134
+MCUSED Times used motorcycle/moped on road in the
+past month
+N 4 La -9 = Not ascertained 330 357,088
+-8 = Don't know 50 48,588
+-7 = Refused 3 2,005
+-1 = Appropriate skip 301,112 276,512,713
+0-999 7,406 6,133,478
+MEDCOND Have medical condition making it hard to
+travel
+C 2 M4 -1 = Appropriate skip 38,183 44,757,967
+-7 = Refused 252 150,842
+-8 = Don't know 217 161,826
+-9 = Not ascertained 26 29,954
+01 = Yes 33,423 24,284,861
+02 = No 236,800 213,668,421
+MEDCOND6 Length of time with medical condition C 2 M5 -1 = Appropriate skip 275,478 258,769,011
+-7 = Refused 34 15,216
+-8 = Don't know 188 131,010
+-9 = Not ascertained 4 1,190
+01 = 0-5 months 2,277 1,855,300
+02 = 6-11 months 1,450 890,490
+03 = 1-4 years 10,188 6,902,628
+04 = 5-9 years 7,110 5,027,486
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-31
+Name Label Type Length Question Code / Range Frequency Weighted
+05 = 10 years or more 10,451 7,266,413
+06 = All his/her Life 1,721 2,195,128
+MOROFTEN Would like to get out more often C 2 Ga -1 = Appropriate skip 301,469 276,930,992
+-7 = Refused 39 22,686
+-8 = Don't know 355 317,859
+-9 = Not ascertained 266 174,986
+01 = Yes 3,719 3,315,533
+02 = No 3,053 2,291,817
+MSACAT MSA category for the HH home address C 2 DV_28* -9 = Not ascertained 2 23,099
+01 = MSA of 1 million or more, with rail 54,979 83,583,927
+02 = MSA of 1 million or more, and not in 1 98,720 81,046,378
+03 = MSA less than 1 million 93,581 65,023,289
+04 = Not in MSA (CMSA) 61,619 53,377,178
+MSASIZE MSA population size for the HH home address C 2 DV_29* -9 = Not ascertained 2 23,099
+01 = In an MSA of Less than 250,000 34,609 19,045,731
+02 = In an MSA of 250,000 - 499,999 25,824 23,791,971
+03 = In an MSA of 500,000 - 999,999 33,148 22,185,587
+04 = In an MSA or CMSA of 1,000,000 - 2,999,999 66,838 60,408,382
+05 = In an MSA or CMSA of 3 million or more 86,861 104,221,924
+06 = Not in MSA or CMSA 61,619 53,377,178
+NBIKETRP Number of bike trips in past week N 8 Table 1* L4 -8 = Don't know 394 511,843
+-7 = Refused 139 91,160
+0-99 308,368 282,450,869
+NUMADLT Count of adult HHMs at least 18 years old N 8 DV_31* 1 41,917 39,686,990
+2 207,707 166,470,671
+3 42,571 51,201,604
+4 13,361 20,597,602
+5 2,619 3,961,269
+6 528 722,868
+7 152 389,371
+8 28 10,766
+9 9 7,555
+10 9 5,175
+NWALKTRP Number of walk trips in past week N 3 L3 -9 = Not ascertained 4 1,899
+-8 = Don't know 2,813 2,757,734
+-7 = Refused 267 180,821
+0-99 305,817 280,113,418
+OCCAT Job category C 2 E7 -1 = Appropriate skip 176,007 133,055,068
+-7 = Refused 62 66,536
+-8 = Don't know 185 251,345
+-9 = Not ascertained 5 6,877
+01 = Sales / service 36,087 45,961,525
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-32
+Name Label Type Length Question Code / Range Frequency Weighted
+02 = Clerical / admin support 15,662 15,627,627
+03 = Manuf, construct, maintenance, or farming 20,586 27,010,635
+04 = Professional, managerial, or technical 59,210 59,859,073
+97 = Other 1,097 1,215,184
+OUTCNTRY S out of country entire travel day C 2 G14 -1 = Appropriate skip 300,649 275,982,033
+-9 = Not ascertained 2 3,411
+01 = Yes 1,000 1,120,059
+02 = No 7,250 5,948,368
+OUTOFTWN R Was out of town the entire travel day C 2 G9 -1 = Appropriate skip 289,903 263,602,384
+-9 = Not ascertained 34 27,368
+01 = Yes 8,252 7,071,839
+02 = No 10,712 12,352,281
+PAYPROF Worked for pay or profit last week C 2 E4 -1 = Appropriate skip 164,793 183,167,523
+-7 = Refused 166 95,472
+-8 = Don't know 93 73,118
+-9 = Not ascertained 29 36,235
+01 = Yes 12,407 12,890,142
+02 = No 131,413 86,791,381
+PERSONID Person ID number C 2 Table 1* 01 147,506 116,144,752
+02 99,051 84,481,167
+03 35,708 47,563,871
+04 18,068 23,176,320
+05 5,938 7,758,697
+06 1,770 2,639,905
+07 537 779,143
+08 194 340,863
+09 73 119,129
+10 29 29,324
+11 16 13,792
+12 7 4,825
+13 4 2,084
+PRMACT Primary activity last week C 2 E3 -1 = Appropriate skip 38,132 44,684,568
+-7 = Refused 195 182,024
+-8 = Don't know 458 458,022
+-9 = Not ascertained 25 32,003
+01 = Working 118,637 130,328,081
+02 = Temporarily absent from a job or business 8,024 8,154,875
+03 = Looking for work 5,744 8,116,434
+04 = A homemaker 26,159 21,908,759
+05 = Going to school 10,407 15,990,938
+06 = Retired 85,640 38,051,404
+07 = Doing something else 15,480 15,146,766
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-33
+Name Label Type Length Question Code / Range Frequency Weighted
+PROXY Trip info from respondent or proxy C 2 Table 1* E1 01 = Subject 220,825 187,545,158
+02 = Proxy 88,076 95,508,714
+PTUSED How often S used public transit in past month N 4 L11 -9 = Not ascertained 99,106 68,466,779
+-8 = Don't know 854 1,208,018
+-7 = Refused 45 35,904
+-1 = Appropriate skip 38,182 44,755,684
+0-180 170,714 168,587,487
+PURCHASE Number of times purchased via internet in
+past month
+N 4 Ma -9 = Not ascertained 10 22,430
+-8 = Don't know 932 919,628
+-7 = Refused 146 70,304
+-1 = Appropriate skip 108,873 100,259,493
+0-400 198,940 181,782,016
+RAIL MSA heavy rail status for HH C 2 DV_38* 01 = MSA has rail 54,979 83,583,927
+02 = MSA does not have rail, or hh not in an MSA 253,922 199,469,945
+R_AGE Respondent Age N 4 Table 1* C5 5-88 305,725 281,332,548
+92 = 89+ 3,176 1,721,324
+R_RELAT Respondent relationship to HH respondent C 2 Table 1* -7 = Refused 198 239,643
+-8 = Don't know 54 74,461
+-9 = Not ascertained 32 91,224
+01 = Self 147,555 116,171,745
+02 = Spouse 84,085 64,620,013
+03 = Child 56,399 75,978,434
+04 = Parent 6,139 5,880,445
+05 = Sibling 2,319 3,775,005
+06 = Other relative 6,603 8,822,702
+07 = Unmarried Partner 2,722 3,338,180
+08 = Non-relative 2,795 4,062,020
+R_SEX Respondent gender C 2 DV_37* 01 = Male 143,137 139,257,062
+02 = Female 165,764 143,796,810
+SAMEPLC Stayed at same place all day C 2 G13 -1 = Appropriate skip 263,933 246,946,024
+-7 = Refused 1 234
+01 = Yes 44,967 36,107,614
+SCHCARE Attends before or after school care C 2 F4 -1 = Appropriate skip 286,447 256,750,081
+-7 = Refused 14 14,515
+-8 = Don't know 26 21,492
+-9 = Not ascertained 1 340
+01 = Before 206 237,401
+02 = After 2,157 2,518,162
+03 = Both 743 987,001
+04 = Neither 19,307 22,524,880
+SCHCRIM Walk/Bike issue: violence/crime along route C 2 F11 -1 = Appropriate skip 286,566 256,947,813
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-34
+Name Label Type Length Question Code / Range Frequency Weighted
+-7 = Refused 21 18,589
+-8 = Don't know 158 183,840
+-9 = Not ascertained 218 286,314
+01 = Not an issue 11,511 12,964,532
+02 = A little bit of an issue 3,457 4,097,715
+03 = Somewhat of an issue 2,769 3,335,246
+04 = Very much an issue 1,262 1,612,787
+05 = A serious issue 2,939 3,607,035
+SCHDIST Walk/Bike issue: distance between home &
+school
+C 2 F11 -1 = Appropriate skip 286,566 256,947,813
+-7 = Refused 17 15,691
+-8 = Don't know 80 85,372
+-9 = Not ascertained 218 286,314
+01 = Not an issue 4,766 6,018,560
+02 = A little bit of an issue 1,922 2,456,442
+03 = Somewhat of an issue 2,487 2,908,031
+04 = Very much an issue 2,896 3,636,455
+05 = A serious issue 9,949 10,699,193
+SCHSPD Walk/Bike issue: speed of traffic along route C 2 F11 -1 = Appropriate skip 286,566 256,947,813
+-7 = Refused 21 17,775
+-8 = Don't know 105 94,500
+-9 = Not ascertained 218 286,314
+01 = Not an issue 3,174 4,223,005
+02 = A little bit of an issue 1,900 2,526,475
+03 = Somewhat of an issue 3,474 4,536,606
+04 = Very much an issue 3,722 4,211,061
+05 = A serious issue 9,721 10,210,323
+SCHTRAF Walk/Bike issue: amount of traffic along route C 2 F11 -1 = Appropriate skip 286,566 256,947,813
+-7 = Refused 17 15,515
+-8 = Don't know 78 87,924
+-9 = Not ascertained 218 286,314
+01 = Not an issue 2,634 3,603,896
+02 = A little bit of an issue 1,953 2,616,718
+03 = Somewhat of an issue 3,083 3,966,169
+04 = Very much an issue 3,881 4,570,339
+05 = A serious issue 10,471 10,959,185
+SCHTRN1 Mode to school C 2 F5 -1 = Appropriate skip 286,447 256,750,081
+-7 = Refused 9 13,329
+-8 = Don't know 23 12,451
+-9 = Not ascertained 1 340
+01 = Car 8,419 8,912,218
+02 = Van 1,279 1,336,448
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-35
+Name Label Type Length Question Code / Range Frequency Weighted
+03 = SUV 1,560 1,472,906
+04 = Pickup truck 655 667,126
+05 = Other truck 19 54,130
+07 = Motorcycle 2 9,134
+08 = Light electric veh (golf cart) 4 4,086
+09 = Local public bus 137 337,877
+10 = Commuter bus 30 75,608
+11 = School bus 8,049 9,847,124
+12 = Charter/tour bus 10 5,593
+13 = City to city bus 1 139
+14 = Shuttle bus 26 49,151
+15 = Amtrak/inter city train 2 8,664
+16 = Commuter train 17 77,781
+17 = Subway/elevated train 13 64,063
+18 = Street car/trolley 1 125
+19 = Taxicab 2 37,171
+22 = Bicycle 261 273,226
+23 = Walk 1,709 2,824,214
+24 = Special transit-people w/disabilities 6 19,792
+97 = Other 219 201,095
+SCHTRN2 Mode from school C 2 F7 -1 = Appropriate skip 286,447 256,750,081
+-7 = Refused 11 16,071
+-8 = Don't know 23 19,248
+-9 = Not ascertained 1 340
+01 = Car 7,264 7,489,317
+02 = Van 1,258 1,274,379
+03 = SUV 1,382 1,385,275
+04 = Pickup truck 491 518,431
+05 = Other truck 9 22,646
+07 = Motorcycle 4 9,061
+08 = Light electric veh (golf cart) 2 1,449
+09 = Local public bus 177 407,711
+10 = Commuter bus 36 70,059
+11 = School bus 8,930 10,551,532
+12 = Charter/tour bus 14 8,421
+13 = City to city bus 2 254
+14 = Shuttle bus 75 73,047
+15 = Amtrak/inter city train 1 8,321
+16 = Commuter train 15 77,029
+17 = Subway/elevated train 15 82,659
+18 = Street car/trolley 2 495
+19 = Taxicab 2 36,597
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-36
+Name Label Type Length Question Code / Range Frequency Weighted
+22 = Bicycle 262 276,031
+23 = Walk 2,227 3,742,684
+24 = Special transit-people w/disabilities 5 19,729
+97 = Other 246 213,004
+SCHTYP School type C 2 F1 -1 = Appropriate skip 285,401 255,637,832
+-7 = Refused 9 12,627
+-8 = Don't know 13 13,873
+01 = Public 19,360 22,867,576
+02 = Private 3,072 3,409,715
+03 = Home schooled 766 752,861
+04 = Not in school 280 359,387
+SCHWTHR Walk/Bike issue: poor weather or climate in
+area
+C 2 F11 -1 = Appropriate skip 286,566 256,947,813
+-7 = Refused 21 18,093
+-8 = Don't know 96 98,471
+-9 = Not ascertained 218 286,314
+01 = Not an issue 7,443 7,667,421
+02 = A little bit of an issue 3,986 4,481,600
+03 = Somewhat of an issue 5,658 7,069,295
+04 = Very much an issue 2,363 2,870,332
+05 = A serious issue 2,550 3,614,533
+SELF_EMP Self-employed C 2 Ea -1 = Appropriate skip 169,833 131,680,775
+-7 = Refused 14 11,203
+-8 = Don't know 68 55,094
+-9 = Not ascertained 4 6,143
+01 = Yes 24,601 21,176,324
+02 = No 114,381 130,124,333
+SFWGT Weight for child 5-15, Safe Routes to School
+section
+N 8 Table4* 0-132123 308,901 283,053,872
+TDAYDATE Date of Travel Day (YYYYMM) C 8 DV* 200803 444 432,944
+200804 10,686 11,540,475
+200805 19,489 24,150,416
+200806 20,570 22,888,559
+200807 25,281 24,287,231
+200808 28,297 24,310,735
+200809 27,403 22,864,902
+200810 27,533 23,837,960
+200811 30,179 23,337,459
+200812 29,202 23,730,015
+200901 28,189 23,445,543
+200902 22,070 22,769,751
+200903 24,120 24,406,096
+200904 15,438 11,051,786
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-37
+Name Label Type Length Question Code / Range Frequency Weighted
+TIMETOSC Minutes to get to school N 3 F9 -9 = Not ascertained 7 4,858
+-8 = Don't know 504 720,612
+-7 = Refused 18 25,473
+-1 = Appropriate skip 286,447 256,750,081
+1-95 21,925 25,552,849
+TIMETOWK Minutes to go from home to work last week N 4 E15 -9 = Not ascertained 4 2,351
+-8 = Don't know 837 836,834
+-7 = Refused 75 54,438
+-5 = Did not work last week 3,097 2,964,448
+-4 = Did not work in usual workplace last week 962 1,056,908
+-1 = Appropriate skip 187,829 148,405,192
+1-660 116,097 129,733,701
+TOSCSIZE Number of people on to school trip N 3 F6 -9 = Not ascertained 7 10,878
+-8 = Don't know 21 20,333
+-7 = Refused 1 224
+-1 = Appropriate skip 306,931 279,956,432
+0 428 643,859
+1 653 1,044,281
+2 454 713,759
+3 221 374,820
+4 93 179,756
+5 55 60,822
+6 15 19,336
+7 9 19,403
+8 4 2,569
+9 2 378
+10 3 5,656
+11 1 465
+15 3 901
+TRAVDAY Travel day - day of week C 2 DV* 01 = Sunday 45,032 40,436,267
+02 = Monday 44,265 40,436,267
+03 = Tuesday 44,440 40,436,267
+04 = Wednesday 44,096 40,436,267
+05 = Thursday 43,794 40,436,267
+06 = Friday 43,979 40,436,267
+07 = Saturday 43,295 40,436,267
+URBAN Home address in urbanized area C 2 DV_47* -9 = Not ascertained 2 23,099
+01 = In an urban area 187,909 187,515,939
+02 = In an Urban cluster 28,482 27,971,345
+03 = In an area surrounded by urban areas 127 224,558
+04 = Not in urban area 92,381 67,318,931
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-38
+Name Label Type Length Question Code / Range Frequency Weighted
+URBANSIZE Size of urban area in which home address is
+located
+C 2 DV_48* -9 = Not ascertained 2 23,099
+01 = 50,000 - 199,999 42,155 27,211,636
+02 = 200,000 - 499,999 28,610 23,868,150
+03 = 500,000 - 999,999 24,912 23,078,760
+04 = 1 million or more without subway or rail 57,287 52,223,677
+05 = 1 million or more with subway or rail 34,945 61,133,715
+06 = Not in an urbanized area 120,990 95,514,834
+URBRUR Household in urban/rural area C 2 DV_49* -9 = Not ascertained 2 23,099
+01 = Urban 216,518 215,711,841
+02 = Rural 92,381 67,318,931
+USEINTST Interstate used for any trips C 2 N_G19 -1 = Appropriate skip 45,968 37,227,907
+-7 = Refused 19 34,303
+-8 = Don't know 875 929,121
+-9 = Not ascertained 16 9,496
+01 = Yes 74,936 70,465,102
+02 = No 187,087 174,387,943
+USEPUBTR Use public transit on travel day C 2 G19 -1 = Appropriate skip 45,968 37,227,907
+-7 = Refused 10 22,132
+-8 = Don't know 34 29,238
+-9 = Not ascertained 20 31,660
+01 = Yes 4,942 10,914,320
+02 = No 257,927 234,828,615
+VARSTRAT Linearization Variance Stratum for Std Err
+Calculation
+N 8 DV* 1-100 308,901 283,053,872
+WEBUSE Frequency of internet use in past month C 2 M2 -1 = Appropriate skip 38,183 44,757,967
+-7 = Refused 125 87,014
+-8 = Don't know 332 390,528
+-9 = Not ascertained 27 30,621
+01 = Almost everyday 153,010 138,736,891
+02 = Several times a week 28,530 26,356,740
+03 = Once a week 11,828 11,356,145
+04 = Once a month 6,660 6,344,603
+05 = Never 70,206 54,993,364
+WKFMHMXX Frequency of working from home in past
+month
+N 4 E20 -9 = Not ascertained 3 641
+-8 = Don't know 199 196,623
+-7 = Refused 20 21,726
+-1 = Appropriate skip 291,736 266,530,339
+0-31 16,943 16,304,543
+WKFTPT Work full or part-time C 2 E5 -1 = Appropriate skip 169,833 131,680,775
+-7 = Refused 48 40,907
+-8 = Don't know 232 362,502
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-39
+Name Label Type Length Question Code / Range Frequency Weighted
+-9 = Not ascertained 2 1,545
+01 = Full-time 106,286 114,135,029
+02 = Part-time 31,195 35,256,445
+03 = Multiple Jobs 1,305 1,576,669
+WKRMHM Has option to work at home C 2 Ed -1 = Appropriate skip 187,829 148,405,192
+-7 = Refused 56 72,880
+-8 = Don't know 170 188,536
+-9 = Not ascertained 2 1,545
+01 = Yes 17,165 16,523,533
+02 = No 103,679 117,862,187
+WKSTFIPS State FIPS code for work address C 2 DV_54* -1 = Appropriate skip 173,108 135,628,239
+-9 = Not ascertained 1,289 1,762,698
+01 = Alabama 376 2,161,084
+02 = Alaska 295 372,764
+04 = Arizona 6,211 3,019,200
+05 = Arkansas 220 1,162,559
+06 = California 19,625 16,925,351
+08 = Colorado 328 2,715,529
+09 = Connecticut 364 1,710,655
+10 = Delaware 204 418,380
+11 = District of Columbia 490 899,191
+12 = Florida 11,697 8,428,814
+13 = Georgia 6,147 4,495,936
+15 = Hawaii 223 550,096
+16 = Idaho 212 690,892
+17 = Illinois 858 6,203,614
+18 = Indiana 3,137 2,987,006
+19 = Iowa 3,752 1,567,480
+20 = Kansas 262 1,549,791
+21 = Kentucky 284 1,995,772
+22 = Louisiana 285 2,086,800
+23 = Maine 256 646,407
+24 = Maryland 448 2,447,489
+25 = Massachusetts 513 3,525,822
+26 = Michigan 583 4,711,508
+27 = Minnesota 416 2,717,340
+28 = Mississippi 182 1,298,965
+29 = Missouri 375 2,747,720
+30 = Montana 268 574,997
+31 = Nebraska 1,512 917,494
+32 = Nevada 244 1,278,465
+33 = New Hampshire 304 628,955
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-40
+Name Label Type Length Question Code / Range Frequency Weighted
+34 = New Jersey 792 4,103,044
+35 = New Mexico 198 858,675
+36 = New York 14,860 9,742,548
+37 = North Carolina 9,316 4,402,069
+38 = North Dakota 289 412,764
+39 = Ohio 680 5,381,396
+40 = Oklahoma 229 1,651,512
+41 = Oregon 260 1,812,971
+42 = Pennsylvania 847 6,230,635
+44 = Rhode Island 220 532,577
+45 = South Carolina 4,120 2,024,467
+46 = South Dakota 1,982 450,428
+47 = Tennessee 2,214 2,897,878
+48 = Texas 19,815 11,278,917
+49 = Utah 284 1,282,190
+50 = Vermont 1,709 333,028
+51 = Virginia 13,986 3,787,675
+53 = Washington 399 3,153,796
+54 = West Virginia 203 696,423
+55 = Wisconsin 1,748 2,894,797
+56 = Wyoming 282 299,070
+WORKER Subject worker status C 2 DV_55* -1 = Appropriate skip 38,141 44,724,330
+-9 = Not ascertained 203 149,541
+01 = Yes 139,068 151,373,097
+02 = No 131,489 86,806,904
+WRKCOUNT Number of workers in HH N 8 DV_57* 0 89,548 46,407,713
+1 103,587 107,387,770
+2 93,966 98,823,997
+3 17,633 23,940,975
+4 3,649 5,852,535
+5 458 570,904
+6 60 69,979
+WRKTIME Usual arrival time at work C 8 Eb -1 = Appropriate Skip 187,829 148,405,192
+-7 = Refused 278 274,612
+-8 = Don't Know 4,074 4,706,368
+-9 = Not Ascertained 2 1,545
+01:00AM-12:57PM 116,718 129,666,156
+WRKTRANS Transportation mode to work last week C 2 E16 -1 = Appropriate skip 191,888 152,426,549
+-7 = Refused 46 31,958
+-8 = Don't know 202 236,483
+-9 = Not ascertained 5 4,040
+01 = Car 78,079 84,712,160
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-41
+Name Label Type Length Question Code / Range Frequency Weighted
+02 = Van 4,682 4,878,025
+03 = SUV 9,834 10,598,214
+04 = Pickup truck 15,809 15,705,987
+05 = Other truck 538 626,327
+06 = RV 6 1,835
+07 = Motorcycle 710 653,353
+08 = Light electric veh (golf cart) 39 28,902
+09 = Local public bus 1,276 3,231,700
+10 = Commuter bus 362 748,437
+11 = School bus 83 62,668
+12 = Charter/tour bus 12 20,766
+13 = City to city bus 8 3,797
+14 = Shuttle bus 55 77,843
+15 = Amtrak/inter city train 62 154,556
+16 = Commuter train 617 1,301,973
+17 = Subway/elevated train 426 1,360,343
+18 = Street car/trolley 40 38,703
+19 = Taxicab 67 106,322
+20 = Ferry 34 28,445
+21 = Airplane 76 43,349
+22 = Bicycle 656 1,036,054
+23 = Walk 2,282 3,676,117
+24 = Special transit-people w/disabilities 70 138,222
+97 = Other 937 1,120,745
+WTPERFIN Final person weight N 8 Table 4* 1-74135 308,901 283,053,872
+YEARMILE Miles respondent drove last 12 months N 8 L5 -9 = Not ascertained 621 660,166
+-8 = Don't know 48,477 43,747,185
+-7 = Refused 667 572,330
+-1 = Appropriate skip 61,583 75,588,069
+0-200000 197,553 162,486,122
+YRMLCAP Indicates YEARMILE was capped C 2 DV_61* -1 = Appropriate skip 111,072 120,378,685
+01 = Yes 48 50,472
+02 = No 197,781 162,624,714
+YRTOUS Year entered U.S. N 8 Table 1* M10 -9 = Not ascertained 32 35,153
+-8 = Don't know 722 1,140,712
+-7 = Refused 269 292,998
+-1 = Appropriate skip 282,707 249,141,234
+1910-2009 25,171 32,443,775
+2009 NHTS Person File - Public Use Codebook, Version 2.1
+B-42
+Name Label Type Length Question Code / Range Frequency Weighted
+ANNMILES Self-reported annualized mile estimate N 8 DV* -9 = N/A 493 328,822
+-8 = Don't Know 6,932 5,276,386
+-7 = Refused 298 141,900
+-1 = Skip 12,604 10,221,030
+0-200000 288,836 195,533,180
+BESTMILE Best estimate of annual miles N 8 ORNL -9 = N/A 7,732 6,093,969
+0 - 200000 301,431 205,407,349
+BEST_EDT Flag any edits/adjustments to BESTMILE C 2 ORNL -1 = Skip 302,885 207,422,536
+01 = BESTMILE > Annualized Odom Reading and Self-Repted
+VMT; set to Annualized Odom Reading
+5,438 3,595,302
+02 = BESTMILE > Annualized Odom Reading (No Self-Repted
+VMT); set to Annualized Odom Reading
+357 255,726
+03 = BESTMILE < 0; set to 0 405 181,713
+04 = BESTMILE > 200,000; set to 200,000 7 14,503
+05 = BESTMILE > 200,000 after edit 1 or 2; set to 200,000 71 31,538
+BEST_FLG How BESTMILE was computed C 2 ORNL 01 = BESTMILE based on odometer reading, self-reported VMT,
+and info on primary driver
+191,830 127,496,812
+02 = Used same model as in 1; no odometer reading present 52,700 38,509,571
+03 = Used model relating self-estimated VMT to annualized
+estimates
+30,131 20,241,845
+04 = BESTMILE based on odometer reading and info on primary
+driver
+5,624 4,022,903
+05 = Used model relating info on primary driver to annualized
+estimates
+4,374 3,656,872
+06 = Used travel day information multiplied by adjustment factors
+for probability of driving
+2,811 2,349,890
+07 = Assigned ANNMILES value (other truck, RV, motorcycle and
+other vehicle type)
+13,961 9,129,456
+08 = No BESTMILE present 7,732 6,093,969
+BEST_OUT Flag identifying BESTMILE outlier values C 2 ORNL -1 = Skip 287,635 196,927,138
+01 = BESTMILE < Crude Estimate/4 and Difference > 10,000 6,322 4,130,857
+02 = BESTMILE < Self Estimate/4 and Difference > 10,000 1,313 870,814
+03 = BESTMILE < Crude Estimate*4 and Difference > 10,000 3,085 2,139,643
+04 = BESTMILE < Self Estimate*4 and Difference > 10,000 10,808 7,432,866
+CDIVMSAR Grouping of HH by combination of Census
+Division, MSA status, and presence of a
+subway system (if area > 1 million)
+C 2 DV_1* -9 = Not ascertained 1 499
+11 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or more with heavy rail
+1,183 4,992,868
+12 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or without heavy rail.
+678 1,825,076
+13 = New England (ME, NH, VT, CT, MA, RI) MSA of less than 1
+million.
+1,391 1,042,350
+14 = New England (ME, NH, VT, CT, MA, RI) Not in a MSA. 3,159 1,789,951
+21 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or more
+with heavy rail.
+12,209 12,554,330
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-43
+Name Label Type Length Question Code / Range Frequency Weighted
+22 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or without
+heavy rail.
+3,008 3,074,084
+23 = Mid-Atlantic (NY, NJ, PA) MSA of less than 1 million. 11,004 5,001,709
+24 = Mid-Atlantic (NY, NJ, PA) Not in a MSA. 6,226 2,490,164
+31 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or more with heavy rail
+2,046 7,780,847
+32 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or without heavy rail
+4,387 10,123,811
+33 = East North Central (IL, IN, MI, OH, WI) MSA of less than 1
+million.
+4,610 7,945,456
+34 = East North Central (IL, IN, MI, OH, WI) Not in a MSA. 4,639 7,361,210
+42 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA or
+CMSA of 1 million or without heavy rail
+893 5,156,468
+43 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA of
+less than 1 million.
+11,195 4,444,919
+44 = West North Central (IA, KS, MO, MN, ND, NE, SD) Not in a
+MSA.
+5,990 7,781,911
+51 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or more with heavy rail
+13,102 11,818,057
+52 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or without heavy rail
+31,576 9,540,151
+53 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA of
+less than 1 million.
+40,734 10,651,673
+54 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) Not in a
+MSA.
+31,315 9,240,725
+62 = East South Central (AL, KY, MS, TN) MSA or CMSA of 1
+million or without heavy rail.
+2,049 2,799,836
+63 = East South Central (AL, KY, MS, TN) MSA of less than 1
+million.
+2,802 5,616,762
+64 = East South Central (AL, KY, MS, TN) Not in a MSA. 2,701 5,838,208
+72 = West South Central (AR, LA, OK, TX) MSA or CMSA of 1
+million or without heavy rail.
+27,230 11,660,917
+73 = West South Central (AR, LA, OK, TX) MSA of less than 1
+million.
+10,682 7,254,733
+74 = West South Central (AR, LA, OK, TX) Not in a MSA. 8,925 4,960,672
+82 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA or CMSA
+of 1 million or without heavy rail
+10,292 7,503,117
+83 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA of less
+than 1 million.
+5,842 3,967,112
+84 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) Not in a MSA. 2,225 4,611,420
+91 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+more with heavy rail.
+21,837 15,320,464
+92 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+without heavy rail.
+16,192 8,579,331
+93 = Pacific (AK, CA, HI, OR, WA) MSA of less than 1 million. 6,258 5,392,752
+94 = Pacific (AK, CA, HI, OR, WA) Not in a MSA. 2,782 3,379,738
+CENSUS_D Census division classification for home
+address
+C 2 DV_2* 01 = New England 6,411 9,650,244
+02 = Middle Atlantic 32,447 23,120,287
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-44
+Name Label Type Length Question Code / Range Frequency Weighted
+03 = East North Central 15,682 33,211,324
+04 = West North Central 18,078 17,383,298
+05 = South Atlantic 116,727 41,250,606
+06 = East South Central 7,552 14,254,806
+07 = West South Central 46,838 23,876,821
+08 = Mountain 18,359 16,081,649
+09 = Pacific 47,069 32,672,285
+CENSUS_R Census region classification for home address C 2 DV_3* 01 = Northeast 38,858 32,770,531
+02 = Midwest 33,760 50,594,622
+03 = South 171,117 79,382,233
+04 = West 65,428 48,753,933
+DRVRCNT Number of drivers in HH N 8 DV_10* 0 854 635,753
+1 53,158 43,654,192
+2 195,331 118,713,737
+3 43,984 34,370,836
+4 13,208 11,911,319
+5 2,207 1,737,442
+6 291 300,292
+7 100 157,275
+8 17 15,333
+9 13 5,139
+EIADMPG EIA derived miles per gasoline-equivalent
+gallon estimate
+N 8 EIA -9 = N/A 9,909 7,474,381
+5.2 - 141.1 299,254 204,026,937
+EPATMPG Unadjusted 55/45 combined fuel economy N 8 EIA 6.4 - 141.1 309,163 211,501,318
+EPATMPGF Imputation flag for EPATMPG C 2 EIA 01 = Linked on manufacturer, model, model year, and body style 252,393 173,919,376
+02 = Linked on manufacturer, model, adjusted by adding one year
+to the reported model year, and body style
+4,322 2,919,914
+03 = Linked on manufacturer, model, adjusted by subtracting one
+year from the reported model year, and body style
+3,283 2,151,212
+04 = Linked on manufacturer, model, adjusted by adding two years
+to the reported model year, and body style
+2,335 1,664,831
+05 = Linked on manufacturer, model, adjusted by subtracting two
+years from the reported model year, and body style
+749 535,417
+06 = Linked on manufacturer, model and body style 14,369 9,701,140
+07 = Linked on manufacturer, model, and reported model year 6,435 4,213,782
+08 = Linked on manufacturer, model, and adding one year to the
+reported model year
+251 179,447
+09 = Linked on manufacturer, model, and subtracting one year from
+the reported model year
+259 149,747
+10 = Linked on manufacturer, model, and adding two years to the
+reported model year
+182 120,970
+11 = Linked on manufacturer, model, and subtracting two years
+from the reported model year
+117 93,117
+12 = Linked on manufacturer and model 1,020 692,424
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-45
+Name Label Type Length Question Code / Range Frequency Weighted
+13 = Linked on model year and body style 2,642 1,746,167
+14 = Linked on body style and adjusted by adding one year from
+reported model year
+21 32,305
+15 = Linked on body style and adjusted by subtracting one year
+from reported model year
+82 61,042
+16 = Linked on body style and adjusted by adding two years from
+reported model year
+8 1,040
+18 = Linked on body style 39 27,196
+99 = Hot-deck match based on MPG; generally pre-1978; use with
+caution
+20,656 13,292,191
+FLAG100 Did HH have 100% of members complete
+interview?
+C 2 DV* 01 = Yes 262,371 175,824,145
+02 = No 46,792 35,677,174
+FUELTYPE Type of fuel N 8 EIA 1 = Diesel 4,176 2,648,210
+2 = Natural Gas 123 100,919
+3 = Electricity 15 7,458
+4 = Motor Gasoline 304,849 208,744,732
+GSCOST Fuel cost in nominal US dollars per gasolineequivalent
+gallon N 8 EIA -9 = N/A 9,909 7,474,381
+1.22 - 4.63 299,254 204,026,937
+GSTOTCST Annual fuel expenditures in nominal US
+dollars
+N 8 EIA -9 = N/A 7,732 6,093,969
+0 - 87965 301,431 205,407,349
+GSYRGAL Annual fuel consumption in gasolineequivalent
+gallons N 8 EIA -9 = N/A 7,732 6,093,969
+0 - 23529 301,431 205,407,349
+HBHTNRNT Percent renter-occupied - Block group C 2 Claritas 0 = 0-4% 23,830 17,465,302
+5 = 5-14% 92,523 58,018,042
+-9 = N/A 1 499
+20 = 15-24% 82,294 48,365,830
+30 = 25-34% 42,063 29,649,716
+40 = 35-44% 26,796 19,374,950
+50 = 45-54% 17,021 14,442,214
+60 = 55-64% 10,727 9,549,751
+70 = 65-74% 6,676 6,395,177
+80 = 75-84% 3,910 4,215,142
+90 = 85-94% 2,189 2,370,078
+95 = 95-100% 1,133 1,654,618
+HBHUR Urban / Rural indicator - Block group C 2 Claritas -9 = N/A 1 499
+C = Second City 50,295 35,342,869
+S = Suburban 71,102 51,780,175
+TC = Town and Country 160,248 97,883,075
+U = Urban 27,502 26,481,228
+X = Unassigned 15 13,472
+HBPPOPDN Population per sq mile - Block group C 5 Claritas -9 = N/A 1 499
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-46
+Name Label Type Length Question Code / Range Frequency Weighted
+50 = 0-99 48,304 31,739,374
+300 = 100-499 60,192 33,739,515
+750 = 500-999 29,944 17,865,523
+1500 = 1,000-1,999 42,109 26,543,212
+3000 = 2,000-3,999 56,719 39,492,794
+7000 = 4,000-9,999 58,561 46,098,734
+17000 = 10,000-24,999 11,294 12,259,338
+30000 = 25,000-999,999 2,039 3,762,330
+HBRESDN Housing units per sq mile - Block group C 5 Claritas -9 = N/A 1 499
+50 = 0-99 80,413 49,442,639
+300 = 100-499 68,671 40,513,821
+750 = 500-999 45,564 29,403,148
+1500 = 1,000-1,999 59,717 42,367,227
+3000 = 2,000-3,999 41,623 33,910,047
+7000 = 4,000-9,999 10,947 11,914,801
+17000 = 10,000-24,999 1,689 3,095,069
+30000 = 25,000-999,999 538 854,068
+HHC_MSA CMSA FIPS code for HH address C 4 DV_13* -1 = Appropriate skip 67,962 47,453,997
+-9 = Not ascertained 1 499
+0520 = Atlanta, GA 2,181 3,400,746
+0640 = Austin--San Marcos, TX 3,080 1,103,108
+1122 = Boston--Worcester--Lawrence, MA--NH--ME--CT 903 3,736,675
+1280 = Buffalo--Niagara Falls, NY 1,211 744,871
+1520 = Charlotte--Gastonia--Rock Hill, NC--SC 1,347 1,370,107
+1602 = Chicago--Gary--Kenosha, IL--IN--WI 1,674 5,736,070
+1642 = Cincinnati--Hamilton, OH--KY--IN 306 1,553,134
+1692 = Cleveland--Akron, OH 372 2,044,777
+1840 = Columbus, OH 192 1,239,952
+1922 = Dallas--Fort Worth, TX 12,167 4,361,926
+2082 = Denver--Boulder--Greeley, CO 362 2,287,442
+2162 = Detroit--Ann Arbor--Flint, MI 606 3,601,642
+3000 = Grand Rapids--Muskegon--Holland, MI 139 841,460
+3120 = Greensboro--Winston-Salem--High Point, NC 12,311 1,287,118
+3280 = Hartford, CT 211 927,796
+3362 = Houston--Galveston--Brazoria, TX 7,974 3,072,571
+3480 = Indianapolis, IN 1,808 1,282,317
+3600 = Jacksonville, FL 2,288 856,535
+3760 = Kansas City, MO--KS 279 1,341,250
+4120 = Las Vegas, NV--AZ 341 1,508,435
+4472 = Los Angeles--Riverside--Orange County, CA 13,707 10,169,516
+4520 = Louisville, KY--IN 358 692,652
+4920 = Memphis, TN--AR--MS 646 826,232
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-47
+Name Label Type Length Question Code / Range Frequency Weighted
+4992 = Miami--Fort Lauderdale, FL 5,140 2,529,671
+5082 = Milwaukee--Racine, WI 901 1,120,193
+5120 = Minneapolis--St. Paul, MN--WI 471 2,440,499
+5360 = Nashville, TN 1,257 1,095,380
+5560 = New Orleans, LA 134 693,534
+5602 = New York--Northern New Jersey--Long Island,NY--NJ--CT--
+PA
+11,877 10,569,447
+5720 = Norfolk--Virginia Beach--Newport News, VA--NC 6,850 1,199,283
+5880 = Oklahoma City, OK 160 889,050
+5960 = Orlando, FL 2,227 1,285,886
+6162 = Philadelphia--Wilmington--Atlantic City,PA--NJ--DE--MD 882 3,625,964
+6200 = Phoenix--Mesa, AZ 9,211 2,558,882
+6280 = Pittsburgh, PA 300 1,621,336
+6442 = Portland--Salem, OR--WA 347 1,773,733
+6480 = Providence--Fall River--Warwick, RI--MA 467 897,280
+6640 = Raleigh--Durham--Chapel Hill, NC 1,139 1,109,024
+6840 = Rochester, NY 1,497 707,877
+6922 = Sacramento--Yolo, CA 2,654 1,558,855
+7040 = St. Louis, MO--IL 372 2,059,787
+7160 = Salt Lake City--Ogden, UT 378 1,148,357
+7240 = San Antonio, TX 3,709 1,526,345
+7320 = San Diego, CA 12,663 1,994,376
+7362 = San Francisco--Oakland--San Jose, CA 8,130 5,150,948
+7602 = Seattle--Tacoma--Bremerton, WA 528 3,252,367
+8280 = Tampa--St. Petersburg--Clearwater, FL 3,718 1,791,129
+8872 = Washington--Baltimore, DC--MD--VA--WV 5,511 5,502,750
+8960 = West Palm Beach--Boca Raton, FL 1,696 641,068
+XXXX = Suppressed, in an MSA of less than 1 million 94,518 51,317,465
+HHFAMINC Derived total HH income C 2 DV_16* -7 = Refused 16,575 9,723,368
+-8 = Don't know 5,098 3,021,134
+-9 = Not ascertained 66 68,261
+01 = < $5,000 2,705 2,340,459
+02 = $5,000 - $9,999 5,651 5,328,508
+03 = $10,000 - $14,999 9,215 8,029,480
+04 = $15,000 - $19,999 11,550 8,998,801
+05 = $20,000 - $24,999 10,555 8,236,229
+06 = $25,000 - $29,999 16,765 11,923,387
+07 = $30,000 - $34,999 10,273 7,496,520
+08 = $35,000 - $39,999 17,981 13,023,119
+09 = $40,000 - $44,999 9,175 6,921,629
+10 = $45,000 - $49,999 18,352 12,208,139
+11 = $50,000 - $54,999 8,537 6,277,046
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-48
+Name Label Type Length Question Code / Range Frequency Weighted
+12 = $55,000 - $59,999 17,781 11,508,770
+13 = $60,000 - $64,999 7,035 5,112,651
+14 = $65,000 - $69,999 15,601 10,204,403
+15 = $70,000 - $74,999 7,311 4,604,751
+16 = $75,000 - $79,999 15,542 10,728,077
+17 = $80,000 - $99,999 31,349 20,893,379
+18 = > = $100,000 72,046 44,853,210
+HHSIZE Count of HH members N 8 DV_18* 1 39,506 32,535,059
+2 147,900 75,902,670
+3 52,471 41,964,125
+4 43,488 37,129,078
+5 16,986 15,209,525
+6 5,780 5,522,079
+7 1,858 2,021,692
+8 672 735,616
+9 287 245,884
+10 108 138,602
+11 52 68,578
+12 23 7,613
+13 27 19,473
+14 5 1,326
+HHSTATE State HH location C 2 DV_19* AK = Alaska 583 528,339
+AL = Alabama 923 3,771,870
+AR = Arkansas 551 2,068,239
+AZ = Arizona 13,883 4,056,758
+CA = California 44,526 23,143,454
+CO = Colorado 701 4,109,515
+CT = Connecticut 556 2,405,727
+DC = District of Columbia 292 222,126
+DE = Delaware 487 593,054
+FL = Florida 29,457 11,895,026
+GA = Georgia 16,214 6,890,994
+HI = Hawaii 465 770,954
+IA = Iowa 8,417 2,825,663
+ID = Idaho 652 1,388,736
+IL = Illinois 1,597 8,519,394
+IN = Indiana 7,502 4,871,276
+KS = Kansas 586 2,538,553
+KY = Kentucky 564 3,236,482
+LA = Louisiana 582 2,970,084
+MA = Massachusetts 744 4,069,125
+MD = Maryland 721 3,746,733
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-49
+Name Label Type Length Question Code / Range Frequency Weighted
+ME = Maine 560 1,006,615
+MI = Michigan 1,330 6,986,486
+MN = Minnesota 714 4,175,458
+MO = Missouri 811 4,641,904
+MS = Mississippi 533 2,320,217
+MT = Montana 679 954,317
+NC = North Carolina 23,806 7,038,064
+ND = North Dakota 663 696,354
+NE = Nebraska 2,689 1,655,344
+NH = New Hampshire 544 992,493
+NJ = New Jersey 1,091 5,331,624
+NM = New Mexico 533 1,267,560
+NV = Nevada 556 1,880,030
+NY = New York 29,778 9,143,919
+OH = Ohio 1,463 8,326,403
+OK = Oklahoma 583 2,991,839
+OR = Oregon 544 2,763,775
+PA = Pennsylvania 1,578 8,644,744
+RI = Rhode Island 486 702,643
+SC = South Carolina 10,969 3,211,318
+SD = South Dakota 4,198 850,021
+TN = Tennessee 5,532 4,926,237
+TX = Texas 45,122 15,846,659
+UT = Utah 639 1,874,458
+VA = Virginia 34,282 6,187,495
+VT = Vermont 3,521 473,642
+WA = Washington 951 5,465,762
+WI = Wisconsin 3,790 4,507,766
+WV = West Virginia 499 1,465,796
+WY = Wyoming 716 550,274
+HHSTFIPS State FIPS for HH address C 2 DV_20* 01 = Alabama 923 3,771,870
+02 = Alaska 583 528,339
+04 = Arizona 13,883 4,056,758
+05 = Arkansas 551 2,068,239
+06 = California 44,526 23,143,454
+08 = Colorado 701 4,109,515
+09 = Connecticut 556 2,405,727
+10 = Delaware 487 593,054
+11 = District of Columbia 292 222,126
+12 = Florida 29,457 11,895,026
+13 = Georgia 16,214 6,890,994
+15 = Hawaii 465 770,954
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-50
+Name Label Type Length Question Code / Range Frequency Weighted
+16 = Idaho 652 1,388,736
+17 = Illinois 1,597 8,519,394
+18 = Indiana 7,502 4,871,276
+19 = Iowa 8,417 2,825,663
+20 = Kansas 586 2,538,553
+21 = Kentucky 564 3,236,482
+22 = Louisiana 582 2,970,084
+23 = Maine 560 1,006,615
+24 = Maryland 721 3,746,733
+25 = Massachusetts 744 4,069,125
+26 = Michigan 1,330 6,986,486
+27 = Minnesota 714 4,175,458
+28 = Mississippi 533 2,320,217
+29 = Missouri 811 4,641,904
+30 = Montana 679 954,317
+31 = Nebraska 2,689 1,655,344
+32 = Nevada 556 1,880,030
+33 = New Hampshire 544 992,493
+34 = New Jersey 1,091 5,331,624
+35 = New Mexico 533 1,267,560
+36 = New York 29,778 9,143,919
+37 = North Carolina 23,806 7,038,064
+38 = North Dakota 663 696,354
+39 = Ohio 1,463 8,326,403
+40 = Oklahoma 583 2,991,839
+41 = Oregon 544 2,763,775
+42 = Pennsylvania 1,578 8,644,744
+44 = Rhode Island 486 702,643
+45 = South Carolina 10,969 3,211,318
+46 = South Dakota 4,198 850,021
+47 = Tennessee 5,532 4,926,237
+48 = Texas 45,122 15,846,659
+49 = Utah 639 1,874,458
+50 = Vermont 3,521 473,642
+51 = Virginia 34,282 6,187,495
+53 = Washington 951 5,465,762
+54 = West Virginia 499 1,465,796
+55 = Wisconsin 3,790 4,507,766
+56 = Wyoming 716 550,274
+HHVEHCNT Count of HH vehicles N 8 DV_21* 0 212 191,671
+1 40,769 36,620,748
+2 123,747 82,321,318
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-51
+Name Label Type Length Question Code / Range Frequency Weighted
+3 80,138 48,961,320
+4 37,124 24,023,294
+5 15,466 10,995,606
+6 6,263 4,448,834
+7 2,656 1,714,449
+8 1,256 1,057,795
+9 651 392,631
+10 383 290,416
+11 187 115,767
+12 120 322,626
+13 26 13,228
+14 85 14,981
+15 30 11,493
+23 23 365
+27 27 4,777
+HH_CBSA CBSA FIPS code for HH address C 5 DV_64* -9 = Not ascertained 1 499
+12060 = Atlanta-Sandy Springs-Marietta, GA 2,751 3,534,670
+12420 = Austin-Round Rock, TX 3,080 1,103,108
+12580 = Baltimore-Towson, MD 345 1,845,132
+13820 = Birmingham-Hoover, AL 154 818,697
+14460 = Boston-Cambridge-Quincy, MA-NH 604 2,648,980
+15380 = Buffalo-Niagara Falls, NY 1,211 744,871
+16740 = Charlotte-Gastonia-Concord, NC-SC 1,225 1,248,009
+16980 = Chicago-Naperville-Joliet, IL-IN-WI 1,708 5,709,672
+17140 = Cincinnati-Middletown, OH-KY-IN 367 1,608,938
+17460 = Cleveland-Elyria-Mentor, OH 265 1,538,115
+18140 = Columbus, OH 202 1,274,880
+19100 = Dallas-Fort Worth-Arlington, TX 11,999 4,318,327
+19740 = Denver-Aurora-Broomfield, CO 297 2,047,724
+19820 = Detroit-Warren-Livonia, MI 492 2,959,806
+25540 = Hartford-West Hartford-East Hartford, CT 181 837,588
+26420 = Houston-Sugar Land-Baytown, TX 8,087 3,096,540
+26900 = Indianapolis-Carmel, IN 1,686 1,228,665
+27260 = Jacksonville, FL 2,389 875,189
+28140 = Kansas City, MO-KS 292 1,430,498
+29820 = Las Vegas-Paradise, NV 288 1,294,032
+31100 = Los Angeles-Long Beach-Santa Ana, CA 9,366 7,306,352
+31140 = Louisville-Jefferson County, KY-IN 423 869,292
+32820 = Memphis, TN-MS-AR 665 934,109
+33100 = Miami-Fort Lauderdale-Pompano Beach, FL 6,836 3,170,740
+33340 = Milwaukee-Waukesha-West Allis, WI 805 1,002,066
+33460 = Minneapolis-St. Paul-Bloomington, MN-WI 471 2,440,499
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-52
+Name Label Type Length Question Code / Range Frequency Weighted
+34980 = Nashville-Davidson--Murfreesboro--Franklin, TN 1,326 1,152,751
+35380 = New Orleans-Metairie-Kenner, LA 129 657,905
+35620 = New York-Northern New Jersey-Long Island, NY-NJ-PA 8,351 8,644,597
+36420 = Oklahoma City, OK 153 874,121
+36740 = Orlando-Kissimmee, FL 2,227 1,285,886
+37980 = Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 795 3,237,378
+38060 = Phoenix-Mesa-Scottsdale, AZ 9,211 2,558,882
+38300 = Pittsburgh, PA 317 1,682,973
+38900 = Portland-Vancouver-Beaverton, OR-WA 305 1,456,223
+39300 = Providence-New Bedford-Fall River, RI-MA 543 1,119,192
+39580 = Raleigh-Cary, NC 810 802,415
+40060 = Richmond, VA 5,535 984,890
+40140 = Riverside-San Bernardino-Ontario, CA 3,418 2,383,254
+40380 = Rochester, NY 1,377 668,810
+40900 = Sacramento--Arden-Arcade--Roseville, CA 2,654 1,558,855
+41180 = St. Louis, MO-IL 382 2,097,996
+41620 = Salt Lake City, UT 287 801,088
+41700 = San Antonio, TX 4,105 1,629,963
+41740 = San Diego-Carlsbad-San Marcos, CA 12,663 1,994,376
+41860 = San Francisco-Oakland-Fremont, CA 4,487 2,893,769
+41940 = San Jose-Sunnyvale-Santa Clara, CA 1,870 1,296,598
+42660 = Seattle-Tacoma-Bellevue, WA 421 2,863,879
+45300 = Tampa-St. Petersburg-Clearwater, FL 3,718 1,791,129
+47260 = Virginia Beach-Norfolk-Newport News, VA-NC 6,857 1,200,261
+47900 = Washington-Arlington-Alexandria, DC-VA-MD-WV 4,828 3,422,460
+XXXXX 176,204 106,554,671
+HH_HISP Hispanic status of HH respondent C 2 C6 -1 = Appropriate Skip 5 535
+-7 = Refused 712 386,423
+-8 = Don't Know 384 244,395
+-9 = Not Ascertained 21 7,740
+01 = Yes 19,071 21,532,796
+02 = No 288,970 189,329,429
+HH_RACE Race of HH respondent C 2 C7 -1 = Appropriate skip 5 535
+-7 = Refused 1,768 1,108,105
+-8 = Don't know 568 487,664
+-9 = Not ascertained 63 28,222
+01 = White 270,576 171,047,520
+02 = African American, Black 15,299 17,847,692
+03 = Asian Only 5,972 5,126,371
+04 = American Indian, Alaskan Native 2,298 1,989,059
+05 = Native Hawaiian, other Pacific 820 769,384
+06 = Multiracial 1,841 1,376,195
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-53
+Name Label Type Length Question Code / Range Frequency Weighted
+07 = Hispanic/Mexican 6,927 8,695,161
+97 = Other specify 3,026 3,025,410
+HOMEOWN Housing unit owned or rented C 2 C2 01 = Own 285,545 165,300,445
+02 = Rent 23,618 46,200,874
+HOMETYPE Type of housing unit C 2 C1 -7 = Refused 347 172,280
+-8 = Don't know 187 142,868
+-9 = Not ascertained 2 712
+01 = Detached single house 261,967 162,512,875
+02 = Duplex 13,782 13,640,217
+03 = Rowhouse or townhouse 17,884 25,469,929
+04 = Apartment, condominium 14,741 9,212,211
+05 = Mobile home or trailer 70 21,546
+06 = Dorm room, fraternity or sorority house 14 31,401
+97 = Other 169 297,279
+HOUSEID HH eight-digit ID number C 8 Table 1* 20000017-69999811 309,163 211,501,318
+HTEEMPDN Workers per square mile living in Tract C 4 Claritas -9 = N/A 1 499
+25 = 0-49 81,184 50,292,926
+75 = 50-99 25,121 13,644,455
+150 = 100-249 39,940 23,955,065
+350 = 250-499 39,702 26,416,735
+750 = 500-999 45,214 32,014,635
+1500 = 1,000-1,999 40,120 31,101,423
+3000 = 2,000-3,999 24,047 21,024,954
+5000 = 4,000-999,999 13,834 13,050,627
+HTHTNRNT Percent renter-occupied - Tract level C 2 Claritas 0 = 0-4% 9,913 7,737,474
+5 = 5-14% 71,813 45,945,331
+-9 = N/A 1 499
+20 = 15-24% 96,153 58,872,500
+30 = 25-34% 56,340 38,941,937
+40 = 35-44% 33,448 23,924,581
+50 = 45-54% 19,319 15,312,751
+60 = 55-64% 11,510 9,262,792
+70 = 65-74% 5,863 6,174,611
+80 = 75-84% 2,969 3,055,457
+90 = 85-94% 1,271 1,369,726
+95 = 95-100% 563 903,660
+HTPPOPDN Population per sq mile - Tract level C 5 Claritas -9 = N/A 1 499
+50 = 0-99 55,172 36,535,688
+300 = 100-499 63,588 35,541,803
+750 = 500-999 30,885 20,110,070
+1500 = 1,000-1,999 41,582 26,506,791
+3000 = 2,000-3,999 55,492 39,310,121
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-54
+Name Label Type Length Question Code / Range Frequency Weighted
+7000 = 4,000-9,999 52,201 40,787,004
+17000 = 10,000-24,999 8,691 9,622,119
+30000 = 25,000-999,999 1,551 3,087,223
+HTRESDN Housing units per sq mile - Tract level C 5 Claritas -9 = N/A 1 499
+50 = 0-99 90,919 55,399,119
+300 = 100-499 68,718 43,385,394
+750 = 500-999 46,342 30,218,925
+1500 = 1,000-1,999 57,090 40,343,929
+3000 = 2,000-3,999 36,010 29,958,072
+7000 = 4,000-9,999 8,347 9,227,888
+17000 = 10,000-24,999 1,317 2,237,086
+30000 = 25,000-999,999 419 730,407
+HYBRID Vehicle is Hybrid or uses alternate fuel C 2 C22c -1 = Appropriate skip 166,392 118,065,924
+-7 = Refused 14 22,631
+-8 = Don't know 438 294,721
+-9 = Not ascertained 504 338,930
+01 = Yes 7,222 4,875,128
+02 = No 134,593 87,903,983
+LIF_CYC Life Cycle classification for the HH C 2 DV_24* 01 = one adult, no children 18,173 21,645,834
+02 = 2+ adults, no children 77,973 54,244,150
+03 = one adult, youngest child 0-5 704 1,026,283
+04 = 2+ adults, youngest child 0-5 29,870 27,283,249
+05 = one adult, youngest child 6-15 2,730 2,901,074
+06 = 2+ adults, youngest child 6-15 44,016 35,977,657
+07 = one adult, youngest child 16-21 2,030 1,607,954
+08 = 2+ adults, youngest child 16-21 21,720 17,819,637
+09 = one adult, retired, no children 21,333 10,889,224
+10 = 2+ adults, retired, no children 90,614 38,106,256
+MAKECODE NASS vehicle make code C 2 DV_26* B2 -7 = Refused 490 312,387
+-8 = Don't know 1,508 1,412,882
+-9 = Not ascertained 71 83,144
+01 = AMC/AMERICAN MOTORS 50 18,511
+02 = JEEP / KAISER-JEEP 7,405 5,097,037
+03 = AM GENERAL 144 62,947
+06 = CHRYSLER 8,153 5,545,436
+07 = DODGE 18,855 13,783,579
+09 = PLYMOUTH 1,560 1,216,317
+10 = EAGLE 62 70,224
+12 = FORD 49,004 34,277,162
+13 = LINCOLN 3,607 2,269,882
+14 = MERCURY 5,835 3,875,785
+18 = BUICK 10,864 6,633,537
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-55
+Name Label Type Length Question Code / Range Frequency Weighted
+19 = CADILLAC 4,996 2,760,352
+20 = CHEVROLET 43,256 31,196,089
+21 = OLDSMOBILE 3,709 2,899,510
+22 = PONTIAC 5,986 4,946,106
+23 = GMC 8,635 6,074,354
+24 = SATURN 4,080 2,994,126
+29 = OTHER DOMESTIC MANUFACTURER 77 44,063
+30 = VOLKSWAGEN 4,077 2,840,309
+32 = AUDI 884 641,041
+34 = BMW 3,796 2,270,117
+ = NISSAN / DATSUN 12,345 8,593,811
+37 = HONDA 25,183 17,205,541
+38 = ISUZU 980 641,468
+39 = JAGUAR 698 316,732
+41 = MAZDA 4,689 3,171,855
+42 = MERCEDES BENZ 3,910 1,916,990
+43 = MG 152 101,327
+45 = PORSCHE 580 364,100
+47 = SAAB 559 447,112
+48 = SUBARU 3,973 2,739,568
+49 = TOYOTA 35,863 23,128,849
+50 = TRIUMPH 179 103,483
+51 = VOLVO 3,040 1,864,422
+52 = MITSUBISHI 2,056 1,781,061
+53 = SUZUKI 1,775 1,290,175
+54 = ACURA 2,782 1,911,997
+55 = HYUNDAI 4,650 3,326,373
+58 = INFINITI 1,494 834,986
+59 = LEXUS 4,754 2,380,990
+62 = LAND ROVER 298 207,399
+63 = KIA 2,668 1,961,063
+64 = DAEWOO 86 80,355
+65 = SMART 163 89,410
+69 = OTHER IMPORT 413 210,664
+71 = 1DUCATI 75 77,462
+72 = HARLEY-DAVIDSON 3,202 2,086,324
+73 = KAWASAKI 872 622,959
+76 = YAMAHA 1,237 832,372
+82 = FREIGHTLINER/WHITE 69 39,765
+84 = INTERNATIONAL HARVESTER/NAVISTAR 136 84,513
+91 = UNKNOWN MAKE 51 20,164
+98 = OTHER MAKE 2,644 1,404,947
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-56
+Name Label Type Length Question Code / Range Frequency Weighted
+99 = UNKNOWN MAKE 133 90,393
+XX = Suppressed for confidential reason 350 247,793
+MODLCODE NASS vehicle model code C 3 DV_27* B2 -7 = Refused 683 466,283
+-8 = Don't know 8,689 5,995,042
+-9 = Not ascertained 149 140,804
+000-998 291,599 199,470,812
+XXX = Suppressed for confidential reason 8,043 5,428,378
+MSACAT MSA category for the HH home address C 2 DV_28* -9 = Not ascertained 1 499
+01 = MSA of 1 million or more, with rail 50,377 52,466,566
+02 = MSA of 1 million or more, and not in 1 96,305 60,262,791
+03 = MSA less than 1 million 94,518 51,317,465
+04 = Not in MSA (CMSA) 67,962 47,453,997
+MSASIZE MSA population size for the HH home address C 2 DV_29* -9 = Not ascertained 1 499
+01 = In an MSA of Less than 250,000 36,225 15,760,600
+02 = In an MSA of 250,000 - 499,999 25,623 18,888,958
+03 = In an MSA of 500,000 - 999,999 32,670 16,667,907
+04 = In an MSA or CMSA of 1,000,000 - 2,999,999 66,191 45,460,180
+05 = In an MSA or CMSA of 3 million or more 80,491 67,269,177
+06 = Not in MSA or CMSA 67,962 47,453,997
+NUMADLT Count of adult HHMs at least 18 years old N 8 DV_31* 1 43,064 36,056,089
+2 211,905 128,985,744
+3 39,524 32,885,917
+4 12,050 11,242,023
+5 2,076 1,806,243
+6 413 367,092
+7 109 150,977
+8 11 2,102
+9 8 3,813
+10 3 1,317
+OD_READ Odometer reading N 5 N2 -9 = Not ascertained 77 79,737
+-8 = Don't know 9,212 6,064,595
+-7 = Refused 164 85,176
+-1 = Appropriate skip 66,825 50,405,158
+0-999999 232,885 154,866,652
+PERSONID Person ID number C 2 Table 1* -1 = Appropriate skip 3,001 2,173,304
+-7 = Refused 132 89,152
+-8 = Don't know 678 449,131
+-9 = Not ascertained 290 195,356
+01-14 287,283 197,457,756
+99 = No main driver 17,779 11,136,620
+RAIL MSA heavy rail status for HH C 2 DV_38* 01 = MSA has rail 50,377 52,466,566
+02 = MSA does not have rail, or hh not in an MSA 258,786 159,034,753
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-57
+Name Label Type Length Question Code / Range Frequency Weighted
+TDAYDATE Date of Travel Day (YYYYMM) C 8 DV* 200803 465 416,372
+200804 11,126 9,512,476
+200805 19,934 17,302,875
+200806 20,394 17,308,124
+200807 25,505 17,505,583
+200808 28,694 17,774,741
+200809 27,168 17,336,114
+200810 27,466 17,180,830
+200811 30,419 17,623,947
+200812 29,159 17,913,203
+200901 27,615 17,873,797
+200902 21,715 17,382,205
+200903 24,309 18,148,375
+200904 15,194 8,222,676
+TRAVDAY Travel day - day of week C 2 DV* 01 = Sunday 45,018 31,109,640
+02 = Monday 44,246 30,134,119
+03 = Tuesday 44,256 30,482,914
+04 = Wednesday 44,118 30,085,221
+05 = Thursday 43,884 29,723,949
+06 = Friday 44,025 29,732,546
+07 = Saturday 43,616 30,232,929
+URBAN Home address in urbanized area C 2 DV_47* -9 = Not ascertained 1 499
+01 = In an urban area 177,207 128,557,064
+02 = In an Urban cluster 28,818 22,147,457
+03 = In an area surrounded by urban areas 136 208,153
+04 = Not in urban area 103,001 60,588,146
+URBANSIZE Size of urban area in which home address is
+located
+C 2 DV_48* -9 = Not ascertained 1 499
+01 = 50,000 - 199,999 41,381 21,177,831
+02 = 200,000 - 499,999 27,810 17,817,196
+03 = 500,000 - 999,999 23,515 16,282,721
+04 = 1 million or more without subway or rail 54,216 37,558,198
+05 = 1 million or more with subway or rail 30,285 35,721,117
+06 = Not in an urbanized area 131,955 82,943,756
+URBRUR Household in urban/rural area C 2 DV_49* -9 = Not ascertained 1 499
+01 = Urban 206,161 150,912,673
+02 = Rural 103,001 60,588,146
+VEHAGE Age of vehicle in years N 8 DV* -9 = Not ascertained 10,746 8,172,228
+1-24 286,441 195,562,018
+35 = 25+ 11,976 7,767,073
+VEHCOMM Commercial license plate C 2 C22b -1 = Appropriate skip 13,375 9,298,948
+-7 = Refused 38 32,114
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-58
+Name Label Type Length Question Code / Range Frequency Weighted
+-8 = Don't know 929 1,010,000
+-9 = Not ascertained 504 302,435
+01 = Yes 9,666 6,412,718
+02 = No 284,651 194,445,104
+VEHID HH vehicle number used for trip C 2 G31 01-28 309,163 211,501,318
+VEHOWNMO How long vehicle owned - Months N 8 DV_50* -9 = Not ascertained 79 41,951
+-1 = Appropriate skip 16,813 13,055,665
+0-720 292,271 198,403,703
+VEHTYPE Vehicle type C 3 VMAT6Y B2 -7 = Refused 153 90,368
+-8 = Don't know 192 182,781
+-9 = Not ascertained 16 36,611
+01 = Automobile/car/station wagon 154,593 108,114,721
+02 = Van (mini, cargo, passenger) 24,272 17,450,186
+03 = Sports utility vehicle 54,760 38,254,183
+04 = Pickup truck 60,784 37,987,526
+05 = Other truck 1,152 824,956
+06 = RV (recreational vehicle) 2,193 1,083,585
+07 = Motorcycle 10,202 7,062,499
+08 = Golf cart 292 68,339
+97 = Other 554 345,565
+VEHYEAR Vehicle Model year N 4 VMAT5Y B2 -9 = Not ascertained 30 12,924
+-8 = Don't know 10,102 7,713,471
+-7 = Refused 607 411,931
+-1 = Appropriate skip 7 33,902
+1974 = 1923-1984 11,976 7,767,073
+1985-2010 286,441 195,562,018
+WHOMAIN Person number of primary driver C 2 C12 -1 = Appropriate skip 3,001 2,173,304
+-7 = Refused 132 89,152
+-8 = Don't know 678 449,131
+-9 = Not ascertained 290 195,356
+01 158,689 109,373,504
+02 107,592 70,157,786
+03 15,853 13,147,925
+04 3,903 3,585,566
+05 860 714,675
+06 264 368,776
+07 75 72,254
+08 24 20,555
+09 16 14,606
+10 5 1,759
+12 1 84
+14 1 265
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-59
+Name Label Type Length Question Code / Range Frequency Weighted
+99 = No main driver 17,779 11,136,620
+WRKCOUNT Number of workers in HH N 8 DV_57* 0 89,680 37,631,071
+1 108,570 85,442,591
+2 90,604 69,740,727
+3 16,484 15,161,569
+4 3,398 3,233,100
+5 375 268,244
+6 52 24,017
+WTHHFIN Final HH weight N 8 Table 4* 1.17-53067 309,163 211,501,318
+2009 NHTS Vehicle File - Public Use Codebook, Version 2.1
+B-60
+Name Label Type Length Question Code / Range Frequency Weighted
+AWAYHOME Travel day reason S was away from home C 2 G25a -1 = Appropriate skip 1,162,512 390,004,442,833
+-7 = Refused 6 1,222,788
+-8 = Don't know 50 22,593,763
+-9 = Not ascertained 16 4,003,782
+10 = Work 106 40,823,239
+11 = Go to work 1,602 810,687,578
+12 = Return to work 58 23,877,823
+13 = Attend business meeting/trip 32 8,008,238
+14 = Other work related 214 106,449,828
+20 = School/religious activity 26 9,466,302
+21 = Go to school as student 105 38,175,588
+22 = Go to religious activity 28 7,026,556
+23 = Go to library: school related 1 1,409,362
+24 = OS - Day care 12 9,522,633
+30 = Medical/dental services 114 49,886,326
+40 = Shopping/errands 15 6,894,816
+41 = Buy goods: groceries/clothing/hardware store 33 9,305,642
+42 = Buy services: video rentals/dry cleaner/post office/car
+service/bank
+6 2,414,140
+50 = Social/recreational 99 29,105,439
+51 = Go to gym/exercise/play sports 106 27,014,722
+52 = Rest or relaxation/vacation 438 112,859,320
+53 = Visit friends/relatives 1,087 455,608,377
+54 = Go out/hang out: entertainment/theater/sports event/go to bar 93 45,464,972
+55 = Visit public place: historical site/museum/park/library 17 3,792,217
+60 = Family personal business/obligations 117 36,195,400
+61 = Use professional services: attorney/accountant 4 526,315
+62 = Attend funeral/wedding 18 3,671,264
+63 = Use personal services: grooming/haircut/nails 11 2,077,755
+64 = Pet care: walk the dog/vet visits 22 8,793,902
+65 = Attend meeting: PTA/home owners association/local
+government
+8 3,246,339
+70 = Transport someone 7 1,115,512
+71 = Pick up someone 24 18,532,227
+72 = Take and wait 3 1,328,638
+73 = Drop someone off 23 10,330,713
+80 = Meals 4 1,978,465
+81 = Social event 64 21,509,313
+82 = Get/eat meal 8 1,044,280
+83 = Coffee/ice cream/snacks 2 129,899
+97 = Other reason 230 82,308,656
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-61
+Name Label Type Length Question Code / Range Frequency Weighted
+CDIVMSAR Grouping of HH by combination of Census
+Division, MSA status, and presence of a
+subway system (if area > 1 million)
+C 2 DV_1* -9 = Not ascertained 2 313,651
+11 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or more with heavy rail
+5,035 10,005,388,517
+12 = New England (ME, NH, VT, CT, MA, RI) MSA or CMSA of 1
+million or without heavy rail.
+2,864 3,619,814,674
+13 = New England (ME, NH, VT, CT, MA, RI) MSA of less than 1
+million.
+5,876 2,233,557,889
+14 = New England (ME, NH, VT, CT, MA, RI) Not in a MSA. 11,264 3,024,992,683
+21 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or more
+with heavy rail.
+55,683 33,225,226,195
+22 = Mid-Atlantic (NY, NJ, PA) MSA or CMSA of 1 million or without
+heavy rail.
+12,771 5,864,385,838
+23 = Mid-Atlantic (NY, NJ, PA) MSA of less than 1 million. 44,710 8,725,673,197
+24 = Mid-Atlantic (NY, NJ, PA) Not in a MSA. 23,222 4,216,462,012
+31 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or more with heavy rail
+8,643 15,875,472,166
+32 = East North Central (IL, IN, MI, OH, WI) MSA or CMSA of 1
+million or without heavy rail
+17,560 20,489,641,656
+33 = East North Central (IL, IN, MI, OH, WI) MSA of less than 1
+million.
+17,861 14,258,091,112
+34 = East North Central (IL, IN, MI, OH, WI) Not in a MSA. 15,405 11,395,106,475
+42 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA or
+CMSA of 1 million or without heavy rail
+3,871 9,385,775,523
+43 = West North Central (IA, KS, MO, MN, ND, NE, SD) MSA of
+less than 1 million.
+43,371 6,856,174,467
+44 = West North Central (IA, KS, MO, MN, ND, NE, SD) Not in a
+MSA.
+19,224 10,789,183,537
+51 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or more with heavy rail
+51,964 23,214,613,082
+52 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA or
+CMSA of 1 million or without heavy rail
+118,617 17,301,731,386
+53 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) MSA of
+less than 1 million.
+147,204 18,701,322,316
+54 = South Atlantic (DE, FL, GA, MD, NC, SC, WV, VA) Not in a
+MSA.
+101,676 13,724,651,900
+62 = East South Central (AL, KY, MS, TN) MSA or CMSA of 1
+million or without heavy rail.
+7,481 4,986,264,055
+63 = East South Central (AL, KY, MS, TN) MSA of less than 1
+million.
+9,468 8,683,707,860
+64 = East South Central (AL, KY, MS, TN) Not in a MSA. 8,228 8,645,186,382
+72 = West South Central (AR, LA, OK, TX) MSA or CMSA of 1
+million or without heavy rail.
+109,899 23,054,136,618
+73 = West South Central (AR, LA, OK, TX) MSA of less than 1
+million.
+41,787 13,515,751,376
+74 = West South Central (AR, LA, OK, TX) Not in a MSA. 29,505 8,005,865,344
+82 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA or CMSA
+of 1 million or without heavy rail
+42,478 14,235,938,203
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-62
+Name Label Type Length Question Code / Range Frequency Weighted
+83 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) MSA of less
+than 1 million.
+23,019 7,689,622,950
+84 = Mountain (AZ, CO, ID, MT, NM, NV, UT, WY) Not in a MSA. 6,930 7,091,113,221
+91 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+more with heavy rail.
+86,415 31,757,170,795
+92 = Pacific (AK, CA, HI, OR, WA) MSA or CMSA of 1 million or
+without heavy rail.
+61,945 15,372,857,885
+93 = Pacific (AK, CA, HI, OR, WA) MSA of less than 1 million. 23,869 10,550,904,738
+94 = Pacific (AK, CA, HI, OR, WA) Not in a MSA. 9,474 5,526,747,260
+CENSUS_D Census division classification for home
+address
+C 2 DV_2* 01 = New England 25,039 18,883,753,763
+02 = Middle Atlantic 136,386 52,031,747,243
+03 = East North Central 59,469 62,018,311,409
+04 = West North Central 66,466 27,031,133,527
+05 = South Atlantic 419,461 72,942,318,683
+06 = East South Central 25,177 22,315,158,298
+07 = West South Central 181,193 44,576,066,988
+08 = Mountain 72,427 29,016,674,374
+09 = Pacific 181,703 63,207,680,677
+CENSUS_R Census region classification for home address C 2 DV_3* 01 = Northeast 161,425 70,915,501,006
+02 = Midwest 125,935 89,049,444,936
+03 = South 625,831 139,833,543,969
+04 = West 254,130 92,224,355,051
+DRIVER Driver status of S C 2 DV_8* -1 = Appropriate skip 110,359 46,731,908,208
+-9 = Not ascertained 311 189,520,860
+01 = Yes, a driver 1,006,096 319,149,563,252
+02 = No, not a driver 50,555 25,951,852,642
+DROP_PRK Parked or dropped off at public transit C 2 G35a -1 = Appropriate skip 1,166,292 391,439,969,875
+-7 = Refused 2 689,356
+-8 = Don't know 9 9,728,878
+-9 = Not ascertained 19 2,180,723
+01 = Parked 765 426,351,828
+02 = Dropped off 234 143,924,301
+DRVRCNT Number of drivers in HH N 8 DV_10* 0 9,942 5,179,862,771
+1 193,181 73,460,628,056
+2 729,715 216,117,817,620
+3 172,557 66,393,219,711
+4 51,388 25,659,479,188
+5 8,942 4,162,270,090
+6 1,114 733,805,350
+7 364 290,516,728
+8 82 17,199,378
+9 36 8,046,069
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-63
+Name Label Type Length Question Code / Range Frequency Weighted
+DRVR_FLG Subject was driver on this trip C 2 DV_9* G49 -1 = Appropriate skip 146,462 64,817,836,840
+-9 = Not ascertained 57,277 21,850,065,864
+01 = Yes 748,807 233,912,560,345
+02 = No 214,775 71,442,381,913
+DWELTIME Calculated Time (minutes) at Destination N 8 DV* -9 = Not ascertained 265,226 90,503,378,696
+0-1439 902,095 301,519,466,265
+EDUC Highest grade completed C 2 M7 -1 = Appropriate skip 147,327 62,520,026,200
+-7 = Refused 1,582 467,119,185
+-8 = Don't know 4,471 2,023,895,467
+-9 = Not ascertained 1,086 679,517,521
+01 = Less then high school graduate 55,896 24,741,752,451
+02 = High school graduate, include GED 246,592 84,128,015,649
+03 = Some college or Associate's degree (Vocational) 288,839 96,521,767,889
+04 = Bachelor's degree (BA, AB, BS) 238,291 70,223,011,826
+05 = Graduate or Professional Degree
+(MA,MS,MBA,MD,PHD,EdD,JD)
+183,237 50,717,738,774
+ENDTIME Trip END time in military C 4 DV_11* -1 = Appropriate skip 25 5,331,278
+-9 = Not ascertained 2,346 841,701,216
+0000-2359 1,164,950 391,175,812,467
+FLAG100 Did HH have 100% of members complete
+interview?
+C 2 DV* 01 = Yes 1,051,914 343,361,311,692
+02 = No 115,407 48,661,533,269
+FRSTHM Did Person Start Travel Day at Home? C 2 G8 -1 = Appropriate skip 2 1,322,527
+-7 = Refused 96 21,744,760
+-8 = Don't know 94 25,542,145
+01 = Yes 1,107,308 369,025,539,498
+02 = No 59,821 22,948,696,032
+GASPRICE Price of gasoline (cents) on respondent's
+travel day
+N 8 * 149.5 - 446 1,167,321 392,022,844,962
+HBHTNRNT Percent renter-occupied - Block group C 2 Claritas 0 = 0-4% 100,663 34,996,267,760
+5 = 5-14% 338,290 98,874,173,931
+-9 = N/A 2 313,651
+20 = 15-24% 286,148 80,168,844,767
+30 = 25-34% 156,454 52,169,395,417
+40 = 35-44% 103,384 35,667,786,363
+50 = 45-54% 70,514 31,243,870,687
+60 = 55-64% 45,077 20,375,819,025
+70 = 65-74% 30,121 14,973,412,549
+80 = 75-84% 18,889 10,914,036,633
+90 = 85-94% 11,279 6,878,073,499
+95 = 95-100% 6,500 5,760,850,679
+HBHUR Urban / Rural indicator - Block group C 2 Claritas -9 = N/A 2 313,651
+C = Second City 208,914 70,481,770,890
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-64
+Name Label Type Length Question Code / Range Frequency Weighted
+S = Suburban 290,570 100,732,334,206
+TC = Town and Country 543,771 154,160,168,948
+U = Urban 124,033 66,637,487,399
+X = Unassigned 31 10,769,866
+HBPPOPDN Population per sq mile - Block group C 5 Claritas -9 = N/A 2 313,651
+50 = 0-99 142,855 42,805,799,315
+300 = 100-499 203,870 53,859,021,781
+750 = 500-999 112,096 31,107,905,856
+1500 = 1,000-1,999 167,021 50,072,325,364
+3000 = 2,000-3,999 230,880 75,970,139,578
+7000 = 4,000-9,999 244,879 93,754,389,920
+17000 = 10,000-24,999 50,910 28,781,339,737
+30000 = 25,000-999,999 14,808 15,671,609,761
+HBRESDN Housing units per sq mile - Block group C 5 Claritas -9 = N/A 2 313,651
+50 = 0-99 248,871 69,901,036,743
+300 = 100-499 251,543 70,225,026,949
+750 = 500-999 182,147 57,189,325,793
+1500 = 1,000-1,999 243,888 81,304,771,017
+3000 = 2,000-3,999 174,771 69,620,455,903
+7000 = 4,000-9,999 50,492 27,614,506,602
+17000 = 10,000-24,999 10,093 10,496,406,824
+30000 = 25,000-999,999 5,514 5,671,001,480
+HHC_MSA CMSA FIPS code for HH address C 4 DV_13* -1 = Appropriate skip 224,928 72,419,308,814
+-9 = Not ascertained 2 313,651
+0520 = Atlanta, GA 7,857 6,423,189,166
+0640 = Austin--San Marcos, TX 12,413 2,178,436,688
+1122 = Boston--Worcester--Lawrence, MA--NH--ME--CT 3,918 7,670,727,698
+1280 = Buffalo--Niagara Falls, NY 5,103 1,399,236,728
+1520 = Charlotte--Gastonia--Rock Hill, NC--SC 4,658 2,301,785,022
+1602 = Chicago--Gary--Kenosha, IL--IN--WI 6,965 11,941,987,000
+1642 = Cincinnati--Hamilton, OH--KY--IN 1,123 2,654,619,851
+1692 = Cleveland--Akron, OH 1,678 3,933,485,166
+1840 = Columbus, OH 813 2,551,777,057
+1922 = Dallas--Fort Worth, TX 48,812 8,436,071,103
+2082 = Denver--Boulder--Greeley, CO 1,345 3,801,129,264
+2162 = Detroit--Ann Arbor--Flint, MI 2,696 8,239,756,991
+3000 = Grand Rapids--Muskegon--Holland, MI 681 1,998,035,385
+3120 = Greensboro--Winston-Salem--High Point, NC 44,798 2,112,972,456
+3280 = Hartford, CT 904 1,962,446,187
+3362 = Houston--Galveston--Brazoria, TX 31,919 5,984,690,661
+3480 = Indianapolis, IN 6,850 2,278,787,020
+3600 = Jacksonville, FL 8,547 1,527,746,911
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-65
+Name Label Type Length Question Code / Range Frequency Weighted
+3760 = Kansas City, MO--KS 1,233 2,739,235,834
+4120 = Las Vegas, NV--AZ 1,236 2,455,332,350
+4472 = Los Angeles--Riverside--Orange County, CA 54,143 21,824,528,234
+4520 = Louisville, KY--IN 1,236 1,164,187,670
+4920 = Memphis, TN--AR--MS 2,477 1,502,506,676
+4992 = Miami--Fort Lauderdale, FL 21,985 5,493,481,671
+5082 = Milwaukee--Racine, WI 3,857 2,090,444,008
+5120 = Minneapolis--St. Paul, MN--WI 1,864 4,060,795,141
+5360 = Nashville, TN 4,495 1,928,822,195
+5560 = New Orleans, LA 694 1,885,618,367
+5602 = New York--Northern New Jersey--Long Island,NY--NJ--CT--
+PA
+54,044 28,035,728,729
+5720 = Norfolk--Virginia Beach--Newport News, VA--NC 25,034 2,085,499,013
+5880 = Oklahoma City, OK 625 1,547,426,128
+5960 = Orlando, FL 8,726 2,468,837,789
+6162 = Philadelphia--Wilmington--Atlantic City,PA--NJ--DE--MD 3,927 8,292,484,617
+6200 = Phoenix--Mesa, AZ 38,299 5,603,523,619
+6280 = Pittsburgh, PA 1,232 3,055,545,532
+6442 = Portland--Salem, OR--WA 1,637 3,869,221,762
+6480 = Providence--Fall River--Warwick, RI--MA 1,960 1,657,368,486
+6640 = Raleigh--Durham--Chapel Hill, NC 4,328 2,081,932,354
+6840 = Rochester, NY 6,436 1,409,603,579
+6922 = Sacramento--Yolo, CA 9,803 2,847,953,582
+7040 = St. Louis, MO--IL 1,612 3,675,595,909
+7160 = Salt Lake City--Ogden, UT 1,598 2,375,952,971
+7240 = San Antonio, TX 15,411 2,999,011,169
+7320 = San Diego, CA 48,571 3,882,661,751
+7362 = San Francisco--Oakland--San Jose, CA 32,272 9,932,642,561
+7602 = Seattle--Tacoma--Bremerton, WA 1,934 4,773,020,790
+8280 = Tampa--St. Petersburg--Clearwater, FL 15,238 3,484,969,138
+8872 = Washington--Baltimore, DC--MD--VA--WV 20,951 10,529,615,914
+8960 = West Palm Beach--Boca Raton, FL 7,288 1,237,988,703
+XXXX = Suppressed, in an MSA of less than 1 million 357,165 91,214,805,904
+HHFAMINC Derived total HH income C 2 DV_16* -7 = Refused 53,049 13,298,239,233
+-8 = Don't know 15,809 4,436,710,423
+-9 = Not ascertained 233 79,639,127
+01 = < $5,000 11,447 6,702,099,743
+02 = $5,000 - $9,999 22,309 11,533,717,689
+03 = $10,000 - $14,999 33,908 16,177,362,235
+04 = $15,000 - $19,999 42,629 17,979,801,183
+05 = $20,000 - $24,999 39,184 15,214,632,341
+06 = $25,000 - $29,999 60,239 22,010,167,911
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-66
+Name Label Type Length Question Code / Range Frequency Weighted
+07 = $30,000 - $34,999 38,204 13,887,924,548
+08 = $35,000 - $39,999 64,661 21,882,869,352
+09 = $40,000 - $44,999 33,651 11,948,626,234
+10 = $45,000 - $49,999 67,454 21,388,473,128
+11 = $50,000 - $54,999 32,346 11,042,890,369
+12 = $55,000 - $59,999 65,419 20,499,004,773
+13 = $60,000 - $64,999 26,622 9,359,101,164
+14 = $65,000 - $69,999 58,321 18,935,791,334
+15 = $70,000 - $74,999 28,072 8,408,599,291
+16 = $75,000 - $79,999 59,942 20,668,402,042
+17 = $80,000 - $99,999 123,382 39,233,459,027
+18 = > = $100,000 290,440 87,335,333,814
+HHMEMDRV HH member drove on trip C 2 G48 -1 = Appropriate skip 655,514 221,164,596,976
+-7 = Refused 3 197,314
+-8 = Don't know 58 31,507,530
+-9 = Not ascertained 22 7,495,553
+01 = Yes 461,691 151,685,526,188
+02 = No 49,699 19,007,488,652
+03 = Drove on part of trip 334 126,032,747
+HHRESP Person ID number of household respondent C 2 Table 1* 01 1,164,065 390,640,783,214
+02 2,700 1,204,469,031
+03 297 86,534,307
+04 200 39,960,857
+05 25 2,866,370
+06 9 7,911,253
+08 17 39,661,052
+10 8 658,879
+HHSIZE Count of HH members N 8 DV_18* 1 126,858 40,872,421,840
+2 474,959 99,508,709,540
+3 199,440 80,762,343,890
+4 215,007 96,528,998,595
+5 96,145 44,726,229,851
+6 35,129 18,715,738,194
+7 12,087 6,408,779,913
+8 4,290 2,479,526,553
+9 1,943 1,304,063,265
+10 703 368,693,092
+11 386 267,249,998
+12 176 31,590,369
+13 177 45,732,601
+14 21 2,767,262
+HHSTATE State HH location C 2 DV_19* AK = Alaska 2,314 959,875,808
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-67
+Name Label Type Length Question Code / Range Frequency Weighted
+AL = Alabama 3,018 5,447,094,205
+AR = Arkansas 2,114 3,783,051,675
+AZ = Arizona 56,786 8,531,744,083
+CA = California 171,661 46,880,287,904
+CO = Colorado 2,637 6,936,172,683
+CT = Connecticut 2,243 4,717,997,133
+DC = District of Columbia 1,761 700,564,723
+DE = Delaware 2,049 1,195,565,642
+FL = Florida 114,910 22,864,357,156
+GA = Georgia 54,785 11,862,484,608
+HI = Hawaii 1,973 1,637,749,532
+IA = Iowa 29,914 3,974,708,680
+ID = Idaho 2,201 2,099,109,930
+IL = Illinois 6,901 16,819,667,260
+IN = Indiana 27,134 8,049,817,807
+KS = Kansas 2,229 3,692,277,375
+KY = Kentucky 1,954 5,477,627,343
+LA = Louisiana 2,409 5,817,045,468
+MA = Massachusetts 3,357 8,432,347,217
+MD = Maryland 2,907 7,051,902,619
+ME = Maine 2,236 1,802,427,509
+MI = Michigan 5,554 14,657,233,613
+MN = Minnesota 2,780 6,817,716,327
+MO = Missouri 3,216 8,163,407,036
+MS = Mississippi 1,804 3,702,809,052
+MT = Montana 2,035 1,354,280,336
+NC = North Carolina 83,962 11,635,872,867
+ND = North Dakota 2,140 840,071,947
+NE = Nebraska 11,026 2,469,632,810
+NH = New Hampshire 2,071 1,801,151,565
+NJ = New Jersey 4,663 11,404,321,419
+NM = New Mexico 1,856 2,692,599,986
+NV = Nevada 1,987 2,971,772,001
+NY = New York 125,402 24,280,880,480
+OH = Ohio 5,926 15,261,482,728
+OK = Oklahoma 1,971 4,675,472,197
+OR = Oregon 2,439 5,629,768,756
+PA = Pennsylvania 6,321 16,346,545,344
+RI = Rhode Island 2,013 1,324,209,216
+SC = South Carolina 39,866 5,751,319,572
+SD = South Dakota 15,161 1,073,319,352
+TN = Tennessee 18,401 7,687,627,698
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-68
+Name Label Type Length Question Code / Range Frequency Weighted
+TX = Texas 174,699 30,300,497,648
+UT = Utah 2,789 3,720,112,771
+VA = Virginia 117,544 9,755,155,025
+VT = Vermont 13,119 805,621,123
+WA = Washington 3,316 8,099,998,677
+WI = Wisconsin 13,954 7,230,110,002
+WV = West Virginia 1,677 2,125,096,471
+WY = Wyoming 2,136 710,882,585
+HHSTFIPS State FIPS for HH address C 2 DV_20* 01 = Alabama 3,018 5,447,094,205
+02 = Alaska 2,314 959,875,808
+04 = Arizona 56,786 8,531,744,083
+05 = Arkansas 2,114 3,783,051,675
+06 = California 171,661 46,880,287,904
+08 = Colorado 2,637 6,936,172,683
+09 = Connecticut 2,243 4,717,997,133
+10 = Delaware 2,049 1,195,565,642
+11 = District of Columbia 1,761 700,564,723
+12 = Florida 114,910 22,864,357,156
+13 = Georgia 54,785 11,862,484,608
+15 = Hawaii 1,973 1,637,749,532
+16 = Idaho 2,201 2,099,109,930
+17 = Illinois 6,901 16,819,667,260
+18 = Indiana 27,134 8,049,817,807
+19 = Iowa 29,914 3,974,708,680
+20 = Kansas 2,229 3,692,277,375
+21 = Kentucky 1,954 5,477,627,343
+22 = Louisiana 2,409 5,817,045,468
+23 = Maine 2,236 1,802,427,509
+24 = Maryland 2,907 7,051,902,619
+25 = Massachusetts 3,357 8,432,347,217
+26 = Michigan 5,554 14,657,233,613
+27 = Minnesota 2,780 6,817,716,327
+28 = Mississippi 1,804 3,702,809,052
+29 = Missouri 3,216 8,163,407,036
+30 = Montana 2,035 1,354,280,336
+31 = Nebraska 11,026 2,469,632,810
+32 = Nevada 1,987 2,971,772,001
+33 = New Hampshire 2,071 1,801,151,565
+34 = New Jersey 4,663 11,404,321,419
+35 = New Mexico 1,856 2,692,599,986
+36 = New York 125,402 24,280,880,480
+37 = North Carolina 83,962 11,635,872,867
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-69
+Name Label Type Length Question Code / Range Frequency Weighted
+38 = North Dakota 2,140 840,071,947
+39 = Ohio 5,926 15,261,482,728
+40 = Oklahoma 1,971 4,675,472,197
+41 = Oregon 2,439 5,629,768,756
+42 = Pennsylvania 6,321 16,346,545,344
+44 = Rhode Island 2,013 1,324,209,216
+45 = South Carolina 39,866 5,751,319,572
+46 = South Dakota 15,161 1,073,319,352
+47 = Tennessee 18,401 7,687,627,698
+48 = Texas 174,699 30,300,497,648
+49 = Utah 2,789 3,720,112,771
+50 = Vermont 13,119 805,621,123
+51 = Virginia 117,544 9,755,155,025
+53 = Washington 3,316 8,099,998,677
+54 = West Virginia 1,677 2,125,096,471
+55 = Wisconsin 13,954 7,230,110,002
+56 = Wyoming 2,136 710,882,585
+HHVEHCNT Count of HH vehicles N 8 DV_21* 0 22,464 17,029,953,935
+1 207,217 83,734,209,729
+2 521,881 163,100,026,153
+3 262,019 76,753,368,280
+4 99,720 31,401,956,549
+5 34,596 12,954,573,402
+6 11,505 4,017,163,999
+7 4,284 1,570,700,808
+8 1,809 870,599,995
+9 875 301,070,676
+10 449 155,234,800
+11 205 71,743,575
+12 146 44,089,646
+13 30 11,936,653
+14 72 3,004,842
+15 19 2,462,000
+23 23 223,504
+27 7 526,416
+HH_CBSA CBSA FIPS code for HH address C 5 DV_64* -9 = Not ascertained 2 313,651
+12060 = Atlanta-Sandy Springs-Marietta, GA 9,594 6,622,531,596
+12420 = Austin-Round Rock, TX 12,413 2,178,436,688
+12580 = Baltimore-Towson, MD 1,333 3,151,670,622
+13820 = Birmingham-Hoover, AL 497 1,362,536,478
+14460 = Boston-Cambridge-Quincy, MA-NH 2,667 5,722,361,483
+15380 = Buffalo-Niagara Falls, NY 5,103 1,399,236,728
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-70
+Name Label Type Length Question Code / Range Frequency Weighted
+16740 = Charlotte-Gastonia-Concord, NC-SC 4,379 2,143,110,708
+16980 = Chicago-Naperville-Joliet, IL-IN-WI 7,076 11,914,530,407
+17140 = Cincinnati-Middletown, OH-KY-IN 1,330 2,720,085,510
+17460 = Cleveland-Elyria-Mentor, OH 1,154 2,717,417,360
+18140 = Columbus, OH 837 2,576,584,795
+19100 = Dallas-Fort Worth-Arlington, TX 48,301 8,367,781,130
+19740 = Denver-Aurora-Broomfield, CO 1,110 3,438,621,691
+19820 = Detroit-Warren-Livonia, MI 2,132 6,426,400,345
+25540 = Hartford-West Hartford-East Hartford, CT 744 1,686,954,166
+26420 = Houston-Sugar Land-Baytown, TX 32,272 6,021,616,833
+26900 = Indianapolis-Carmel, IN 6,513 2,245,372,786
+27260 = Jacksonville, FL 8,875 1,558,959,712
+28140 = Kansas City, MO-KS 1,272 2,905,189,388
+29820 = Las Vegas-Paradise, NV 1,076 2,154,636,273
+31100 = Los Angeles-Long Beach-Santa Ana, CA 37,923 16,121,554,180
+31140 = Louisville-Jefferson County, KY-IN 1,428 1,468,432,135
+32820 = Memphis, TN-MS-AR 2,539 1,696,819,032
+33100 = Miami-Fort Lauderdale-Pompano Beach, FL 29,273 6,731,470,374
+33340 = Milwaukee-Waukesha-West Allis, WI 3,489 1,914,636,632
+33460 = Minneapolis-St. Paul-Bloomington, MN-WI 1,864 4,060,795,141
+34980 = Nashville-Davidson--Murfreesboro--Franklin, TN 4,686 1,979,751,574
+35380 = New Orleans-Metairie-Kenner, LA 684 1,846,157,328
+35620 = New York-Northern New Jersey-Long Island, NY-NJ-PA 40,521 24,513,222,076
+36420 = Oklahoma City, OK 576 1,493,801,043
+36740 = Orlando-Kissimmee, FL 8,726 2,468,837,789
+37980 = Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 3,569 7,365,892,197
+38060 = Phoenix-Mesa-Scottsdale, AZ 38,299 5,603,523,619
+38300 = Pittsburgh, PA 1,299 3,142,170,595
+38900 = Portland-Vancouver-Beaverton, OR-WA 1,427 3,187,393,141
+39300 = Providence-New Bedford-Fall River, RI-MA 2,263 1,960,278,527
+39580 = Raleigh-Cary, NC 3,082 1,428,426,326
+40060 = Richmond, VA 19,115 1,537,735,350
+40140 = Riverside-San Bernardino-Ontario, CA 12,726 4,890,917,628
+40380 = Rochester, NY 5,897 1,325,243,306
+40900 = Sacramento--Arden-Arcade--Roseville, CA 9,803 2,847,953,582
+41180 = St. Louis, MO-IL 1,638 3,715,002,304
+41620 = Salt Lake City, UT 1,021 1,517,171,642
+41700 = San Antonio, TX 16,849 3,145,391,126
+41740 = San Diego-Carlsbad-San Marcos, CA 48,571 3,882,661,751
+41860 = San Francisco-Oakland-Fremont, CA 18,367 5,926,138,846
+41940 = San Jose-Sunnyvale-Santa Clara, CA 7,527 2,372,196,351
+42660 = Seattle-Tacoma-Bellevue, WA 1,595 4,131,179,092
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-71
+Name Label Type Length Question Code / Range Frequency Weighted
+45300 = Tampa-St. Petersburg-Clearwater, FL 15,238 3,484,969,138
+47260 = Virginia Beach-Norfolk-Newport News, VA-NC 25,056 2,086,701,328
+47900 = Washington-Arlington-Alexandria, DC-VA-MD-WV 18,618 7,068,826,216
+XXXXX 634,972 179,793,247,245
+HH_HISP Hispanic status of HH respondent C 2 C6 -1 = Appropriate Skip 19 997,106
+-7 = Refused 2,671 691,913,455
+-8 = Don't Know 1,325 490,759,358
+-9 = Not Ascertained 72 17,866,772
+01 = Yes 86,995 54,609,991,670
+02 = No 1,076,239 336,211,316,601
+HH_ONTD Derived number of HHMs on trip N 8 DV_22* 1 739,735 248,136,494,464
+2 296,687 84,476,650,520
+3 72,812 31,986,958,234
+4 39,484 18,019,892,284
+5 13,505 6,905,465,402
+6 3,681 1,647,083,196
+7 954 686,609,541
+8 290 120,441,875
+9 112 26,567,810
+10 18 9,364,884
+11 36 3,331,810
+12 7 3,984,942
+HH_RACE Race of HH respondent C 2 C7 -1 = Appropriate skip 19 997,106
+-7 = Refused 6,666 1,987,051,105
+-8 = Don't know 2,397 1,090,851,461
+-9 = Not ascertained 288 59,295,292
+01 = White 1,007,223 294,207,130,583
+02 = African American, Black 60,865 45,392,292,689
+03 = Asian Only 25,187 10,894,625,806
+04 = American Indian, Alaskan Native 8,267 4,483,937,979
+05 = Native Hawaiian, other Pacific 3,510 2,052,416,649
+06 = Multiracial 7,471 3,255,502,540
+07 = Hispanic/Mexican 33,296 22,157,448,748
+97 = Other specify 12,132 6,441,295,002
+HOMEOWN Housing unit owned or rented C 2 C2 01 = Own 1,049,495 286,561,610,993
+02 = Rent 117,826 105,461,233,969
+HOMETYPE Type of housing unit C 2 C1 -7 = Refused 1,008 261,648,042
+-8 = Don't know 546 176,434,775
+-9 = Not ascertained 14 2,294,308
+01 = Detached single house 970,071 286,855,260,906
+02 = Duplex 57,623 28,515,338,657
+03 = Rowhouse or townhouse 89,187 61,145,098,104
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-72
+Name Label Type Length Question Code / Range Frequency Weighted
+04 = Apartment, condominium 48,011 14,551,778,111
+05 = Mobile home or trailer 219 29,716,953
+06 = Dorm room, fraternity or sorority house 22 10,008,281
+97 = Other 620 475,266,823
+HOUSEID HH eight-digit ID number C 8 Table 1* 20000017-69999811 1,167,321 392,022,844,962
+HTEEMPDN Workers per square mile living in Tract C 4 Claritas -9 = N/A 12 18,679,977
+25 = 0-49 253,275 72,499,829,167
+75 = 50-99 87,784 22,555,386,201
+150 = 100-249 150,413 42,072,956,805
+350 = 250-499 156,508 48,805,658,716
+750 = 500-999 183,849 63,380,723,478
+1500 = 1,000-1,999 166,463 62,586,412,811
+3000 = 2,000-3,999 103,190 45,484,982,115
+5000 = 4,000-999,999 65,827 34,618,215,692
+HTHTNRNT Percent renter-occupied - Tract level C 2 Claritas 0 = 0-4% 42,563 15,690,911,335
+5 = 5-14% 267,223 80,350,599,169
+-9 = N/A 2 313,651
+20 = 15-24% 334,856 96,553,429,396
+30 = 25-34% 209,544 69,132,437,198
+40 = 35-44% 131,502 45,704,673,839
+50 = 45-54% 79,415 31,433,265,401
+60 = 55-64% 49,774 20,807,914,293
+70 = 65-74% 27,023 15,976,279,840
+80 = 75-84% 14,857 8,538,278,590
+90 = 85-94% 7,148 4,602,886,865
+95 = 95-100% 3,414 3,231,855,386
+HTPPOPDN Population per sq mile - Tract level C 5 Claritas -9 = N/A 2 313,651
+50 = 0-99 167,081 51,094,411,463
+300 = 100-499 217,867 56,139,179,795
+750 = 500-999 116,849 36,161,324,775
+1500 = 1,000-1,999 166,967 50,152,865,541
+3000 = 2,000-3,999 226,755 76,789,344,625
+7000 = 4,000-9,999 219,759 83,820,057,264
+17000 = 10,000-24,999 39,904 24,280,158,531
+30000 = 25,000-999,999 12,137 13,585,189,316
+HTRESDN Housing units per sq mile - Tract level C 5 Claritas -9 = N/A 2 313,651
+50 = 0-99 286,542 80,502,977,833
+300 = 100-499 255,457 75,930,224,151
+750 = 500-999 186,948 58,161,464,481
+1500 = 1,000-1,999 234,874 79,200,815,832
+3000 = 2,000-3,999 151,619 62,270,286,022
+7000 = 4,000-9,999 38,842 22,321,081,766
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-73
+Name Label Type Length Question Code / Range Frequency Weighted
+17000 = 10,000-24,999 8,079 8,314,375,384
+30000 = 25,000-999,999 4,958 5,321,305,842
+INTSTATE A part of this trip was on interstate C 2 Gb -1 = Appropriate skip 826,994 277,109,370,820
+-7 = Refused 13 2,225,227
+-8 = Don't know 496 225,103,698
+-9 = Not ascertained 3,823 1,541,139,227
+01 = Yes 161,366 55,571,893,671
+02 = No 174,629 57,573,112,318
+LIF_CYC Life Cycle classification for the HH C 2 DV_24* 01 = one adult, no children 60,100 28,971,794,014
+02 = 2+ adults, no children 239,627 74,232,382,101
+03 = one adult, youngest child 0-5 5,034 4,852,493,322
+04 = 2+ adults, youngest child 0-5 143,552 72,897,164,648
+05 = one adult, youngest child 6-15 20,568 11,493,347,213
+06 = 2+ adults, youngest child 6-15 244,109 98,832,080,072
+07 = one adult, youngest child 16-21 8,353 4,138,931,032
+08 = 2+ adults, youngest child 16-21 79,294 35,309,179,183
+09 = one adult, retired, no children 66,758 11,900,627,826
+10 = 2+ adults, retired, no children 299,926 49,394,845,552
+MSACAT MSA category for the HH home address C 2 DV_28* -9 = Not ascertained 2 313,651
+01 = MSA of 1 million or more, with rail 207,740 114,077,870,755
+02 = MSA of 1 million or more, and not in 1 377,486 114,310,545,838
+03 = MSA less than 1 million 357,165 91,214,805,904
+04 = Not in MSA (CMSA) 224,928 72,419,308,814
+MSASIZE MSA population size for the HH home address C 2 DV_29* -9 = Not ascertained 2 313,651
+01 = In an MSA of Less than 250,000 133,834 26,911,546,848
+02 = In an MSA of 250,000 - 499,999 96,777 32,719,300,408
+03 = In an MSA of 500,000 - 999,999 126,554 31,583,958,649
+04 = In an MSA or CMSA of 1,000,000 - 2,999,999 255,504 85,206,967,841
+05 = In an MSA or CMSA of 3 million or more 329,722 143,181,448,752
+06 = Not in MSA or CMSA 224,928 72,419,308,814
+NONHHCNT Derived number of non-HHMs on trip N 8 DV_30* -9 = Not ascertained 6,167 2,348,929,207
+-8 = Don't know 827 467,133,579
+-7 = Refused 72 27,809,754
+-1 = Appropriate skip 131,251 52,560,786,829
+0 861,858 277,291,207,322
+1 114,881 41,084,695,787
+2 32,084 10,863,067,702
+3 12,261 4,339,515,286
+4 4,652 1,855,013,957
+5 1,773 685,467,385
+6 614 220,275,183
+7 313 65,428,250
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-74
+Name Label Type Length Question Code / Range Frequency Weighted
+8 125 46,899,311
+9 63 18,473,964
+10 113 54,342,878
+11 89 33,283,895
+12 70 11,296,090
+13 22 18,946,634
+14 44 15,881,439
+15 42 14,390,509
+NUMADLT Count of adult HHMs at least 18 years old N 8 DV_31* 1 152,398 54,878,590,905
+2 804,946 238,009,304,440
+3 152,675 67,083,326,676
+4 46,474 26,404,012,100
+5 8,581 4,426,731,266
+6 1,630 824,342,318
+7 489 372,819,182
+8 78 10,565,907
+9 15 5,278,808
+10 35 7,873,360
+NUMONTRP Count of total people on trip N 8 DV_32* 1 648,395 216,037,883,424
+2 310,484 91,387,692,297
+3 106,775 41,281,702,366
+4 59,347 23,914,378,639
+5 26,504 12,348,105,698
+6 9,671 4,260,264,135
+7 3,700 1,943,445,438
+8 1,198 428,620,009
+9 520 158,819,096
+10 124 30,467,750
+11 182 74,041,384
+12 106 38,848,896
+13 117 28,419,677
+14 37 13,817,247
+15 55 8,181,440
+16 106 68,157,467
+ONTD_P1 Person number 1 was on travel day trip C 2 DV* -1 = Appropriate skip 11,028 5,368,402,702
+01 = Yes 785,745 240,611,602,573
+02 = No 370,548 146,042,839,686
+ONTD_P10 Person number 10 was on travel day trip C 2 DV* -1 = Appropriate skip 1,165,822 391,315,100,502
+01 = Yes 336 170,143,669
+02 = No 1,163 537,600,791
+ONTD_P11 Person number 11 was on travel day trip C 2 DV* -1 = Appropriate skip 1,166,584 391,672,298,648
+01 = Yes 124 43,292,010
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-75
+Name Label Type Length Question Code / Range Frequency Weighted
+02 = No 613 307,254,304
+ONTD_P12 Person number 12 was on travel day trip C 2 DV* -1 = Appropriate skip 1,166,894 391,896,749,609
+01 = Yes 70 18,502,988
+02 = No 357 107,592,364
+ONTD_P13 Person number 13 was on travel day trip C 2 DV* -1 = Appropriate skip 1,167,144 391,977,112,361
+01 = Yes 28 10,198,912
+02 = No 149 35,533,689
+ONTD_P14 Person number 14 was on travel day trip C 2 DV* -1 = Appropriate skip 1,167,320 392,022,526,336
+01 = Yes 1 318,626
+ONTD_P15 Person number 15 was on travel day trip C 2 DV* -1 = Appropriate skip 1,167,321 392,022,844,962
+ONTD_P2 Person number 2 was on travel day trip C 2 DV* -1 = Appropriate skip 190,084 65,786,395,731
+01 = Yes 549,881 174,185,126,148
+02 = No 427,356 152,051,323,083
+ONTD_P3 Person number 3 was on travel day trip C 2 DV* -1 = Appropriate skip 638,510 157,623,004,588
+01 = Yes 230,399 107,810,216,593
+02 = No 298,412 126,589,623,780
+ONTD_P4 Person number 4 was on travel day trip C 2 DV* -1 = Appropriate skip 818,253 230,307,932,200
+01 = Yes 151,555 69,557,522,205
+02 = No 197,513 92,157,390,556
+ONTD_P5 Person number 5 was on travel day trip C 2 DV* -1 = Appropriate skip 1,021,014 320,827,207,083
+01 = Yes 60,441 28,135,942,242
+02 = No 85,866 43,059,695,637
+ONTD_P6 Person number 6 was on travel day trip C 2 DV* -1 = Appropriate skip 1,113,469 362,927,715,072
+01 = Yes 20,012 9,851,807,096
+02 = No 33,840 19,243,322,794
+ONTD_P7 Person number 7 was on travel day trip C 2 DV* -1 = Appropriate skip 1,147,998 381,674,789,102
+01 = Yes 6,215 3,083,288,287
+02 = No 13,108 7,264,767,573
+ONTD_P8 Person number 8 was on travel day trip C 2 DV* -1 = Appropriate skip 1,159,729 387,658,859,409
+01 = Yes 2,296 1,019,779,593
+02 = No 5,296 3,344,205,959
+ONTD_P9 Person number 9 was on travel day trip C 2 DV* -1 = Appropriate skip 1,163,904 390,201,132,824
+01 = Yes 855 484,649,416
+02 = No 2,562 1,337,062,722
+OUTOFTWN R Was out of town the entire travel day C 2 G9 -1 = Appropriate skip 1,107,310 369,026,862,024
+-9 = Not ascertained 124 42,359,401
+01 = Yes 21,993 6,420,817,753
+02 = No 37,894 16,532,805,783
+PAYTOLL Toll paid on this interstate C 2 Gc -1 = Appropriate skip 1,005,948 336,450,241,841
+-8 = Don't know 77 29,910,653
+-9 = Not ascertained 47 6,101,259
+01 = Yes 12,098 4,812,097,467
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-76
+Name Label Type Length Question Code / Range Frequency Weighted
+02 = No 149,151 50,724,493,742
+PERSONID Person ID number C 2 Table 1* 01 595,151 176,100,666,223
+02 369,124 117,151,916,731
+03 117,990 58,199,099,636
+04 58,947 27,889,706,336
+05 18,664 8,714,238,299
+06 5,145 2,716,541,357
+07 1,502 823,595,259
+08 484 252,570,696
+09 197 136,366,854
+10 65 23,299,349
+11 27 9,720,472
+12 15 3,578,215
+13 10 1,545,534
+PRMACT Primary activity last week C 2 E3 -1 = Appropriate skip 122,325 51,918,623,164
+-7 = Refused 569 171,606,442
+-8 = Don't know 1,049 394,158,715
+-9 = Not ascertained 91 46,536,911
+01 = Working 510,011 201,636,224,836
+02 = Temporarily absent from a job or business 31,149 11,364,381,479
+03 = Looking for work 22,243 11,082,279,778
+04 = A homemaker 100,812 31,483,013,602
+05 = Going to school 38,200 21,768,678,663
+06 = Retired 291,950 44,943,350,391
+07 = Doing something else 48,922 17,213,990,981
+PROXY Trip info from respondent or proxy C 2 Table 1* E1 01 = Subject 891,239 282,551,974,735
+02 = Proxy 276,082 109,470,870,226
+PSGR_FLG S was passenger on trip that only used POV C 2 DV_36* -1 = Appropriate skip 146,462 64,817,836,840
+-9 = Not ascertained 57,266 21,845,930,140
+01 = Yes 214,775 71,442,381,913
+02 = No 748,818 233,916,696,068
+PUBTRANS Respondent Used Public Transportation on
+trip
+C 2 DV* 01 = Yes 8,521 7,519,544,155
+02 = No 1,158,800 384,503,300,807
+RAIL MSA heavy rail status for HH C 2 DV_38* 01 = MSA has rail 207,740 114,077,870,755
+02 = MSA does not have rail, or hh not in an MSA 959,581 277,944,974,207
+R_AGE Respondent Age N 4 Table 1* C5 5-88 1,161,935 390,986,147,588
+92 = 89+ 5,386 1,036,697,374
+R_SEX Respondent gender C 2 DV_37* 01 = Male 540,698 190,571,603,972
+02 = Female 626,623 201,451,240,990
+STRTTIME Trip START time in military C 4 DV* -9 = Not Ascertained 2,344 772,443,266
+0000-2359 1,164,977 391,250,401,696
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-77
+Name Label Type Length Question Code / Range Frequency Weighted
+TDAYDATE Date of Travel Day (YYYYMM) C 8 DV* 200803 1,547 548,425,461
+200804 42,511 16,866,303,885
+200805 76,690 34,799,995,187
+200806 77,745 31,735,351,052
+200807 93,510 32,544,130,354
+200808 106,694 33,063,996,779
+200809 103,783 31,945,270,201
+200810 108,213 35,252,880,730
+200811 113,958 32,321,933,269
+200812 108,425 31,725,487,517
+200901 100,849 30,426,745,174
+200902 82,871 31,067,538,924
+200903 91,501 34,373,974,941
+200904 59,024 15,350,811,488
+TDCASEID Trip number C 12 Table 1* 200000170101-699998110109 1,167,321 392,022,844,962
+TDTRPNUM Travel Day Trip number C 12 DV* 01 257,047 87,496,561,386
+02 253,098 86,130,523,483
+03 186,314 62,566,480,996
+04 156,283 52,545,455,399
+05 105,584 34,992,739,043
+06 76,201 25,007,224,374
+07 48,728 15,796,483,609
+08 32,209 10,310,400,374
+09 19,827 6,380,929,910
+10 12,515 4,117,017,534
+11 7,454 2,412,887,356
+12 4,526 1,533,608,934
+13 2,748 965,560,781
+14 1,705 614,062,281
+15 1,057 396,598,640
+16 681 242,159,761
+17 463 182,121,498
+18 311 124,189,983
+19 210 83,367,249
+20 126 40,778,965
+21 90 26,940,176
+22 55 21,644,939
+23 36 15,455,277
+24 24 9,652,253
+25 15 6,431,303
+26 6 3,190,538
+27 3 164,502
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-78
+Name Label Type Length Question Code / Range Frequency Weighted
+28 1 42,884
+29 1 42,884
+30 1 42,884
+31 1 42,884
+32 1 42,884
+TDWKND TD trip was on weekend C 2 DV* 01 = Yes 340,952 116,654,145,746
+02 = No 826,369 275,368,699,215
+TRACC1 1st mode used to get to public transit C 2 Table 1* G35 -1 = Appropriate skip 1,156,673 383,190,524,915
+-7 = Refused 1 60,534
+-8 = Don't know 16 9,628,628
+-9 = Not ascertained 61 24,133,491
+01 = Car 920 493,045,509
+02 = Van 52 38,212,355
+03 = SUV 67 36,137,390
+04 = Pickup truck 52 26,813,044
+05 = Other truck 1 137,370
+07 = Motorcycle 6 12,079,873
+08 = Light electric veh (golf cart) 3 74,199
+09 = Local public bus 348 278,173,233
+10 = Commuter bus 91 66,459,018
+11 = School bus 7 6,164,731
+12 = Charter/tour bus 9 3,691,624
+13 = City to city bus 5 7,707,033
+14 = Shuttle bus 58 25,643,732
+15 = Amtrak/inter city train 18 12,726,830
+16 = Commuter train 111 65,887,106
+17 = Subway/elevated train 136 102,282,335
+18 = Street car/trolley 28 9,235,108
+19 = Taxicab 30 14,377,274
+20 = Ferry 22 6,699,914
+21 = Airplane 3 2,832,331
+22 = Bicycle 82 49,822,426
+23 = Walk 8,300 7,472,553,246
+24 = Special transit-people w/disabilities 54 17,679,966
+97 = Other 167 50,061,745
+TRACC2 2nd mode used to get to public transit C 2 Table 1* G35 -1 = Appropriate skip 1,166,840 391,625,851,846
+01 = Car 13 7,051,684
+02 = Van 2 390,870
+03 = SUV 1 689,352
+09 = Local public bus 81 75,037,673
+10 = Commuter bus 26 14,558,863
+12 = Charter/tour bus 1 8,482,739
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-79
+Name Label Type Length Question Code / Range Frequency Weighted
+14 = Shuttle bus 8 2,949,561
+15 = Amtrak/inter city train 3 2,735,555
+16 = Commuter train 32 35,369,146
+17 = Subway/elevated train 60 65,595,444
+18 = Street car/trolley 12 2,896,084
+19 = Taxicab 1 1,380,688
+20 = Ferry 17 6,783,898
+21 = Airplane 5 367,648
+22 = Bicycle 6 7,187,687
+23 = Walk 208 152,561,688
+97 = Other 5 12,954,535
+TRACC3 3rd mode used to get to public transit C 2 Table 1* G35 -1 = Appropriate skip 1,167,258 391,976,155,773
+01 = Car 4 1,509,304
+09 = Local public bus 8 5,993,355
+10 = Commuter bus 5 1,034,417
+11 = School bus 1 175,878
+14 = Shuttle bus 1 1,410,295
+15 = Amtrak/inter city train 1 344,678
+16 = Commuter train 4 2,904,132
+17 = Subway/elevated train 8 12,144,981
+18 = Street car/trolley 2 112,471
+19 = Taxicab 4 411,006
+20 = Ferry 4 420,677
+23 = Walk 20 20,179,237
+97 = Other 1 48,757
+TRACC4 4th mode used to get to public transit C 2 Table 1* G35 -1 = Appropriate skip 1,167,315 392,020,457,192
+01 = Car 1 915,569
+16 = Commuter train 1 127,735
+23 = Walk 4 1,344,466
+TRACC5 5th mode used to get to public transit C 2 Table 1* G35 -1 = Appropriate skip 1,167,321 392,022,844,962
+TRACCTM Derived time to get to public transit - minutes N 8 DV_41* -9 = Not ascertained 46 35,183,967
+-1 = Appropriate skip 1,156,851 383,300,418,430
+0-440 10,424 8,687,242,565
+TRAVDAY Travel day - day of week C 2 DV* 01 = Sunday 146,394 47,754,722,904
+02 = Monday 165,001 55,506,516,642
+03 = Tuesday 173,301 58,031,699,287
+04 = Wednesday 173,179 57,950,300,838
+05 = Thursday 168,208 56,547,023,701
+06 = Friday 179,739 60,234,379,537
+07 = Saturday 161,499 55,998,202,052
+TREGR1 1st mode used from public transit to
+destination
+C 2 Table 1* G38 -1 = Appropriate skip 1,156,673 383,190,524,915
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-80
+Name Label Type Length Question Code / Range Frequency Weighted
+-7 = Refused 1 340,808
+-8 = Don't know 26 11,403,943
+-9 = Not ascertained 64 25,289,578
+01 = Car 620 333,685,567
+02 = Van 31 11,342,083
+03 = SUV 38 24,411,869
+04 = Pickup truck 33 10,733,507
+05 = Other truck 1 137,370
+06 = RV 1 1,684,761
+07 = Motorcycle 10 13,223,676
+08 = Light electric veh (golf cart) 3 74,199
+09 = Local public bus 541 415,523,929
+10 = Commuter bus 171 151,735,635
+11 = School bus 5 2,500,906
+12 = Charter/tour bus 6 1,671,586
+13 = City to city bus 5 9,396,792
+14 = Shuttle bus 83 42,472,617
+15 = Amtrak/inter city train 30 7,925,824
+16 = Commuter train 191 98,578,287
+17 = Subway/elevated train 219 184,912,489
+18 = Street car/trolley 51 24,627,829
+19 = Taxicab 33 33,350,610
+20 = Ferry 68 21,613,440
+21 = Airplane 7 7,779,401
+22 = Bicycle 67 48,005,504
+23 = Walk 8,147 7,289,698,132
+24 = Special transit-people w/disabilities 50 9,839,215
+97 = Other 146 50,360,488
+TREGR2 2nd mode used from public transit to
+destination
+C 2 Table 1* G38 -1 = Appropriate skip 1,166,881 391,657,206,682
+01 = Car 37 14,409,794
+02 = Van 3 254,981
+03 = SUV 7 1,328,201
+04 = Pickup truck 5 1,340,799
+08 = Light electric veh (golf cart) 1 174,946
+09 = Local public bus 44 48,763,924
+10 = Commuter bus 8 4,106,730
+13 = City to city bus 1 93,018
+14 = Shuttle bus 2 8,656,402
+15 = Amtrak/inter city train 3 1,410,646
+16 = Commuter train 13 14,656,017
+17 = Subway/elevated train 27 25,955,556
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-81
+Name Label Type Length Question Code / Range Frequency Weighted
+18 = Street car/trolley 6 974,329
+19 = Taxicab 3 3,197,681
+20 = Ferry 5 3,100,362
+21 = Airplane 2 490,133
+22 = Bicycle 4 4,122,528
+23 = Walk 264 219,343,867
+97 = Other 5 13,258,369
+TREGR3 3rd mode used from public transit to
+destination
+C 2 Table 1* G38 -1 = Appropriate skip 1,167,293 392,007,763,994
+01 = Car 6 2,043,770
+09 = Local public bus 2 326,025
+10 = Commuter bus 1 163,746
+11 = School bus 1 329,636
+14 = Shuttle bus 3 1,900,428
+17 = Subway/elevated train 2 161,235
+23 = Walk 13 10,156,128
+TREGR4 4th mode used from public transit to
+destination
+C 2 Table 1* G38 -1 = Appropriate skip 1,167,321 392,022,844,962
+TREGR5 5th mode used from public transit to
+destination
+C 2 Table 1* G38 -1 = Appropriate skip 1,167,321 392,022,844,962
+TREGRTM How long to destination from transit -
+converted to minutes
+N 8 DV_42* -9 = Not ascertained 45 44,640,361
+-1 = Appropriate skip 1,156,896 383,324,948,822
+0-720 10,380 8,653,255,778
+TRIPPURP General Trip Purpose (Home-Based Purpose
+types)
+C 8 DV* -9 = Not Ascertained 2,341 771,909,473
+HBO = Other home-based 247,032 86,244,427,885
+HBSHOP = Home-based shopping 272,525 83,516,346,937
+HBSOCREC = Home-based social/recreational 168,409 54,824,636,727
+HBW = Home-base work 112,122 45,346,670,005
+NHB = Not home-based 364,892 121,318,853,935
+TRPACCMP Number of people with R on trip N 3 G43 -9 = Not ascertained 6,167 2,348,929,207
+-8 = Don't know 827 467,133,579
+-7 = Refused 72 27,809,754
+-1 = Appropriate skip 131,251 52,560,786,829
+0 511,672 161,324,956,846
+1 309,713 91,073,377,156
+2 106,463 41,172,724,787
+3 59,182 23,807,630,827
+4 26,384 12,274,286,256
+5 9,599 4,233,631,645
+6 3,673 1,935,967,438
+7 1,190 427,276,567
+8 505 157,992,381
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-82
+Name Label Type Length Question Code / Range Frequency Weighted
+9 120 29,228,391
+10 155 66,437,832
+11 101 38,455,626
+12 101 20,104,117
+13 35 13,696,779
+14 48 4,581,795
+15 63 37,837,149
+TRPHHACC Number of HHM with R on trip N 8 DV_44* -1 = Appropriate skip 28,142 12,212,143,749
+0 712,730 236,432,403,316
+1 295,929 84,094,656,196
+2 72,606 31,930,461,254
+3 39,406 17,988,018,183
+4 13,422 6,870,667,849
+5 3,669 1,644,193,552
+6 954 686,609,541
+7 290 120,441,875
+8 112 26,567,810
+9 18 9,364,884
+10 36 3,331,810
+11 7 3,984,942
+TRPHHVEH HH vehicle used for trip C 2 G30 -1 = Appropriate skip 188 43,891,299
+-7 = Refused 32 3,446,489
+-8 = Don't know 195 50,420,243
+-9 = Not ascertained 82 32,218,540
+01 = Yes 961,803 303,775,097,329
+02 = No 205,021 88,117,771,062
+TRPMILES Calculated Trip distance converted into miles N 8 DV_43* -9 = Not ascertained 454 181,707,249
+-8 = Don't know 17,734 8,876,154,517
+-7 = Refused 296 71,283,370
+-1 = Appropriate skip 181 42,421,452
+0-9000 1,148,656 382,851,278,373
+TRPTRANS Transportation mode used on trip (as reported
+by respondent)
+C 2 G34 -1 = Appropriate skip 338 89,814,521
+-7 = Refused 690 173,490,079
+-8 = Don't know 1,001 435,501,133
+-9 = Not ascertained 95 30,810,250
+01 = Car 537,022 173,746,350,860
+02 = Van 120,424 40,578,890,136
+03 = SUV 215,650 69,339,276,673
+04 = Pickup truck 138,293 40,387,740,310
+05 = Other truck 4,360 1,911,531,714
+06 = RV 496 103,309,746
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-83
+Name Label Type Length Question Code / Range Frequency Weighted
+07 = Motorcycle 3,517 1,050,555,336
+08 = Light electric veh (golf cart) 1,445 182,697,979
+09 = Local public bus 5,414 4,688,217,665
+10 = Commuter bus 866 666,465,744
+11 = School bus 15,146 6,714,816,768
+12 = Charter/tour bus 648 240,890,720
+13 = City to city bus 49 59,851,517
+14 = Shuttle bus 1,206 650,748,766
+15 = Amtrak/inter city train 116 95,342,569
+16 = Commuter train 665 560,732,714
+17 = Subway/elevated train 1,410 1,535,989,499
+18 = Street car/trolley 166 68,138,532
+19 = Taxicab 1,041 737,522,784
+20 = Ferry 123 39,935,863
+21 = Airplane 1,066 310,648,318
+22 = Bicycle 9,443 4,081,818,704
+23 = Walk 100,405 40,961,817,089
+24 = Special transit-people w/disabilities 621 273,675,896
+97 = Other 5,605 2,306,263,078
+TRVLCMIN Calculated travel time N 8 G34* -9 = Not ascertained 2,954 1,034,854,088
+0-1439 1,164,367 390,987,990,874
+TRVL_MIN Derived trip time - minutes N 8 DV_45* -9 = Not ascertained 130 35,139,430
+-1 = Appropriate skip 2,733 991,402,971
+0-1230 1,164,458 390,996,302,561
+TRWAITTM Derived length of wait for public transit -
+minutes
+N 8 DV_46* -9 = Not ascertained 276 161,709,531
+-1 = Appropriate skip 1,156,704 383,200,837,355
+0-302 10,341 8,660,298,075
+URBAN Home address in urbanized area C 2 DV_47* -9 = Not ascertained 2 313,651
+01 = In an urban area 728,303 263,451,403,014
+02 = In an Urban cluster 107,448 39,211,739,799
+03 = In an area surrounded by urban areas 469 295,882,787
+04 = Not in urban area 331,099 89,063,505,711
+URBANSIZE Size of urban area in which home address is
+located
+C 2 DV_48* -9 = Not ascertained 2 313,651
+01 = 50,000 - 199,999 165,792 38,966,989,722
+02 = 200,000 - 499,999 111,153 33,969,437,313
+03 = 500,000 - 999,999 96,800 32,851,499,042
+04 = 1 million or more without subway or rail 221,828 74,053,350,561
+05 = 1 million or more with subway or rail 132,730 83,610,126,377
+06 = Not in an urbanized area 439,016 128,571,128,297
+URBRUR Household in urban/rural area C 2 DV_49* -9 = Not ascertained 2 313,651
+01 = Urban 836,220 302,959,025,600
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-84
+Name Label Type Length Question Code / Range Frequency Weighted
+02 = Rural 331,099 89,063,505,711
+USEINTST Interstate used for any trips C 2 N_G19 -1 = Appropriate skip 1 59,845
+-7 = Refused 64 52,827,458
+-8 = Don't know 3,552 1,190,664,287
+-9 = Not ascertained 45 9,403,340
+01 = Yes 363,495 123,761,350,562
+02 = No 800,164 267,008,539,470
+USEPUBTR Use public transit on travel day C 2 G19 -1 = Appropriate skip 1 59,845
+-7 = Refused 30 31,616,616
+-8 = Don't know 114 30,479,314
+-9 = Not ascertained 54 33,300,908
+01 = Yes 20,988 16,454,320,786
+02 = No 1,146,134 375,473,067,493
+VEHID HH vehicle number used for trip C 2 G31 -1 = Appropriate skip 205,516 88,247,622,792
+-7 = Refused 14 976,724
+-8 = Don't know 131 45,997,904
+01-28 961,660 303,728,247,542
+VEHTYPE Vehicle type C 3 VMAT6Y B2 -1 = Appropriate skip 205,661 88,294,597,420
+-7 = Refused 453 114,820,675
+-8 = Don't know 380 203,999,999
+-9 = Not ascertained 29 2,608,207
+01 = Automobile/car/station wagon 483,188 152,915,090,941
+02 = Van (mini, cargo, passenger) 113,897 37,996,097,666
+03 = Sports utility vehicle 228,433 73,363,535,301
+04 = Pickup truck 129,995 37,603,277,360
+05 = Other truck 1,084 480,662,043
+06 = RV (recreational vehicle) 389 49,239,515
+07 = Motorcycle 3,215 926,438,479
+08 = Golf cart 388 27,660,556
+97 = Other 209 44,816,800
+VMT_MILE Calculated Trip distance (miles) for Driver
+Trips
+N 8 DV* -9 = Not ascertained 6,969 2,866,933,849
+-1 = Appropriate skip 419,179 158,173,488,480
+0-5600 741,173 230,982,422,633
+WHODROVE Person ID of driver on trip C 2 G49 -1 = Appropriate skip 203,695 86,653,332,258
+-7 = Refused 1 435,750
+-8 = Don't know 32 9,998,973
+-9 = Not ascertained 21 1,033,684
+01 557,674 164,097,021,824
+02 340,636 106,034,944,694
+03 47,314 25,259,049,931
+04 12,908 7,283,284,341
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-85
+Name Label Type Length Question Code / Range Frequency Weighted
+05 3,266 1,544,849,885
+06 1,044 696,282,173
+07 438 324,884,610
+08 160 77,306,587
+09 61 23,638,708
+10 68 15,430,095
+11 2 1,032,824
+14 1 318,626
+WHYFROM Trip purpose for previous trip C 2 DV_52* -7 = Refused 236 53,372,006
+-9 = Not ascertained 17,259 6,441,485,679
+01 = Home 402,953 136,021,328,247
+10 = Work 97 32,645,121
+11 = Go to work 75,723 30,738,134,801
+12 = Return to work 15,682 5,676,727,221
+13 = Attend business meeting/trip 19,350 6,981,971,859
+14 = Other work related 4,701 1,877,293,708
+20 = School/religious activity 3,282 1,101,804,683
+21 = Go to school as student 25,871 11,774,141,778
+22 = Go to religious activity 22,696 6,958,058,492
+23 = Go to library: school related 803 454,715,311
+24 = OS - Day care 1,832 811,125,375
+30 = Medical/dental services 23,198 6,250,996,307
+40 = Shopping/errands 24,345 7,058,381,249
+41 = Buy goods: groceries/clothing/hardware store 144,704 43,845,092,913
+42 = Buy services: video rentals/dry cleaner/post office/car
+service/bank
+39,648 11,203,719,610
+43 = Buy gas 18,563 6,572,752,723
+50 = Social/recreational 10,784 3,200,821,106
+51 = Go to gym/exercise/play sports 43,299 12,846,994,277
+52 = Rest or relaxation/vacation 6,880 2,366,236,186
+53 = Visit friends/relatives 44,330 15,963,917,899
+54 = Go out/hang out: entertainment/theater/sports event/go to bar 17,640 6,704,068,111
+55 = Visit public place: historical site/museum/park/library 5,631 1,825,661,343
+60 = Family personal business/obligations 13,830 4,332,221,785
+61 = Use professional services: attorney/accountant 3,823 1,098,053,491
+62 = Attend funeral/wedding 1,706 656,370,621
+63 = Use personal services: grooming/haircut/nails 5,857 1,462,684,825
+64 = Pet care: walk the dog/vet visits 9,653 2,736,073,534
+65 = Attend meeting: PTA/home owners association/local
+government
+5,547 1,604,353,331
+70 = Transport someone 836 306,674,576
+71 = Pick up someone 29,559 10,995,551,462
+72 = Take and wait 3,423 1,181,610,320
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-86
+Name Label Type Length Question Code / Range Frequency Weighted
+73 = Drop someone off 32,120 11,861,560,082
+80 = Meals 2,619 789,070,299
+81 = Social event 8,183 2,450,559,169
+82 = Get/eat meal 66,384 20,239,423,005
+83 = Coffee/ice cream/snacks 8,460 2,953,953,297
+97 = Other reason 5,814 2,593,239,160
+WHYTO Travel day purpose of trip C 2 G26 A-E -1 = Appropriate skip 4,807 2,016,940,865
+-7 = Refused 251 56,316,311
+-8 = Don't know 505 175,030,832
+-9 = Not ascertained 47 27,723,241
+01 = Home 399,592 134,819,040,790
+10 = Work 1 215,609
+11 = Go to work 76,389 31,062,036,426
+12 = Return to work 15,762 5,732,878,676
+13 = Attend business meeting/trip 3,279 1,066,903,014
+14 = Other work related 21,089 7,901,898,136
+20 = School/religious activity 3,341 1,132,537,921
+21 = Go to school as student 26,009 11,830,627,020
+22 = Go to religious activity 22,798 6,980,876,310
+23 = Go to library: school related 804 453,575,041
+24 = OS - Day care 1,851 828,988,699
+30 = Medical/dental services 23,385 6,302,927,234
+40 = Shopping/errands 24,530 7,097,239,018
+41 = Buy goods: groceries/clothing/hardware store 145,314 44,001,480,325
+42 = Buy services: video rentals/dry cleaner/post office/car
+service/bank
+39,763 11,224,064,829
+43 = Buy gas 18,659 6,603,091,100
+50 = Social/recreational 12,610 3,779,680,002
+51 = Go to gym/exercise/play sports 45,059 13,430,438,123
+52 = Rest or relaxation/vacation 9,783 3,276,538,854
+53 = Visit friends/relatives 48,110 17,562,038,581
+54 = Go out/hang out: entertainment/theater/sports event/go to bar 18,025 6,838,625,710
+55 = Visit public place: historical site/museum/park/library 5,712 1,852,249,711
+60 = Family personal business/obligations 14,301 4,484,117,764
+61 = Use professional services: attorney/accountant 3,849 1,109,208,170
+62 = Attend funeral/wedding 1,743 667,934,182
+63 = Use personal services: grooming/haircut/nails 5,881 1,467,981,696
+64 = Pet care: walk the dog/vet visits 10,249 2,939,462,521
+65 = Attend meeting: PTA/home owners association/local
+government
+5,605 1,609,806,545
+70 = Transport someone 841 309,113,327
+71 = Pick up someone 29,654 11,035,542,385
+72 = Take and wait 3,448 1,186,149,745
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-87
+Name Label Type Length Question Code / Range Frequency Weighted
+73 = Drop someone off 32,339 11,961,497,342
+80 = Meals 2,631 791,727,089
+81 = Social event 8,313 2,485,502,724
+82 = Get/eat meal 66,647 20,351,291,660
+83 = Coffee/ice cream/snacks 8,495 2,976,589,359
+97 = Other reason 5,850 2,592,958,077
+WHYTRP1S Trip purpose summary C 2 DV_53* -7 = Refused 257 57,539,099
+-8 = Don't know 555 197,624,595
+-9 = Not ascertained 61 30,265,759
+01 = Home 399,592 134,819,040,790
+10 = Work 118,532 46,753,778,567
+20 = School/Daycare/Religious activity 54,975 21,292,205,433
+30 = Medical/Dental services 23,499 6,352,813,559
+40 = Shopping/Errands 228,320 68,944,489,870
+50 = Social/Recreational 141,139 47,413,416,028
+60 = Family personal business/Obligations 41,808 12,333,021,852
+70 = Transport someone 66,339 24,523,609,888
+80 = Meals 86,164 26,629,772,788
+97 = Other reason 6,080 2,675,266,733
+WHYTRP90 1990 Trip Purpose C 2 DV* 01 = To/From Work 151,635 61,214,163,174
+02 = Work-Related Business 32,821 11,942,714,162
+03 = Shopping 265,938 81,971,638,755
+04 = Other Family/Personal Business 224,785 74,468,618,196
+05 = School/Church 98,416 37,676,431,023
+06 = Medical/Dentral 37,524 10,094,633,092
+07 = Vacation 12,869 4,416,011,044
+08 = Visit Friends/Relatives 74,414 26,837,663,047
+10 = Other Social/Recreational 251,818 76,468,394,470
+11 = Other 7,264 3,159,381,505
+98 = N/A 9,498 3,696,172,372
+99 = Refused 339 77,024,121
+WORKER Subject worker status C 2 DV_55* -1 = Appropriate skip 122,389 51,976,375,583
+-9 = Not ascertained 625 158,613,971
+01 = Yes 597,071 234,218,292,974
+02 = No 447,236 105,669,562,433
+WRKCOUNT Number of workers in HH N 8 DV_57* 0 298,112 52,958,755,927
+1 400,116 152,212,755,548
+2 383,105 144,491,564,008
+3 69,536 33,105,801,930
+4 14,404 8,345,215,294
+5 1,853 825,665,987
+6 195 83,086,268
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-88
+Name Label Type Length Question Code / Range Frequency Weighted
+WTTRDFIN Final trip weight N 8 Table 4* 368-27058964 1,167,321 392,022,844,962
+2009 NHTS Day Trip File - Public Use Codebook, Version 2.1
+B-89 

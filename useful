@@ -1,0 +1,5 @@
+pgfutter --db "postgres" --host "/home/ppli/postgres" --port "5432" --user "ppli" csv HHV2PUB.CSV.100
+
+FLAFF100
+HOMEOWN BOOLEAN? OR IN?
+RAIL BOOLEAN OR INT? INT FOR FUTURE
