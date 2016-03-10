@@ -18,13 +18,15 @@ query1 =
 
 #b) Calculate the average fuel economy of all miles traveled for trips less than specific distances from previous problem. Only consider trips that utilize a household vehicle (VEHID is 1 or larger), use the EPA combined fuel economy (EPATMPG) for the particular vehicle.
 
+queryB = """
 SELECT SUM(totalmilespervehicle * "EPATMPG") / SUM(totalmilespervehicle)
 FROM (SELECT daytrip."HOUSEID", daytrip."VEHID", SUM("TRPMILES") AS totalmilespervehicle, "EPATMPG"
 FROM daytrip, vehicle
-WHERE daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."VEHID" = vehicle."VEHID" AND "TRPMILES" >= 0 AND "TRPMILES" < 5
+WHERE daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."VEHID" = vehicle."VEHID" AND "TRPMILES" >= 0 AND "TRPMILES" < %d
 GROUP BY daytrip."HOUSEID", daytrip."VEHID", "EPATMPG"
 HAVING daytrip."VEHID" >= 1) X; #might want to change this to test "TRPHHVEH" = '01'
-
-for i in (5,10,15,...)
-    cur.execute(queryB)
+"""
+answer = []
+for i in range(5, 101, 5)
+    cur.execute(queryB % i)
     answer[i] = cur.fetchone()
