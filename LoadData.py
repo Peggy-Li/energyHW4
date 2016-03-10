@@ -6,7 +6,6 @@ def main():
     cur = conn.cursor()
 
     cur.execute('DROP TABLE IF EXISTS dayv2pub, hhv2pub, perv2pub, vehv2pub, eia_mkwh_2015, eia_co2_electricity_2015, eia_co2_transportation_2015;')
-
     createTables(cur)
 
     NHTS_files = ['DAYV2PUB.CSV', 'HHV2PUB.CSV', 'VEHV2PUB.CSV', 'PERV2PUB.CSV']
@@ -57,6 +56,10 @@ def loadTables(filename, cur, null_string):
                     f.close()
                     fid += 1
                     f = open('%s%d' %(filename, fid), 'w')
+        f.close()
+        f = open('%s%d' %(filename, fid), 'r')
+        cur.copy_expert("COPY %s FROM STDIN WITH (FORMAT csv, NULL'%s')" %(tablename, null_string), f)
+        os.remove(f.name)
         f.close()
 
 main()
