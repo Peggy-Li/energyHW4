@@ -10,6 +10,7 @@ def main():
 
     NHTS_files = ['DAYV2PUB.CSV', 'HHV2PUB.CSV', 'VEHV2PUB.CSV', 'PERV2PUB.CSV']
     EIA_files = ['EIA_CO2_Transportation_2015.csv', 'EIA_CO2_Electricity_2015.csv', 'EIA_MkWh_2015.csv']
+    nullValues = ['XXXXX', 'XXXX', 'XXX', 'XX', 'Not Available']
 
     # Create indexes for each csv for which columns we are keeping
     NHTS_files_indexes = []
@@ -41,10 +42,12 @@ def main():
 
             
     for i, myfile in enumerate(NHTS_files):
-       loadTables(myfile, cur, 'XX')
+       #loadTables(myfile, cur, 'XX')
+       loadTables2(myfile, cur, NHTS_files_indexes[i], nullValues)
 
     for i, myfile in enumerate(EIA_files):
-       loadTables(myfile, cur, 'Not Available')
+       #loadTables(myfile, cur, 'Not Available')
+       loadTables2(myfile, cur, EIA_files_indexes[i], nullValues)
 
 
     conn.commit()
@@ -57,7 +60,7 @@ def getIndices(colNames, allCol):
             if n == allCol[i]:
                 colIndexes.append(i)
                 break
-     return colIndexes
+    return colIndexes
 
 def createTables(cur):
     cur.execute('CREATE TABLE EIA_MkWh_2015(MSN CHAR(8), Date CHAR(6), Value DOUBLE PRECISION, Column_Order INT, DESCRIPTION VARCHAR(100), UNIT VARCHAR(100));')
@@ -100,14 +103,14 @@ def loadTables(filename, cur, null_string):
         os.remove(f.name)
         f.close()
 
-def loadTables2(filename, cur, valuesIndex):
+def loadTables2(filename, cur, valuesIndex, nullValues):
     with open('our_subset/%s' %(filename)) as f:
         counter = 0
         next(f) # or f.readline()
         insertStatement = "INSERT INTO %s VALUES (" %(filename,)
         valuesList = []
         for line in f:
-            counter++;
+            counter += 1
             lineValues = line.split(',')
             values = []
             for i in range(len(lineValues)):
@@ -124,7 +127,10 @@ def loadTables2(filename, cur, valuesIndex):
                     if v is not None:
                         values.append(linesValues[i])
                     else:
-                        values.append("'" + lineValues[i] + "'")
+                        if linesValues in nullValues:
+                            values.append('NULL')
+                        else:
+                            values.append("'" + lineValues[i] + "'")
 
             if counter%1000 == 0:
                 # make the insert statement
