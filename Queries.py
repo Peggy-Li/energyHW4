@@ -13,3 +13,6 @@ query1 =
 
 #for i in (5,10,15,...)
     cur.execute(query1);
+conn.commit()
+cur.close()
+conn.close()
