@@ -30,3 +30,6 @@ answer = []
 for i in range(5, 101, 5)
     cur.execute(queryB % i)
     answer[i] = cur.fetchone()
+conn.commit()
+cur.close()
+conn.close()
