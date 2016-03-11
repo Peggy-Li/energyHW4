@@ -61,9 +61,6 @@ def getIndices(colNames, allCol):
             if n == allCol[i]:
                 colIndexes.append(i)
                 break
-    print colNames
-    print allCol
-    print colIndexes
     return colIndexes
 
 def createTables(cur):
@@ -99,7 +96,7 @@ def loadTables(filename, cur, null_string):
     chunksize = 1000
     fid = 1
     filesmade = []
-    with open('subset/%s' %(filename)) as infile:
+    with open('/home/cjnitta/ecs165a/%s' %(filename)) as infile:
         f = open('%s%d' %(filename, fid), 'w')
         print f
         for i, line in enumerate(infile):
@@ -122,7 +119,7 @@ def loadTables(filename, cur, null_string):
 
 def loadTables2(filename, cur, conn, valuesIndex, nullValues):
     print filename
-    with open('subset/%s' %(filename)) as f:
+    with open('/home/cjnitta/ecs165a/%s' %(filename)) as f:
         counter = 0
         next(f) # or f.readline()
         insertStatement = "INSERT INTO %s VALUES " %(filename.split('.')[0])
