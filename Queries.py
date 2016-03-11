@@ -28,7 +28,7 @@ for mileage_limit in range(5,101, 5):
         FROM
         (SELECT daytrip."HOUSEID", daytrip."PERSONID", "TDAYDATE", SUM("TRPMILES") AS "PersonMilesInDay"
         FROM daytrip, household
-        WHERE daytrip."HOUSEID" = household."HOUSEID" AND "TDAYDATE"%%100 IN (%s)
+        WHERE daytrip."HOUSEID" = household."HOUSEID" AND "TDAYDATE"%%100 IN (%s) AND "TRPMILES" >= 0
         GROUP BY daytrip."HOUSEID", daytrip."PERSONID", "TDAYDATE") PersonMilesPerDay;""" % (month_length, month_match_query_part)
         
         mileage_limit_query = total_query[:-2] + ' WHERE "PersonMilesInDay" < %d;' % mileage_limit
@@ -49,7 +49,8 @@ print "QUERY A"
 print answer
 
 #You want to look at it on a day by day basis. Consider individuals driving on another day as a separate individual. 
-
+# check double counting
+# who is supposed to be included? all people, respondent, driver (WHODROVE), all passengers
 
 #b) Calculate the average fuel economy of all miles traveled for trips less than specific distances from previous problem. Only consider trips that utilize a household vehicle (VEHID is 1 or larger), use the EPA combined fuel economy (EPATMPG) for the particular vehicle.
 
