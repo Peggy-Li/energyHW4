@@ -33,8 +33,8 @@ for mileage_limit in range(5,101, 5):
         
         mileage_limit_query = total_query[:-2] + ' WHERE "PersonMilesInDay" < %d;' % mileage_limit
 
-        print total_query
-        print mileage_limit_query
+        #print total_query
+        #print mileage_limit_query
 
         cur.execute(mileage_limit_query)
         mileage_limit_values.append(cur.fetchone()[0])
@@ -71,80 +71,39 @@ for upper_limit in range(5, 101, 5):
 print "QUERYB"
 print answer
 
-# c) Calculate the percent of transportation CO2 emissions should be attributed to household vehicles for each month of the survey (3/2008 – 04/2009).
-#You should find the number of households represented in each month of dayv2.csv
+# c) Calculate the percent of transportation CO2 emissions should be attributed to household vehicles for each month of the survey
 
 answer = []
 
 start_date = 200803
 end_date = 200904
 
-total_transportation_values_query = """SELECT date, (value*1000000) AS MetricTonsCO2
-FROM eia_co2_transportation
-WHERE column_order = 12 AND date >= %d and date <= %d
-ORDER BY date""" % (start_date, end_date)
-
-cur.execute(total_transportation_values_query)
-total_transportation_monthly_values = cur.fetchall()[0]
-
-#edit: should be count of households that had at least 1 trip in a household vehicle from day file for that particular month
-
 GAS_TO_CO2 = 8.887 / 1000
 US_HOUSEHOLDS = 117538000
-
-# get number of households overall
-# SELECT COUNT(*) FROM (SELECT "HOUSEID", COUNT(*) FROM daytrip GROUP BY "HOUSEID") X;
-
-# get number of households by month
-'SELECT COUNT(*) FROM (SELECT "HOUSEID", SUM("TRPMILES") FROM daytrip WHERE "TDAYDATE"%100 IN (%d) GROUP BY "HOUSEID") X;' % months
-
-"""
-month_lengths = [28, 30, 31] # add 29
-
-month28 = '2'
-month30 = '4, 6, 9, 11'
-month31 = '1, 3, 5, 7, 8, 10, 12'
-
-months = {28: month28, 30: month30, 31: month31}
-"""
 
 months = {1:31, 2:28, 3:31, 4:30, 5:31, 6:30, 7:31, 8:31, 9:30, 10:31, 11:30, 12:31}
 
 survey_months = [200803, 200804, 200805, 200806, 200807, 200808, 200809, 200810, 200811, 200812, 200901, 200902, 200903, 200904]
+survey_months_string = "200803, 200804, 200805, 200806, 200807, 200808, 200809, 200810, 200811, 200812, 200901, 200902, 200903, 200904"
+
+
+total_transportation_values_query = """SELECT (value*1000000) AS MetricTonsCO2
+FROM eia_co2_transportation
+WHERE column_order = 12 AND date IN (%s)
+ORDER BY date""" % survey_months_string
+
+cur.execute(total_transportation_values_query)
+total_transportation_monthly_values = cur.fetchall()
+total_transportation_monthly_values = [i[0] for i in total_transportation_monthly_values]
 
 for i,month in enumerate(survey_months):
     num_days = months[(month%100)]
 
     monthly_households_query = """
-    SELECT (COUNT(*) * %d) FROM (SELECT daytrip.\"HOUSEID\" FROM daytrip, household WHERE \"TDAYDATE\" = %d AND \"TRPMILES\" >= 0 AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 GROUP BY daytrip.\"HOUSEID\") X;""" % (num_days, month)
+    SELECT COUNT(*) FROM (SELECT daytrip.\"HOUSEID\" FROM daytrip, household WHERE \"TDAYDATE\" = %d AND \"TRPMILES\" >= 0 AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 GROUP BY daytrip.\"HOUSEID\") X;""" % month
     cur.execute(monthly_households_query)
-    monthly_households = cur.fetchone()[]
-    print "monthly_households: %d" % monthly_households
+    monthly_households = cur.fetchone()[0]
 
-
-    # inner query
-    """SELECT daytrip."HOUSEID", daytrip."VEHID", SUM("TRPMILES"), "EPATMPG", (SUM("TRPMILES") / "EPATMPG") AS "GasGallons"
-    FROM daytrip, vehicle, household
-    WHERE "TRPMILES" >= 0 AND "TDAYDATE" = 200803 AND daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."HOUSEID" = household."HOUSEID" AND daytrip."VEHID" >= 1 AND daytrip."VEHID" = vehicle."VEHID"                  
-    GROUP BY daytrip."HOUSEID", daytrip."VEHID", "EPATMPG"
-    ORDER BY daytrip."HOUSEID";
-
-    # simplified inner query
-    SELECT (SUM("TRPMILES") / "EPATMPG") AS "GasGallons"
-    FROM daytrip, vehicle, household
-    WHERE "TRPMILES" >= 0 AND "TDAYDATE" = 200803 AND daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."HOUSEID" = household."HOUSEID" AND daytrip    ."VEHID" >= 1 AND daytrip."VEHID" = vehicle."VEHID"
-    GROUP BY daytrip."HOUSEID", daytrip."VEHID", "EPATMPG" ORDER BY "GasGallons";
-
-    # overall query to get metric tons CO2 used by household transportation
-    SELECT SUM("GasGallons"), ((SUM("GasGallons")) * 31 * 8.887 / 1000 * 117538000 / 17)  AS MetricTonsCO2
-    FROM
-    (SELECT (SUM("TRPMILES") / "EPATMPG") AS "GasGallons"
-    FROM daytrip, vehicle, household
-    WHERE "TRPMILES" >= 0 AND "TDAYDATE" = 200803 AND daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."HOUSEID" = household."HOUSEID" AND daytrip        ."VEHID" >= 1 AND daytrip."VEHID" = vehicle."VEHID"
-    GROUP BY daytrip."HOUSEID", daytrip."VEHID", "EPATMPG" ORDER BY "GasGallons") X;
-"""
-
-    # final query
     household_monthly_CO2_query = """
     SELECT ((SUM(\"GasGallons\")) * %d * %f * %d / %d)  AS MetricTonsCO2
     FROM
@@ -153,21 +112,13 @@ for i,month in enumerate(survey_months):
     WHERE \"TRPMILES\" >= 0 AND \"TDAYDATE\" = %d AND daytrip.\"HOUSEID\" = vehicle.\"HOUSEID\" AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 AND daytrip.\"VEHID\" = vehicle.\"VEHID\"
     GROUP BY daytrip.\"HOUSEID\", daytrip.\"VEHID\", \"EPATMPG\" ORDER BY \"GasGallons\") X;""" % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
 
-    #final query in a different format
-    #household_monthly_CO2_query = """SELECT ((SUM(\"GasGallons\")) * %d * %f * %d / %d)  AS MetricTonsCO2 FROM (SELECT (SUM(\"TRPMILES\") / \"EPATMPG\") AS \"GasGallons\" FROM daytrip, vehicle, household WHERE \"TRPMILES\" >= 0 AND \"TDAYDATE\" = %d AND daytrip.\"HOUSEID\" = vehicle.\"HOUSEID\" AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 AND daytrip.\"VEHID\" = vehicle.\"VEHID\" GROUP BY daytrip.\"HOUSEID\", daytrip.\"VEHID\", \"EPATMPG\" ORDER BY \"GasGallons\") X;""" % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
-
-
-
-    print household_monthly_CO2_query
-
     cur.execute(household_monthly_CO2_query)
     household_monthly_CO2_value = cur.fetchone()[0]
+    
     answer.append(float(household_monthly_CO2_value) / total_transportation_monthly_values[i] * 100)
 
-
+print "QUERY C"
 print answer
-
-
 
 conn.commit()
 cur.close()
