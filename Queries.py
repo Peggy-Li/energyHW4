@@ -26,10 +26,10 @@ def main():
     conn = psycopg2.connect("dbname=postgres host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
-#    queryA(cur)
-#    queryB(cur)
+    queryA(cur)
+    queryB(cur)
     queryC(cur)
-#    queryD(cur)
+    queryD(cur)
 
     conn.commit()
     cur.close()
