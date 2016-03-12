@@ -26,10 +26,10 @@ def main():
     conn = psycopg2.connect("dbname=postgres host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
-    #queryA(cur)
-    #queryB(cur)
-    #queryC(cur)
-    queryD(cur)
+#    queryA(cur)
+#    queryB(cur)
+    queryC(cur)
+#    queryD(cur)
 
     conn.commit()
     cur.close()
@@ -116,7 +116,7 @@ def queryC(cur):
         (SELECT (SUM(TRPMILES) / EPATMPG) AS \"GasGallons\"
         FROM dayv2pub, vehv2pub, hhv2pub
         WHERE TRPMILES >= 0 AND dayv2pub.TDAYDATE = %d AND dayv2pub.HOUSEID = vehv2pub.HOUSEID AND dayv2pub.HOUSEID = hhv2pub.HOUSEID AND dayv2pub.VEHID >= 1 AND dayv2pub.VEHID = vehv2pub.VEHID AND DRVR_FLG = 1
-        GROUP BY dayv2pub.HOUSEID, dayv2pub.VEHID, EPATMPG ORDER BY \"GasGallons\") X;
+        GROUP BY dayv2pub.HOUSEID, dayv2pub.VEHID, EPATMPG) X;
         """ % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
 
         cur.execute(household_monthly_CO2_query)
@@ -126,8 +126,6 @@ def queryC(cur):
 
     print "QUERY C"
     print answer
-
-# From Nitta on Piazza: I am not positive the number you will end up seeing, but about 55% or so of CO2 comes form gasoline. If you account for upstream then you would expect to see something like 80% of that be actually burned at the vehv2pub. So you get something like 44% burned from all gasoline. Residents are a big portion of that, but I'm not positive how much. Another approach, if you go from the rough estimate of households burning about 84gallons a month, then multiply by the number of households, and the CO2 factor, this might give you a ball park. Compare that number to the table, and you should have an estimate.
 
 
 def queryD(cur):
@@ -149,8 +147,6 @@ def queryD(cur):
             mytuple = cur.fetchone()
             sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 = mytuple[0]
             sum_kWh_used_for_households_in_survey_for_month_miles_lte_20 =  mytuple[1]
-            #print "sum_gallons_used_for_households_in_survey_for_month_miles_lte_20" , sum_gallons_used_for_households_in_survey_for_month_miles_lte_20
-            #print "sum_kWh_used_for_households_in_survey_for_month_miles_lte_20", sum_kWh_used_for_households_in_survey_for_month_miles_lte_20
 
             query = """
             SELECT sum(20 / epatmpg), sum(20 / (epatmpg * 0.090634441))
@@ -197,15 +193,12 @@ def queryD(cur):
             co2_not_produced_by_car_in_survey_for_month = (sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 + sum_gallons_used_for_households_in_survey_for_month_miles_gt_20) * GAS_TO_CO2
             change = (co2_from_electricity_used_by_car_in_survey_for_month - co2_not_produced_by_car_in_survey_for_month) * num_days * US_HOUSEHOLDS / monthly_households
 
-            #print "co2_from_electricity_used_by_car_in_survey_for_month", co2_from_electricity_used_by_car_in_survey_for_month
-            #print "co2_not_produced_by_car_in_survey_for_month", co2_not_produced_by_car_in_survey_for_month
             answer.append(change)
 
 
         print "QUERYD"        
-        #print answer
         all_answers.append(answer)
-    print all_answers
+    print all_answers # prints an array of 3 arrays for part D
 
 
 main()
