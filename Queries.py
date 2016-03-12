@@ -23,12 +23,12 @@ survey_months_string = "200803, 200804, 200805, 200806, 200807, 200808, 200809, 
 
 def main():
 
-    conn = psycopg2.connect("dbname=subset host=/home/" + os.environ['USER'] + "/postgres")
+    conn = psycopg2.connect("dbname=postgres host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
-    queryA(cur)
-    queryB(cur)
-    queryC(cur)
+    #queryA(cur)
+    #queryB(cur)
+    #queryC(cur)
     queryD(cur)
 
     conn.commit()
@@ -131,91 +131,81 @@ def queryC(cur):
 
 
 def queryD(cur):
+    all_answers = []
+    for limit in (20, 40, 60):
+        answer = []
+        for i,month in enumerate(survey_months):
+            num_days = months[(month%100)]
+            query = """
+            SELECT sum(sumtrpmiles / epatmpg), sum(sumtrpmiles / (epatmpg * 0.090634441))
+            FROM (SELECT d.houseid, d.vehid, sum(d.trpmiles) as sumtrpmiles, v.epatmpg
+                FROM dayv2pub as d, vehv2pub as v
+                WHERE d.houseid=v.houseid and d.vehid=v.vehid and d.vehid >= 1 and d.drvr_flg = 01 and d.tdaydate = %d 
+                GROUP BY d.vehid, d.houseid, v.epatmpg
+                HAVING sum(d.trpmiles) <= %d) as sumtrp
+            ;
+            """ % (month, limit)
+            cur.execute(query)
+            mytuple = cur.fetchone()
+            sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 = mytuple[0]
+            sum_kWh_used_for_households_in_survey_for_month_miles_lte_20 =  mytuple[1]
+            #print "sum_gallons_used_for_households_in_survey_for_month_miles_lte_20" , sum_gallons_used_for_households_in_survey_for_month_miles_lte_20
+            #print "sum_kWh_used_for_households_in_survey_for_month_miles_lte_20", sum_kWh_used_for_households_in_survey_for_month_miles_lte_20
 
-# Plug-in hybrid vehicles have recently become commercially available; these vehicles operate in a purely electric mode, or in a hybrid mode. Assume that every vehicle is a plug-in hybrid that has X miles of all electric range. The first X miles in a given day will be driven all electric and the remainder will be at the fuel economy listed for the particular vehicle. The Energy Efficiency Ratio (EER) is used to estimate the amount of electricity an equivalent electric vehicle will consume. Assuming an EER of 3.0 and 33.1kWh per gallon of gasoline, you can calculate the equivalent energy efficiency in miles/kWh by multiplying the EPA combined fuel economy by 0.090634441. Calculate the change of CO2 over the months of the survey if every household vehicle were plug- in hybrids with 20 mile electric range. Calculate for 40 and 60 mile electric ranges as well.
+            query = """
+            SELECT sum(20 / epatmpg), sum(20 / (epatmpg * 0.090634441))
+            FROM (SELECT d.houseid, d.vehid, sum(d.trpmiles) as sumtrpmiles, v.epatmpg
+                FROM dayv2pub as d, vehv2pub as v
+                WHERE d.houseid=v.houseid and d.vehid=v.vehid and d.vehid >= 1 and d.drvr_flg = 01 and d.tdaydate = 200804 
+                GROUP BY d.vehid, d.houseid, v.epatmpg
+                HAVING sum(d.trpmiles) > 20) as sumtrp
+            ;
+            """ 
+            cur.execute(query)
+            mytuple = cur.fetchone()
+            sum_gallons_used_for_households_in_survey_for_month_miles_gt_20 = mytuple[0]
+            sum_kWh_used_for_households_in_survey_for_month_miles_gt_20 =  mytuple[1]
+            
+            query = """
+            SELECT value
+            FROM eia_co2_electricity_2015
+            WHERE date = %d AND column_order = 9;
+            """ % month
+            cur.execute(query)
+            total_co2_produced_for_month = cur.fetchone()[0]
+
+            query = """
+            SELECT value
+            FROM eia_mkwh_2015
+            WHERE date = %d AND column_order = 13;
+            """ % month
+            cur.execute(query)
+            total_electricity_produced_for_month = cur.fetchone()[0]
+
+            monthly_households_query = """
+            SELECT COUNT(*)
+            FROM (SELECT d.houseid
+                FROM dayv2pub as d, hhv2pub as h
+                WHERE d.tdaydate = %d AND d.trpmiles >= 0 AND d.houseid = h.houseid AND d.vehid >= 1 
+                GROUP BY d.houseid) tempname;
+            """ % month
+            cur.execute(monthly_households_query)
+            monthly_households = cur.fetchone()[0]
+
+            co2_from_electricity_used_by_car_in_survey_for_month = (sum_kWh_used_for_households_in_survey_for_month_miles_lte_20 + sum_kWh_used_for_households_in_survey_for_month_miles_gt_20) * total_co2_produced_for_month / total_electricity_produced_for_month
+
+            co2_not_produced_by_car_in_survey_for_month = (sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 + sum_gallons_used_for_households_in_survey_for_month_miles_gt_20) * GAS_TO_CO2
+            change = (co2_from_electricity_used_by_car_in_survey_for_month - co2_not_produced_by_car_in_survey_for_month) * num_days * US_HOUSEHOLDS / monthly_households
+
+            #print "co2_from_electricity_used_by_car_in_survey_for_month", co2_from_electricity_used_by_car_in_survey_for_month
+            #print "co2_not_produced_by_car_in_survey_for_month", co2_not_produced_by_car_in_survey_for_month
+            answer.append(change)
 
 
+        print "QUERYD"        
+        #print answer
+        all_answers.append(answer)
+    print all_answers
 
-
-# You have to calculate how much electricity is consumed in kWh by using the description above. Once you have kWh, you can figure out how much CO2 attributed per kWh by looking at the EIA data.
-
-# For 3d you are considering all sources for the electricity. You would use the totals ELETPUS and TXEIEUS.
-
-# you need to determine the CO2 that will not be created for the first 20 miles since you won't be burning gasoline. You also then need to determine how much CO2 is created because of the electricity consumed. You are looking for that delta.
-
-# Not exactly sure, but if you figure out the percentage of trip miles that are in the first 20 miles. That number times 2/3 would be probably a ball park. The EER is 3 so it should consume roughly 1/3 gasoline equivalent for those miles. So a 2/3 reduction for those miles. Does that make sense? 
-
-# You are looking at the reduction in CO2. So CO2 that would have been generated by gas minus the CO2 generated by electricity.
-
-    for i,month in enumerate(survey_months):
-        num_days = months[(month%100)]
-        query = """
-        SELECT sum(sumtrpmiles / epatmpg), sum(sumtrpmiles / (epatmpg * 0.090634441))
-        FROM (SELECT d.houseid, d.vehid, sum(d.trpmiles) as sumtrpmiles, v.epatmpg
-            FROM dayv2pub as d, vehv2pub as v
-            WHERE d.houseid=v.houseid and d.vehid=v.vehid and d.vehid >= 1 and d.drvr_flg = 01 and d.tdaydate = %d 
-            GROUP BY d.vehid, d.houseid, v.epatmpg
-            HAVING sum(d.trpmiles) <= 20) as sumtrp
-        ;
-        """ % month
-        cur.execute(query)
-        mytuple = cur.fetchone()
-        sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 = mytuple[0]
-        sum_kWh_used_for_households_in_survey_for_month_miles_lte_20 =  mytuple[1]
-        #print "sum_gallons_used_for_households_in_survey_for_month_miles_lte_20" , sum_gallons_used_for_households_in_survey_for_month_miles_lte_20
-        #print "sum_kWh_used_for_households_in_survey_for_month_miles_lte_20", sum_kWh_used_for_households_in_survey_for_month_miles_lte_20
-
-        query = """
-        SELECT sum(20 / epatmpg), sum(20 / (epatmpg * 0.090634441))
-        FROM (SELECT d.houseid, d.vehid, sum(d.trpmiles) as sumtrpmiles, v.epatmpg
-            FROM dayv2pub as d, vehv2pub as v
-            WHERE d.houseid=v.houseid and d.vehid=v.vehid and d.vehid >= 1 and d.drvr_flg = 01 and d.tdaydate = 200804 
-            GROUP BY d.vehid, d.houseid, v.epatmpg
-            HAVING sum(d.trpmiles) > 20) as sumtrp
-        ;
-        """ 
-        cur.execute(query)
-        mytuple = cur.fetchone()
-        sum_gallons_used_for_households_in_survey_for_month_miles_gt_20 = mytuple[0]
-        sum_kWh_used_for_households_in_survey_for_month_miles_gt_20 =  mytuple[1]
-        
-        query = """
-        SELECT value
-        FROM eia_co2_electricity_2015
-        WHERE date = %d AND column_order = 9;
-        """ % month
-        cur.execute(query)
-        total_co2_produced_for_month = cur.fetchone()[0]
-
-        query = """
-        SELECT value
-        FROM eia_mkwh_2015
-        WHERE date = %d AND column_order = 13;
-        """ % month
-        cur.execute(query)
-        total_electricity_produced_for_month = cur.fetchone()[0]
-
-        monthly_households_query = """
-        SELECT COUNT(*)
-        FROM (SELECT d.houseid
-            FROM dayv2pub as d, hhv2pub as h
-            WHERE d.tdaydate = %d AND d.trpmiles >= 0 AND d.houseid = h.houseid AND d.vehid >= 1 
-            GROUP BY d.houseid) tempname;
-        """ % month
-        cur.execute(monthly_households_query)
-        monthly_households = cur.fetchone()[0]
-
-        co2_from_electricity_used_by_car_in_survey_for_month = (sum_kWh_used_for_households_in_survey_for_month_miles_lte_20 + sum_kWh_used_for_households_in_survey_for_month_miles_gt_20) * total_co2_produced_for_month / total_electricity_produced_for_month
-
-        co2_not_produced_by_car_in_survey_for_month = (sum_gallons_used_for_households_in_survey_for_month_miles_lte_20 + sum_gallons_used_for_households_in_survey_for_month_miles_gt_20) * GAS_TO_CO2
-        change = (co2_from_electricity_used_by_car_in_survey_for_month - co2_not_produced_by_car_in_survey_for_month) * num_days * US_HOUSEHOLDS / monthly_households
-
-        #print "co2_from_electricity_used_by_car_in_survey_for_month", co2_from_electricity_used_by_car_in_survey_for_month
-        #print "co2_not_produced_by_car_in_survey_for_month", co2_not_produced_by_car_in_survey_for_month
-        
-        print change
-        
-
-print "QueryD"
 
 main()
