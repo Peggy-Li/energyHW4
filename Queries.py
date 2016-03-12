@@ -26,15 +26,15 @@ def main():
     conn = psycopg2.connect("dbname=subset host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
-    #queryA(cur)
-    #queryB(cur)
-    #queryC(cur)
+    queryA(cur)
+    queryB(cur)
+    queryC(cur)
     queryD(cur)
 
     conn.commit()
     cur.close()
     conn.close()
-#a) Calculate the percent of individuals that travel less than 5 - 100 miles a day for every 5 mile increments (e.g. 5, 10, 15, ..., 95, 100).
+
 def queryA(cur):
     answer = []
     for mileage_limit in range(5,101, 5):
@@ -47,15 +47,12 @@ def queryA(cur):
             total_query = """
             SELECT (%d*COUNT(*))
             FROM
-            (SELECT daytrip."HOUSEID", daytrip."PERSONID", "TDAYDATE", SUM("TRPMILES") AS "PersonMilesInDay"
-            FROM daytrip, household
-            WHERE daytrip."HOUSEID" = household."HOUSEID" AND "TDAYDATE"%%100 IN (%s) AND "TRPMILES" >= 0
-            GROUP BY daytrip."HOUSEID", daytrip."PERSONID", "TDAYDATE") PersonMilesPerDay;""" % (month_length, month_match_query_part)
+            (SELECT dayv2pub.HOUSEID, dayv2pub.PERSONID, dayv2pub.TDAYDATE, SUM(TRPMILES) AS "PersonMilesInDay"
+            FROM dayv2pub, hhv2pub
+            WHERE dayv2pub.HOUSEID = hhv2pub.HOUSEID AND dayv2pub.TDAYDATE%%100 IN (%s) AND TRPMILES >= 0
+            GROUP BY dayv2pub.HOUSEID, dayv2pub.PERSONID, dayv2pub.TDAYDATE) PersonMilesPerDay;""" % (month_length, month_match_query_part)
             
-            mileage_limit_query = total_query[:-2] + ' WHERE "PersonMilesInDay" < %d;' % mileage_limit
-
-            #print total_query
-            #print mileage_limit_query
+            mileage_limit_query = total_query[:-1] + ' WHERE "PersonMilesInDay" < %d;' % mileage_limit
 
             cur.execute(mileage_limit_query)
             mileage_limit_values.append(cur.fetchone()[0])
@@ -69,19 +66,16 @@ def queryA(cur):
     print "QUERY A"
     print answer
 
-#You want to look at it on a day by day basis. Consider individuals driving on another day as a separate individual. 
-# check double counting
-
 #b) Calculate the average fuel economy of all miles traveled for trips less than specific distances from previous problem. Only consider trips that utilize a household vehicle (VEHID is 1 or larger), use the EPA combined fuel economy (EPATMPG) for the particular vehicle.
 
 def queryB(cur):
     queryB = """
-    SELECT SUM(totalmilespervehicle * "EPATMPG") / SUM(totalmilespervehicle)
-    FROM (SELECT daytrip."HOUSEID", daytrip."VEHID", SUM("TRPMILES") AS totalmilespervehicle, "EPATMPG"
-    FROM daytrip, vehicle
-    WHERE daytrip."HOUSEID" = vehicle."HOUSEID" AND daytrip."VEHID" = vehicle."VEHID" AND "TRPMILES" >= 0 AND "TRPMILES" < %d
-    GROUP BY daytrip."HOUSEID", daytrip."VEHID", "EPATMPG"
-    HAVING daytrip."VEHID" >= 1) X;
+    SELECT SUM(totalmilespervehicle * EPATMPG) / SUM(totalmilespervehicle)
+    FROM (SELECT dayv2pub.HOUSEID, dayv2pub.VEHID, SUM(TRPMILES) AS totalmilespervehicle, EPATMPG
+    FROM dayv2pub, vehv2pub
+    WHERE dayv2pub.HOUSEID = vehv2pub.HOUSEID AND dayv2pub.VEHID = vehv2pub.VEHID AND TRPMILES >= 0 AND TRPMILES < %d
+    GROUP BY dayv2pub.HOUSEID, dayv2pub.VEHID, EPATMPG
+    HAVING dayv2pub.VEHID >= 1) X;
     """
 
     answer = []
@@ -96,10 +90,12 @@ def queryB(cur):
 def queryC(cur):
     answer = []
 
-    total_transportation_values_query = """SELECT (value*1000000) AS MetricTonsCO2
-    FROM eia_co2_transportation
+    total_transportation_values_query = """
+    SELECT (value*1000000) AS MetricTonsCO2
+    FROM eia_co2_transportation_2015
     WHERE column_order = 12 AND date IN (%s)
-    ORDER BY date""" % survey_months_string
+    ORDER BY date
+    """ % survey_months_string
 
     cur.execute(total_transportation_values_query)
     total_transportation_monthly_values = cur.fetchall()
@@ -109,17 +105,19 @@ def queryC(cur):
         num_days = months[(month%100)]
 
         monthly_households_query = """
-        SELECT COUNT(*) FROM (SELECT daytrip.\"HOUSEID\" FROM daytrip, household WHERE \"TDAYDATE\" = %d AND \"TRPMILES\" >= 0 AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 GROUP BY daytrip.\"HOUSEID\") X;""" % month
+        SELECT COUNT(*) FROM (SELECT dayv2pub.HOUSEID FROM dayv2pub, hhv2pub WHERE dayv2pub.TDAYDATE = %d AND TRPMILES >= 0 AND dayv2pub.HOUSEID = hhv2pub.HOUSEID AND dayv2pub.VEHID >= 1 GROUP BY dayv2pub.HOUSEID) X;
+        """ % month
         cur.execute(monthly_households_query)
         monthly_households = cur.fetchone()[0]
 
         household_monthly_CO2_query = """
         SELECT ((SUM(\"GasGallons\")) * %d * %f * %d / %d)  AS MetricTonsCO2
         FROM
-        (SELECT (SUM(\"TRPMILES\") / \"EPATMPG\") AS \"GasGallons\"
-        FROM daytrip, vehicle, household
-        WHERE \"TRPMILES\" >= 0 AND \"TDAYDATE\" = %d AND daytrip.\"HOUSEID\" = vehicle.\"HOUSEID\" AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 AND daytrip.\"VEHID\" = vehicle.\"VEHID\"
-        GROUP BY daytrip.\"HOUSEID\", daytrip.\"VEHID\", \"EPATMPG\" ORDER BY \"GasGallons\") X;""" % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
+        (SELECT (SUM(TRPMILES) / EPATMPG) AS \"GasGallons\"
+        FROM dayv2pub, vehv2pub, hhv2pub
+        WHERE TRPMILES >= 0 AND dayv2pub.TDAYDATE = %d AND dayv2pub.HOUSEID = vehv2pub.HOUSEID AND dayv2pub.HOUSEID = hhv2pub.HOUSEID AND dayv2pub.VEHID >= 1 AND dayv2pub.VEHID = vehv2pub.VEHID AND DRVR_FLG = 1
+        GROUP BY dayv2pub.HOUSEID, dayv2pub.VEHID, EPATMPG ORDER BY \"GasGallons\") X;
+        """ % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
 
         cur.execute(household_monthly_CO2_query)
         household_monthly_CO2_value = cur.fetchone()[0]
@@ -129,7 +127,7 @@ def queryC(cur):
     print "QUERY C"
     print answer
 
-# From Nitta on Piazza: I am not positive the number you will end up seeing, but about 55% or so of CO2 comes form gasoline. If you account for upstream then you would expect to see something like 80% of that be actually burned at the vehicle. So you get something like 44% burned from all gasoline. Residents are a big portion of that, but I'm not positive how much. Another approach, if you go from the rough estimate of households burning about 84gallons a month, then multiply by the number of households, and the CO2 factor, this might give you a ball park. Compare that number to the table, and you should have an estimate.
+# From Nitta on Piazza: I am not positive the number you will end up seeing, but about 55% or so of CO2 comes form gasoline. If you account for upstream then you would expect to see something like 80% of that be actually burned at the vehv2pub. So you get something like 44% burned from all gasoline. Residents are a big portion of that, but I'm not positive how much. Another approach, if you go from the rough estimate of households burning about 84gallons a month, then multiply by the number of households, and the CO2 factor, this might give you a ball park. Compare that number to the table, and you should have an estimate.
 
 
 def queryD(cur):
