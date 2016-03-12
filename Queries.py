@@ -26,14 +26,15 @@ def main():
     conn = psycopg2.connect("dbname=postgres host=/home/" + os.environ['USER'] + "/postgres")
     cur = conn.cursor()
 
-    #queryA(cur)
-    #queryB(cur)
-    #queryC(cur)
+    queryA(cur)
+    queryB(cur)
+    queryC(cur)
     queryD(cur)
 
     conn.commit()
     cur.close()
     conn.close()
+
 #a) Calculate the percent of individuals that travel less than 5 - 100 miles a day for every 5 mile increments (e.g. 5, 10, 15, ..., 95, 100).
 def queryA(cur):
     answer = []
@@ -118,7 +119,7 @@ def queryC(cur):
         FROM
         (SELECT (SUM(\"TRPMILES\") / \"EPATMPG\") AS \"GasGallons\"
         FROM daytrip, vehicle, household
-        WHERE \"TRPMILES\" >= 0 AND \"TDAYDATE\" = %d AND daytrip.\"HOUSEID\" = vehicle.\"HOUSEID\" AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 AND daytrip.\"VEHID\" = vehicle.\"VEHID\"
+        WHERE \"TRPMILES\" >= 0 AND \"TDAYDATE\" = %d AND daytrip.\"HOUSEID\" = vehicle.\"HOUSEID\" AND daytrip.\"HOUSEID\" = household.\"HOUSEID\" AND daytrip.\"VEHID\" >= 1 AND daytrip.\"VEHID\" = vehicle.\"VEHID\" AND \"DRVR_FLG\" = 1
         GROUP BY daytrip.\"HOUSEID\", daytrip.\"VEHID\", \"EPATMPG\" ORDER BY \"GasGallons\") X;""" % (num_days, GAS_TO_CO2, US_HOUSEHOLDS, monthly_households, month)
 
         cur.execute(household_monthly_CO2_query)
